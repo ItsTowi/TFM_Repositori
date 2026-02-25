@@ -1,0 +1,102 @@
+\documentclass[12pt,a4paper]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{microtype}
+\usepackage{titlesec}
+
+
+\titleformat{\chapter}[hang] 
+{\normalfont\LARGE\bfseries}{\thechapter}{1em}{}
+
+\titleformat{\chapter}[hang] 
+{\normalfont\LARGE\bfseries}{\thechapter}{1em}{}
+
+\graphicspath{ {./images/}}
+
+\geometry{left=3cm, right=3cm, top=2.5cm, bottom=2.5cm}
+\onehalfspacing
+
+\begin{document}
+
+% PORTADA
+\begin{titlepage}
+    \centering
+    
+    \vspace*{1cm}
+    {\Large \textbf{Antonio Iglesias Carrión}}
+    \vspace{2cm}
+    
+    {\huge \textbf{Graph Retrieval Augmented Generation and Knowledge Graphs}}
+    \vspace{2cm}
+    
+    {\Large MASTER'S THESIS}
+    \vspace{0.5cm}
+    {\Large Directed by Dr. Pedro García López}
+    \vspace{1.5cm}
+    
+    {\Large Master's Degree in Security Engineering and Artificial Intelligence (MESIIA)}
+    
+    \vfill
+    
+    \includegraphics[width=6cm]{urvlogo.png}
+    \vspace{0.5cm}
+    
+    \vspace{0.3cm}
+    {\large Tarragona}
+    \vspace{0.3cm}
+    {\large 2026}
+\end{titlepage}
+
+
+% RESUMENES
+\pagenumbering{roman}
+
+\section*{Abstract}
+
+\newpage
+\section*{Resumen}
+
+\newpage
+\section*{Resum}
+
+\newpage
+
+
+% ÍNDICE
+\tableofcontents
+\newpage
+
+\pagenumbering{arabic}
+
+% ==========================================
+% CUERPO DEL TFM (Capítulos sugeridos) [cite: 68]
+% ==========================================
+
+\chapter{Introduction}
+
+\chapter{Background and State of the Art}
+
+\chapter{Proposed Solution}
+
+\chapter{Evaluation}
+
+\chapter{Discussions and Conclusions}
+
+\chapter{Ethical, Deontological and Environmental Aspects}
+
+
+% BIBLIOGRAFIA
+\newpage
+\addcontentsline{toc}{chapter}{Bibliography}
+\begin{thebibliography}{99}
+    \bibitem{graphrag} Text example
+\end{thebibliography}
+
+\end{document}
