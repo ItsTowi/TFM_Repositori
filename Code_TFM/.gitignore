@@ -8,3 +8,4 @@ chroma_db_experimentos
 src/__pycache__
 src/baselines/__pycache__
 .DS_Store
+lightrag_graphs
