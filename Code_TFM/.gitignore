@@ -9,3 +9,6 @@ src/__pycache__
 src/baselines/__pycache__
 .DS_Store
 lightrag_graphs
+llamaindex_workspace
+ms_graphrag_workspace/input
+ms_graphrag_workspace/prompts
