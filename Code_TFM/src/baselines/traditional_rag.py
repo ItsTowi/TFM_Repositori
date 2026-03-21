@@ -35,9 +35,9 @@ class TraditionalRAG:
         retriever = self.vector_store.as_retriever(search_kwargs={"k": 4})
         
         system_prompt = (
-            "Eres un asistente experto. Usa SOLO los siguientes fragmentos de contexto "
-            "recuperado para responder a la pregunta. Si no lo sabes, di que no lo sabes.\n\n"
-            "CONTEXTO:\n{context}"
+            "You are an expert assistant. Use ONLY the following retrieved context "
+            "to answer the question. If you don't know, say you don't know.\n\n"
+            "CONTEXT:\n{context}"
         )
         prompt = ChatPromptTemplate.from_messages([
             ("system", system_prompt),
