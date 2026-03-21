@@ -16,16 +16,6 @@ from .metrics import build_ragas_wrappers, compute_ragas_scores
 
 
 class RAGEvaluator:
-    """
-    Evaluador genérico para cualquier RAG.
-
-    Uso básico:
-        evaluator = RAGEvaluator(rag_type="traditional", rag_object=rag)
-        result = await evaluator.run(libros, qas, dominio="cs")
-        evaluator.print_summary(result)
-        evaluator.save(result)
-    """
-
     def __init__(
         self,
         rag_type: RAGType,
@@ -55,7 +45,6 @@ class RAGEvaluator:
         dominio: str,
         max_questions: int = None,
     ) -> ExperimentResult:
-        """Ejecuta el experimento completo y devuelve un ExperimentResult."""
         result = ExperimentResult(
             rag_type=self.rag_type,
             dominio=dominio,
@@ -96,14 +85,17 @@ class RAGEvaluator:
         result.avg_latency_s = round(sum(latencias) / len(latencias), 2) if latencias else 0
 
         print("\n📊 Calculando métricas RAGAS...")
-        result.ragas_scores = await compute_ragas_scores(
+        ragas_output = await compute_ragas_scores(
             result.qa_results, self.llm, self.embeddings
         )
+
+        # Separar scores de token_usage
+        result.token_usage = ragas_output.pop("token_usage", {})
+        result.ragas_scores = ragas_output
 
         return result
 
     def save(self, result: ExperimentResult, path: str = "../../results/") -> str:
-        """Guarda el resultado en un fichero JSON."""
         os.makedirs(path, exist_ok=True)
         filename = f"{result.rag_type}_{result.dominio}_{result.timestamp[:10]}.json"
         filepath = os.path.join(path, filename)
@@ -113,7 +105,6 @@ class RAGEvaluator:
         return filepath
 
     def print_summary(self, result: ExperimentResult):
-        """Imprime un resumen legible del experimento."""
         print("\n" + "=" * 60)
         print(f"📋 RESUMEN: {result.rag_type.upper()} | {result.dominio}")
         print("=" * 60)
@@ -131,4 +122,13 @@ class RAGEvaluator:
                     print(f"    {metric:<25} {score}")
         else:
             print("    (sin métricas)")
+        if result.token_usage:
+            t = result.token_usage.get("total", {})
+            r2 = result.token_usage.get("rates", {})
+            print(f"\n  💰 Tokens RAGAS:")
+            print(f"    Total      : {t.get('total_tokens', 0):,}")
+            print(f"    Prompt     : {t.get('prompt_tokens', 0):,}")
+            print(f"    Completion : {t.get('completion_tokens', 0):,}")
+            print(f"    TPM        : {r2.get('tpm', 0):,} tokens/min")
+            print(f"    RPM        : {r2.get('rpm', 0):,} requests/min")
         print("=" * 60)
