@@ -17,6 +17,16 @@ async def query_traditional(rag, question: str) -> tuple[str, list[str]]:
     answer = rag.ask(question)
     return answer, contexts
 
+async def query_advanced(rag, question: str) -> tuple[str, list[str]]:
+    """
+    RAG++ — usa el pipeline híbrido completo de AdvancedRAG.
+    """
+    retriever = rag._build_retriever()
+    docs = retriever.invoke(question)
+    contexts = [d.page_content for d in docs]
+    answer = rag.ask(question)
+    return answer, contexts
+
 
 async def query_lightrag(rag, question: str, mode: str = "hybrid") -> tuple[str, list[str]]:
     """
@@ -31,15 +41,23 @@ async def query_lightrag(rag, question: str, mode: str = "hybrid") -> tuple[str,
 
 
 async def query_llamaindex(query_engine, question: str) -> tuple[str, list[str]]:
-    """
-    LlamaIndex GraphRAG.
-    Extrae los source_nodes como contextos para RAGAS.
-    """
     response = await query_engine.aquery(question)
     answer = response.response
     contexts = []
     if hasattr(response, "source_nodes"):
-        contexts = [n.text for n in response.source_nodes if hasattr(n, "text")]
+        contexts = [
+            n.node.text for n in response.source_nodes 
+            if hasattr(n, "node") and hasattr(n.node, "text")
+            and not n.node.text.startswith("Here are")  # filtrar triplets
+        ]
     if not contexts:
         contexts = [answer]
     return answer, contexts
+
+
+
+async def query_msgraphrag_local(rag, question: str) -> tuple[str, list[str]]:
+    return await rag.local_search(question)
+
+async def query_msgraphrag_global(rag, question: str) -> tuple[str, list[str]]:
+    return await rag.global_search(question)

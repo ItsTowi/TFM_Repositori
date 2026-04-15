@@ -9,11 +9,6 @@
 \usepackage{titlesec}
 \usepackage{hyperref}
 \usepackage{microtype}
-\usepackage{titlesec}
-
-
-\titleformat{\chapter}[hang] 
-{\normalfont\LARGE\bfseries}{\thechapter}{1em}{}
 
 \titleformat{\chapter}[hang] 
 {\normalfont\LARGE\bfseries}{\thechapter}{1em}{}
@@ -76,10 +71,66 @@
 \pagenumbering{arabic}
 
 % ==========================================
-% CUERPO DEL TFM (Capítulos sugeridos) [cite: 68]
+% CUERPO DEL TFM
 % ==========================================
 
 \chapter{Introduction}
+In recent years, there has been a boom in 
+artificial intelligence that is commercially
+available and accessible to the general public. 
+When these large language models first emerged, 
+the industry realized that the models were black boxes, 
+and if they wanted the model to learn something new, 
+they had to retrain it (an expensive process).
+
+\bigbreak
+\noindent This caused three critical problems in LLMs:
+\begin{itemize}
+    \item  Hallucinations: The models confidently invent facts
+    \item  Knowledge gap: They cannot know anything that happened after their training
+    \item Lack of privacy: They cannot access your private or corporate documents.
+\end{itemize}
+
+In September 2020, researchers at Facebook AI 
+Research published the first paper on 
+Retrieval-Augmented Generation (RAG). 
+RAG was developed to address these issues; 
+before the model responds, it searches a database 
+for information related to the question asked and 
+provides context for it.
+
+\bigbreak
+These RAGs operate using semantic vector search: 
+text is broken down into chunks, converted into 
+numerical values, and stored. When you ask an LLM a 
+question, the system searches for the chunks that are 
+numerically most similar to your query, thereby 
+providing the LLM with more context. This approach had a 
+limitation: the LLM struggled to answer general questions 
+based on the documents when using the RAG.
+
+\bigbreak
+To address this issue, GraphRAG was developed—combining 
+LLMs with knowledge graphs, which contain interconnected
+entities such as people, places, concepts, and 
+relationships like “X works at Y.” This allows us 
+to extract broader contextual insights from the data 
+at our disposal.
+
+\section{Context}
+
+\section{Problem Statement}
+
+In this thesis, we aim to address the practical 
+challenges involved in generating and using 
+high-quality RAGs or GraphsRAGs. 
+When using them, we identify three main issues: 
+indexing time, indexing cost, and determining 
+which systems are best suited to our needs—that is, 
+the trade-offs involved in choosing one type of 
+RAG over another.
+
+\section{Motivation and Objectives}
 
 \chapter{Background and State of the Art}
 

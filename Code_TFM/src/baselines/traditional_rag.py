@@ -1,4 +1,3 @@
-# src/baselines/traditional_rag.py
 import os
 from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
@@ -10,27 +9,38 @@ from langchain_core.prompts import ChatPromptTemplate
 class TraditionalRAG:
     def __init__(self, persist_directory="./chroma_db"):
         self.persist_directory = persist_directory
-        
         self.embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
         self.llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0)
-        self.vector_store = None
+        
+        if os.path.exists(self.persist_directory) and os.listdir(self.persist_directory):
+            print(f"Cargando índice existente desde {self.persist_directory}...")
+            self.vector_store = Chroma(
+                persist_directory=self.persist_directory,
+                embedding_function=self.embeddings
+            )
+        else:
+            print("No se encontró un índice previo. El vector_store está vacío.")
+            self.vector_store = None
 
     def index_documents(self, splits):
-        self.vector_store = Chroma.from_documents(
-            documents=splits, 
-            embedding=self.embeddings,
-            persist_directory=self.persist_directory
-        )
+        """
+        Si ya existe el vector_store, añade documentos. 
+        Si no, lo crea por primera vez.
+        """
+        if self.vector_store is not None:
+            print("Añadiendo nuevos documentos al índice existente...")
+            self.vector_store.add_documents(documents=splits)
+        else:
+            print("Creando nuevo índice de vectores...")
+            self.vector_store = Chroma.from_documents(
+                documents=splits, 
+                embedding=self.embeddings,
+                persist_directory=self.persist_directory
+            )
 
-    def load_existing_index(self):
-        self.vector_store = Chroma(
-            persist_directory=self.persist_directory, 
-            embedding_function=self.embeddings
-        )
-        
     def ask(self, question: str) -> str:
         if not self.vector_store:
-            raise ValueError("Primero debes indexar los documentos.")
+            raise ValueError("La base de datos no existe. Debes indexar documentos primero.")
             
         retriever = self.vector_store.as_retriever(search_kwargs={"k": 4})
         

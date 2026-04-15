@@ -1,0 +1,5 @@
+rag_type,n_preguntas,n_errors,avg_latency_s,faithfulness,answer_relevancy,context_precision,context_recall
+advanced,100,0,2.18,0.946,0.8813,0.6306,0.695
+lightrag,100,0,1.88,0.9949,0.9322,0.95,0.8617
+llamaindex,100,0,2.06,0.9983,0.8224,0.57,0.4633
+traditional,100,0,3.29,0.9757,0.8928,0.5433,0.6767

@@ -1,0 +1,1316 @@
+{
+  "rag_type": "llamaindex",
+  "dominio": "cs",
+  "n_libros": 10,
+  "timestamp": "2026-04-12T13:00:30.085072",
+  "qa_results": [
+    {
+      "question": "How does Spark Streaming enable real-time data processing?",
+      "ground_truth": "Spark Streaming extends the core Spark API to process real-time data streams from sources like Kafka and Flume. It divides the streaming data into batches, which are then processed by the Spark engine to generate the final stream of results in real-time.",
+      "answer": "Spark Streaming is a library that focuses on processing data streams in real time. It allows for near real-time processing, with time frames ranging from sub-seconds to tenths of a second, as opposed to the minutes, hours, or days typical of batch processing. This stream-based approach applies processing to data as it is generated, enabling real-time machine learning workflows and relating to online learning models.",
+      "contexts": [
+        "Spark Streaming is a library that focuses on processing data streams in real time. It allows for near real-time processing, with time frames ranging from sub-seconds to tenths of a second, as opposed to the minutes, hours, or days typical of batch processing. This stream-based approach applies processing to data as it is generated, enabling real-time machine learning workflows and relating to online learning models."
+      ],
+      "latency_s": 2.49,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Machine Learning With Spark",
+      "error": ""
+    },
+    {
+      "question": "What does the book suggest about the use of histograms in data analysis?",
+      "ground_truth": "The book suggests that histograms are a powerful tool for visualizing the distribution of data, especially continuous data. They help in understanding the shape, central tendency, and spread of the data, which are crucial for subsequent statistical analyses.",
+      "answer": "Histograms can be used to check for skewness in data. They can also be used to understand the distribution of data, such as the ages of users. Additionally, histograms can be interpreted to understand conditional distributions.",
+      "contexts": [
+        "Histograms can be used to check for skewness in data. They can also be used to understand the distribution of data, such as the ages of users. Additionally, histograms can be interpreted to understand conditional distributions."
+      ],
+      "latency_s": 5.31,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Probability and Statistics for Computer Science",
+      "error": ""
+    },
+    {
+      "question": "What are some advanced topics covered in the book related to Linux Kernel Networking?",
+      "ground_truth": "Advanced topics covered in the book include Linux namespaces, network namespaces, cgroups, Busy Poll Sockets, the Bluetooth subsystem, the IEEE 802.15.4 subsystem, and Near Field Communication (NFC) subsystem.",
+      "answer": "The book covers advanced topics such as network namespaces, Busy Poll Sockets, the Bluetooth subsystem, the IEEE 802.15.4 subsystem, the Near Field Communication (NFC) subsystem, Notification Chains, and the PCI subsystem. It also includes sections on the teaming network driver, the Point-to-Point over Ethernet (PPPoE) Protocol, and Android.",
+      "contexts": [
+        "The book covers advanced topics such as network namespaces, Busy Poll Sockets, the Bluetooth subsystem, the IEEE 802.15.4 subsystem, the Near Field Communication (NFC) subsystem, Notification Chains, and the PCI subsystem. It also includes sections on the teaming network driver, the Point-to-Point over Ethernet (PPPoE) Protocol, and Android."
+      ],
+      "latency_s": 3.42,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Linux Kernel Networking",
+      "error": ""
+    },
+    {
+      "question": "What is the significance of the R tool in the context of modern optimization methods?",
+      "ground_truth": "The R tool is significant because it is a free, open-source, and multi-platform tool specifically developed for statistical analysis, and it has an active community that continuously enhances its capabilities with new packages, including those that implement modern optimization methods.",
+      "answer": "The R tool is significant because it is an open-source, high-level programming language for statistical and data analysis that runs on multiple platforms. It offers immediate responses without compilation and provides users with a better understanding and control over executed processes. The base distribution includes various statistical techniques that can be used with modern optimization methods and to analyze their results. Furthermore, R is highly extensible through packages, with a large and active community continuously creating new ones. These packages provide access to new features, including modern optimization methods, making R a gateway for sharing computational algorithms. Many R packages are organized into CRAN task views, such as the Optimization and Mathematical Programming view, which contains over 60 packages related to modern optimization. This allows for the execution of distinct computational tasks, such as combining optimization with statistical analysis, visualization, simulation, and data mining, within the same tool.",
+      "contexts": [
+        "The R tool is significant because it is an open-source, high-level programming language for statistical and data analysis that runs on multiple platforms. It offers immediate responses without compilation and provides users with a better understanding and control over executed processes. The base distribution includes various statistical techniques that can be used with modern optimization methods and to analyze their results. Furthermore, R is highly extensible through packages, with a large and active community continuously creating new ones. These packages provide access to new features, including modern optimization methods, making R a gateway for sharing computational algorithms. Many R packages are organized into CRAN task views, such as the Optimization and Mathematical Programming view, which contains over 60 packages related to modern optimization. This allows for the execution of distinct computational tasks, such as combining optimization with statistical analysis, visualization, simulation, and data mining, within the same tool."
+      ],
+      "latency_s": 4.68,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Modern Optimization With R",
+      "error": ""
+    },
+    {
+      "question": "What are the key features of this text that aid in learning object-oriented concepts in Java?",
+      "ground_truth": "Key features include an early introduction to object-oriented programming, the use of contour diagrams to illustrate object-oriented concepts, and the inclusion of questions for readers to interact with the material, reinforcing concepts through practice.",
+      "answer": "Contour diagrams are presented as an effective tool for learning object-oriented concepts.",
+      "contexts": [
+        "Contour diagrams are presented as an effective tool for learning object-oriented concepts."
+      ],
+      "latency_s": 1.58,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Guide to Java",
+      "error": ""
+    },
+    {
+      "question": "What is the role of the RegExr tool in the book?",
+      "ground_truth": "The RegExr tool is used in the book as a web-based, JavaScript-powered regex implementation to help readers practice and understand regular expressions through interactive examples.",
+      "answer": "The RegExr tool is used for checking and demonstrating regular expressions. It can also be used to save results and copy lines into a text box. It interprets literal characters and regular expressions, and has tabs for samples and community. The tool highlights specific patterns and is found at Http://gskinner.com/regexr. It is described as an online regex checker and is used for testing regular expressions.",
+      "contexts": [
+        "The RegExr tool is used for checking and demonstrating regular expressions. It can also be used to save results and copy lines into a text box. It interprets literal characters and regular expressions, and has tabs for samples and community. The tool highlights specific patterns and is found at Http://gskinner.com/regexr. It is described as an online regex checker and is used for testing regular expressions."
+      ],
+      "latency_s": 2.33,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Introducing Regular Expressions",
+      "error": ""
+    },
+    {
+      "question": "How does the text compare to other Java programming texts in terms of content and detail?",
+      "ground_truth": "The text aims to fill the gap between comprehensive texts that might cover too many details, making them difficult for beginners, and shortened introductions that might lack necessary examples and illustrations. It provides a balance by concentrating on the fundamentals and being accessible to readers with no prior programming experience.",
+      "answer": "This question cannot be answered from the given source.",
+      "contexts": [
+        "This question cannot be answered from the given source."
+      ],
+      "latency_s": 1.6,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Guide to Java",
+      "error": ""
+    },
+    {
+      "question": "What role do Bayesian inference and priors play in the book?",
+      "ground_truth": "Bayesian inference and priors play a significant role in the book as they provide a framework for updating beliefs (priors) with new data to form posteriors. This approach is particularly useful in situations where prior knowledge is available and needs to be integrated with new evidence.",
+      "answer": "Bayesian inference is important for extracting information and incorporates prior beliefs. The difference between Bayesian inference and other methods lies in the consideration of prior information, which is information possessed before observing data. This prior information is incorporated by placing a prior probability distribution on parameters.\n\nThe book highlights that Bayesian inference is particularly useful when dealing with limited data. It also explains that a normal prior yields a normal posterior. The concept of conjugacy is introduced, where a prior distribution has a special relationship with the likelihood function, making the calculation of the normalizing constant easier. The Beta distribution is presented as a conjugate prior for the binomial distribution.\n\nMAP inference is performed by finding the parameter value that maximizes the posterior distribution. This process does not require knowledge of the normalizing constant. The book provides examples of calculating MAP estimates for coin flips and for a Poisson model of swearing.",
+      "contexts": [
+        "Bayesian inference is important for extracting information and incorporates prior beliefs. The difference between Bayesian inference and other methods lies in the consideration of prior information, which is information possessed before observing data. This prior information is incorporated by placing a prior probability distribution on parameters.\n\nThe book highlights that Bayesian inference is particularly useful when dealing with limited data. It also explains that a normal prior yields a normal posterior. The concept of conjugacy is introduced, where a prior distribution has a special relationship with the likelihood function, making the calculation of the normalizing constant easier. The Beta distribution is presented as a conjugate prior for the binomial distribution.\n\nMAP inference is performed by finding the parameter value that maximizes the posterior distribution. This process does not require knowledge of the normalizing constant. The book provides examples of calculating MAP estimates for coin flips and for a Poisson model of swearing."
+      ],
+      "latency_s": 3.17,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Probability and Statistics for Computer Science",
+      "error": ""
+    },
+    {
+      "question": "What is the difference between recording a macro and writing code from scratch in VBA?",
+      "ground_truth": "Recording a macro involves using the Macro Recorder to translate user actions into VBA code, while writing code from scratch involves manually typing VBA statements in the Visual Basic Editor to create a macro.",
+      "answer": "Recording a macro involves clicking a \"Record Macro\" button to start the process, and then stopping the recording to view the generated code. Writing code from scratch in VBA, on the other hand, involves directly inputting the code into the Visual Basic Editor.",
+      "contexts": [
+        "Recording a macro involves clicking a \"Record Macro\" button to start the process, and then stopping the recording to view the generated code. Writing code from scratch in VBA, on the other hand, involves directly inputting the code into the Visual Basic Editor."
+      ],
+      "latency_s": 2.3,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Mastering VBA for Microsoft Office 2013",
+      "error": ""
+    },
+    {
+      "question": "How does the book address the implementation of IPv6 in comparison to IPv4?",
+      "ground_truth": "The book discusses the implementation of IPv6, highlighting its larger address space, fixed-length header, and additional features like Neighbor Discovery and Multicast Listener Discovery, which enhance and replace certain functionalities of IPv4.",
+      "answer": "This document does not contain information about the implementation of IPv6 in comparison to IPv4.",
+      "contexts": [
+        "This document does not contain information about the implementation of IPv6 in comparison to IPv4."
+      ],
+      "latency_s": 1.51,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Linux Kernel Networking",
+      "error": ""
+    },
+    {
+      "question": "Can you explain the concept of standard coordinates as discussed in the book?",
+      "ground_truth": "Standard coordinates involve normalizing data by subtracting the mean and dividing by the standard deviation for each variable. This transformation helps in comparing different datasets on a common scale, making it easier to visualize and analyze relationships between variables.",
+      "answer": "Standard coordinates, also referred to as normalized data items, are a transformation of data where the mean is 0 and the standard deviation is 1. This transformation is applied to a dataset to prepare it for further analysis or prediction.",
+      "contexts": [
+        "Standard coordinates, also referred to as normalized data items, are a transformation of data where the mean is 0 and the standard deviation is 1. This transformation is applied to a dataset to prepare it for further analysis or prediction."
+      ],
+      "latency_s": 1.9,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Probability and Statistics for Computer Science",
+      "error": ""
+    },
+    {
+      "question": "What are IP options and why might they be used?",
+      "ground_truth": "IP options are optional fields in the IPv4 header that enable advanced features like strict or loose routing, record routing, time stamping, and router alert. They are used for specific networking tasks that require additional control over packet handling.",
+      "answer": "IP options are an optional part of the IPv4 header that can enable special features. They are not frequently used due to security concerns and processing overhead. Potential uses include specifying alternative routes with Strict or Loose Source Routing options if packets are being dropped by a firewall, or using the Record Route option to determine a packet's path to a destination.",
+      "contexts": [
+        "IP options are an optional part of the IPv4 header that can enable special features. They are not frequently used due to security concerns and processing overhead. Potential uses include specifying alternative routes with Strict or Loose Source Routing options if packets are being dropped by a firewall, or using the Record Route option to determine a packet's path to a destination."
+      ],
+      "latency_s": 2.7,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Linux Kernel Networking",
+      "error": ""
+    },
+    {
+      "question": "How does the book approach the teaching of jargon related to regular expressions?",
+      "ground_truth": "The book approaches jargon by sharing the correct terms in small doses and emphasizing practical application over overwhelming readers with dry language.",
+      "answer": "The book introduces jargon related to regular expressions by defining terms such as \"lookahead,\" \"lookbehind,\" \"metacharacter,\" \"modifier,\" \"negation,\" \"non-capturing group,\" \"octal characters,\" \"occurrence constraint,\" \"options,\" \"pattern space,\" \"Perl,\" \"piece,\" \"positive lookahead,\" \"positive lookbehind,\" \"POSIX,\" \"possessive match,\" and \"quantifier.\" It also explains concepts like \"matching\" and \"literal.\"",
+      "contexts": [
+        "The book introduces jargon related to regular expressions by defining terms such as \"lookahead,\" \"lookbehind,\" \"metacharacter,\" \"modifier,\" \"negation,\" \"non-capturing group,\" \"octal characters,\" \"occurrence constraint,\" \"options,\" \"pattern space,\" \"Perl,\" \"piece,\" \"positive lookahead,\" \"positive lookbehind,\" \"POSIX,\" \"possessive match,\" and \"quantifier.\" It also explains concepts like \"matching\" and \"literal.\""
+      ],
+      "latency_s": 2.05,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Introducing Regular Expressions",
+      "error": ""
+    },
+    {
+      "question": "What role do netlink sockets play in Linux Kernel Networking?",
+      "ground_truth": "Netlink sockets provide a bidirectional communication channel between userspace and the kernel, allowing for tasks such as adding or deleting routes, configuring neighboring tables, and setting IPsec policies and states.",
+      "answer": "Netlink sockets serve as the core mechanism for handling communication between userspace and the kernel. They facilitate the exchange of various types of netlink messages. Understanding kernel netlink sockets is crucial for comprehending the interface that the netlink layer offers to userspace.\n\nThe kernel networking stack creates multiple netlink sockets, with each socket responsible for managing different message types. For instance, the netlink socket designated for handling NETLINK_ROUTE messages is established within the rtnetlink_net_init() function.\n\nNetlink provides a bidirectional communication channel, enabling interaction between userspace and the kernel, or even among different parts of the kernel itself. It functions as an extension to the standard socket implementation. The primary implementation of netlink resides in the net/netlink directory.\n\nNetlink sockets offer several advantages over other communication methods between userspace and the kernel. Polling is not required when working with netlink sockets; a userspace application can open a socket and enter a blocking state upon calling recvmsg() if no messages are sent from the kernel. Additionally, the kernel can initiate the sending of asynchronous messages to userspace without requiring any action from userspace, such as an IOCTL call or writing to a sysfs entry. Netlink sockets also support multicast transmission.\n\nUsers can create netlink sockets using the socket() system call. These sockets can be either SOCK_RAW or SOCK_DGRAM sockets. Netlink sockets can be created in either the kernel or userspace. Kernel netlink sockets are created using the netlink_kernel_create() method, while userspace netlink sockets are created via the socket() system call. The creation of a netlink socket, whether in the kernel or userspace, results in a netlink_sock object. When a socket is created from userspace, it is managed by the netlink_create() method. If created in the kernel, it is handled by __netlink_kernel_create(), which sets the NETLINK_KERNEL_SOCKET flag. Ultimately, both methods invoke __netlink_create() to allocate and initialize a socket in the standard manner by calling the sk_alloc() method.",
+      "contexts": [
+        "Netlink sockets serve as the core mechanism for handling communication between userspace and the kernel. They facilitate the exchange of various types of netlink messages. Understanding kernel netlink sockets is crucial for comprehending the interface that the netlink layer offers to userspace.\n\nThe kernel networking stack creates multiple netlink sockets, with each socket responsible for managing different message types. For instance, the netlink socket designated for handling NETLINK_ROUTE messages is established within the rtnetlink_net_init() function.\n\nNetlink provides a bidirectional communication channel, enabling interaction between userspace and the kernel, or even among different parts of the kernel itself. It functions as an extension to the standard socket implementation. The primary implementation of netlink resides in the net/netlink directory.\n\nNetlink sockets offer several advantages over other communication methods between userspace and the kernel. Polling is not required when working with netlink sockets; a userspace application can open a socket and enter a blocking state upon calling recvmsg() if no messages are sent from the kernel. Additionally, the kernel can initiate the sending of asynchronous messages to userspace without requiring any action from userspace, such as an IOCTL call or writing to a sysfs entry. Netlink sockets also support multicast transmission.\n\nUsers can create netlink sockets using the socket() system call. These sockets can be either SOCK_RAW or SOCK_DGRAM sockets. Netlink sockets can be created in either the kernel or userspace. Kernel netlink sockets are created using the netlink_kernel_create() method, while userspace netlink sockets are created via the socket() system call. The creation of a netlink socket, whether in the kernel or userspace, results in a netlink_sock object. When a socket is created from userspace, it is managed by the netlink_create() method. If created in the kernel, it is handled by __netlink_kernel_create(), which sets the NETLINK_KERNEL_SOCKET flag. Ultimately, both methods invoke __netlink_create() to allocate and initialize a socket in the standard manner by calling the sk_alloc() method."
+      ],
+      "latency_s": 2.97,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Linux Kernel Networking",
+      "error": ""
+    },
+    {
+      "question": "What is the primary purpose of \"Joe Celko's SQL Programming Style\"?",
+      "ground_truth": "The primary purpose of the book is to improve SQL programming style and proficiency, helping individual programmers write Standard SQL without an accent or dialect and to give SQL shops a coding standard for internal use.",
+      "answer": "The primary purpose of \"Joe Celko's SQL Programming Style\" is to provide insights into SQL programming.",
+      "contexts": [
+        "The primary purpose of \"Joe Celko's SQL Programming Style\" is to provide insights into SQL programming."
+      ],
+      "latency_s": 1.95,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Joe Celko's SQL Programming Style",
+      "error": ""
+    },
+    {
+      "question": "What is the role of the tempdb database in SQL Server?",
+      "ground_truth": "The tempdb database is a key working area for the server. It is used for storing temporary objects such as complex query interim tables, user-created temporary tables, and other temporary storage needs. It is rebuilt from scratch every time the SQL Server restarts.",
+      "answer": "The temporary database is used for temporary tables and interim tables. It is also used as a working area and for keyset cursors. The temporary database is rebuilt every time SQL Server starts.",
+      "contexts": [
+        "The temporary database is used for temporary tables and interim tables. It is also used as a working area and for keyset cursors. The temporary database is rebuilt every time SQL Server starts."
+      ],
+      "latency_s": 2.54,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Professional Microsoft SQL Server 2008 Programming",
+      "error": ""
+    },
+    {
+      "question": "What audience is the text primarily intended for?",
+      "ground_truth": "The text is intended primarily for readers who have not had any previous programming experience. However, it can also serve as a useful resource for others, including those who have programmed in the past but are new to Java.",
+      "answer": "The text is primarily intended for users of Microsoft Office 2013 who are interested in mastering VBA.",
+      "contexts": [
+        "The text is primarily intended for users of Microsoft Office 2013 who are interested in mastering VBA."
+      ],
+      "latency_s": 1.5,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Guide to Java",
+      "error": ""
+    },
+    {
+      "question": "How does the book recommend handling the complexity of regular expressions?",
+      "ground_truth": "The book recommends learning by doing, encouraging readers to follow examples and try out new concepts in practical exercises.",
+      "answer": "The book suggests that composability improves ease of learning and use, and tends to enhance the ratio between complexity and power.",
+      "contexts": [
+        "The book suggests that composability improves ease of learning and use, and tends to enhance the ratio between complexity and power."
+      ],
+      "latency_s": 1.79,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Introducing Regular Expressions",
+      "error": ""
+    },
+    {
+      "question": "What is a principal type in the context of type inference?",
+      "ground_truth": "A principal type is the most general type that can be assigned to an expression without losing information. Any other type for the expression can be derived by substituting type variables in the principal type.",
+      "answer": "A principal type is a type such that any other type of a term is an instance of it.",
+      "contexts": [
+        "A principal type is a type such that any other type of a term is an instance of it."
+      ],
+      "latency_s": 1.94,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Introduction to the Theory of Programming Languages",
+      "error": ""
+    },
+    {
+      "question": "What are user-defined functions (UDFs) in SQL Server and how do they differ from stored procedures?",
+      "ground_truth": "User-defined functions are similar to sprocs but can return a value of most SQL Server data types and cannot have side effects like changing tables. They are used to encapsulate reusable logic and return a single value or a table result.",
+      "answer": "User-defined functions (UDFs) can be used to call external processes. However, they can be difficult to maintain and can affect data integrity. Destroying UDFs can impact portability.\n\nStored procedures, on the other hand, require basic software engineering principles. User-defined stored procedures are often prefixed with \"usp_\". In Microsoft SQL Server, the prefix \"sp_\" is reserved for system procedures.",
+      "contexts": [
+        "User-defined functions (UDFs) can be used to call external processes. However, they can be difficult to maintain and can affect data integrity. Destroying UDFs can impact portability.\n\nStored procedures, on the other hand, require basic software engineering principles. User-defined stored procedures are often prefixed with \"usp_\". In Microsoft SQL Server, the prefix \"sp_\" is reserved for system procedures."
+      ],
+      "latency_s": 2.18,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Professional Microsoft SQL Server 2008 Programming",
+      "error": ""
+    },
+    {
+      "question": "What are the two categories of indexes in SQL Server and what distinguishes them?",
+      "ground_truth": "Indexes in SQL Server fall into two categories: clustered and non-clustered. A clustered index can have only one per table and means the table is physically sorted according to that index. Non-clustered indexes are more like traditional indexes and can have many per table.",
+      "answer": "The two categories of indexes are primary and secondary. A primary index is created to enforce PRIMARY KEY and UNIQUE constraints, ensuring the database schema is a correct data model with a key for every table. A secondary index is an optional index created by a database administrator to improve performance, meaning the schema will return the same results but potentially not as quickly.",
+      "contexts": [
+        "The two categories of indexes are primary and secondary. A primary index is created to enforce PRIMARY KEY and UNIQUE constraints, ensuring the database schema is a correct data model with a key for every table. A secondary index is an optional index created by a database administrator to improve performance, meaning the schema will return the same results but potentially not as quickly."
+      ],
+      "latency_s": 1.5,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Professional Microsoft SQL Server 2008 Programming",
+      "error": ""
+    },
+    {
+      "question": "What caution does the book provide regarding the use of maximum likelihood estimation?",
+      "ground_truth": "The book cautions that while maximum likelihood estimation is a powerful tool for estimating model parameters from data, it can be sensitive to the presence of outliers and may not always provide the best fit if the model assumptions are not met.",
+      "answer": "The book cautions that with small amounts of data, maximum likelihood estimation can present difficult problems. For instance, in a binomial case with only one flip, the estimate for p would be either 1 or 0, which might be unconvincing. Similarly, in a geometric case with a fair coin, there's a 0.5 probability of estimating p as 1 after a single trial, which should also raise concerns. Another example is throwing a die a few times, where it's possible that for some outcomes, the count is zero, leading the maximum likelihood procedure to infer that the probability of that outcome is zero, even if it's not the case. This highlights the challenge of estimating the probability of events that have not occurred.",
+      "contexts": [
+        "The book cautions that with small amounts of data, maximum likelihood estimation can present difficult problems. For instance, in a binomial case with only one flip, the estimate for p would be either 1 or 0, which might be unconvincing. Similarly, in a geometric case with a fair coin, there's a 0.5 probability of estimating p as 1 after a single trial, which should also raise concerns. Another example is throwing a die a few times, where it's possible that for some outcomes, the count is zero, leading the maximum likelihood procedure to infer that the probability of that outcome is zero, even if it's not the case. This highlights the challenge of estimating the probability of events that have not occurred."
+      ],
+      "latency_s": 2.06,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Probability and Statistics for Computer Science",
+      "error": ""
+    },
+    {
+      "question": "What is the significance of the ICMP protocol in Linux Kernel Networking?",
+      "ground_truth": "The ICMP protocol is significant in Linux Kernel Networking for sending error and control messages about the network layer, helping to keep the system behaving correctly by providing feedback about problems in the communication environment.",
+      "answer": "The Internet Control Message Protocol (ICMP) is an IP protocol used for control and informational messages. The \"ping\" utility is based on ICMP. It is also known to be involved in certain security denial-of-service attacks, such as the Smurf attack. The Linux kernel networking stack includes support for ICMPv4 and ICMPv6, with specific sections detailing their initialization, headers, message reception, and sending capabilities, including the generation of \"Destination Unreachable\" messages. Additionally, ICMP sockets, also referred to as \"ping sockets,\" are a feature within the networking stack. ICMPv4 redirect messages are also handled by the IPv4 routing subsystem.",
+      "contexts": [
+        "The Internet Control Message Protocol (ICMP) is an IP protocol used for control and informational messages. The \"ping\" utility is based on ICMP. It is also known to be involved in certain security denial-of-service attacks, such as the Smurf attack. The Linux kernel networking stack includes support for ICMPv4 and ICMPv6, with specific sections detailing their initialization, headers, message reception, and sending capabilities, including the generation of \"Destination Unreachable\" messages. Additionally, ICMP sockets, also referred to as \"ping sockets,\" are a feature within the networking stack. ICMPv4 redirect messages are also handled by the IPv4 routing subsystem."
+      ],
+      "latency_s": 2.05,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Linux Kernel Networking",
+      "error": ""
+    },
+    {
+      "question": "What is the significance of the ALS algorithm in Spark's MLlib?",
+      "ground_truth": "The ALS (Alternating Least Squares) algorithm is used in Spark's MLlib for collaborative filtering, particularly in recommendation systems. It is used to factorize a user-item rating matrix into user and item factor matrices, which can then be used to predict missing ratings.",
+      "answer": "The provided context does not contain information about the ALS algorithm or its significance in Spark's MLlib.",
+      "contexts": [
+        "The provided context does not contain information about the ALS algorithm or its significance in Spark's MLlib."
+      ],
+      "latency_s": 1.43,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Machine Learning With Spark",
+      "error": ""
+    },
+    {
+      "question": "What does the book recommend regarding the use of proprietary data types?",
+      "ground_truth": "The book recommends avoiding proprietary data types as they do not port to other products or from one release to another of the same product, and standard SQL has enough data types to model most real-world situations.",
+      "answer": "The book recommends against using proprietary data types because they do not port to other products or from one release to another of the same product. Standard SQL offers sufficient data types for most modeling needs.",
+      "contexts": [
+        "The book recommends against using proprietary data types because they do not port to other products or from one release to another of the same product. Standard SQL offers sufficient data types for most modeling needs."
+      ],
+      "latency_s": 1.94,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Joe Celko's SQL Programming Style",
+      "error": ""
+    },
+    {
+      "question": "How do you assign a macro to a button on the Quick Access Toolbar in Word?",
+      "ground_truth": "To assign a macro to a button on the Quick Access Toolbar in Word, right-click the Quick Access Toolbar, choose Customize Quick Access Toolbar, select Macros from the Choose Commands From drop-down list, select the macro, click Add, and then modify the button's name and icon if desired.",
+      "answer": "To assign a macro to a button on the Quick Access Toolbar in Word, press Alt+F, I. Then, in the Word Options dialog box, select \"Customize\" from the left pane. In the \"Choose Commands From\" list, select \"Macros.\" Click on the desired macro's name to select it, and then click the \"Add\" button to insert it into the \"Customize Quick Access Toolbar\" list. Finally, click \"OK\" to close the dialog box.",
+      "contexts": [
+        "To assign a macro to a button on the Quick Access Toolbar in Word, press Alt+F, I. Then, in the Word Options dialog box, select \"Customize\" from the left pane. In the \"Choose Commands From\" list, select \"Macros.\" Click on the desired macro's name to select it, and then click the \"Add\" button to insert it into the \"Customize Quick Access Toolbar\" list. Finally, click \"OK\" to close the dialog box."
+      ],
+      "latency_s": 1.6,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Mastering VBA for Microsoft Office 2013",
+      "error": ""
+    },
+    {
+      "question": "What is Apache Spark and what are its key features?",
+      "ground_truth": "Apache Spark is a framework for distributed computing designed to handle large-scale data processing tasks efficiently. Its key features include in-memory processing, fault tolerance, flexible data structures, and support for multiple programming languages like Scala, Java, and Python.",
+      "answer": "Apache Spark is a framework designed for high-performance, large-scale data processing tasks. It supports Scala and Python, and can be set up locally or deployed on an Amazon EC2 cluster. Spark abstracts tasks and uses mechanisms to distribute computation. Its programming model is based on SparkContext and it aims to simplify writing programs. Spark is useful for machine learning and has flexible distributed-memory data structures. It requires a Java runtime environment and can run in four modes. Spark also allows control over caching.",
+      "contexts": [
+        "Apache Spark is a framework designed for high-performance, large-scale data processing tasks. It supports Scala and Python, and can be set up locally or deployed on an Amazon EC2 cluster. Spark abstracts tasks and uses mechanisms to distribute computation. Its programming model is based on SparkContext and it aims to simplify writing programs. Spark is useful for machine learning and has flexible distributed-memory data structures. It requires a Java runtime environment and can run in four modes. Spark also allows control over caching."
+      ],
+      "latency_s": 2.19,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Machine Learning With Spark",
+      "error": ""
+    },
+    {
+      "question": "What does the dollar sign ($) signify in regular expressions?",
+      "ground_truth": "The dollar sign ($) in regular expressions signifies the end of a line or string.",
+      "answer": "The dollar sign ($) signifies the end of a line or string in regular expressions.",
+      "contexts": [
+        "The dollar sign ($) signifies the end of a line or string in regular expressions."
+      ],
+      "latency_s": 1.65,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Introducing Regular Expressions",
+      "error": ""
+    },
+    {
+      "question": "How does the book approach the topic of data encoding schemes?",
+      "ground_truth": "The book discusses various data encoding schemes, emphasizing the importance of using existing standard encoding schemes and providing guidelines for designing encoding schemes that allow for expansion and avoid NULLs.",
+      "answer": "The book presents a classification system for encoding schemes, offering suggestions for their use. It categorizes these schemes into types such as enumeration, measurement, abbreviation, and hierarchical encoding. The text also discusses the characteristics and potential issues associated with each type, providing examples to illustrate their application. Additionally, it touches upon the concept of vector encoding, which involves a fixed number of components that collectively form a meaningful unit. The book also highlights the importance of well-designed encoding schemes and the problems that can arise from poorly implemented ones, particularly concerning missing or ambiguous data.",
+      "contexts": [
+        "The book presents a classification system for encoding schemes, offering suggestions for their use. It categorizes these schemes into types such as enumeration, measurement, abbreviation, and hierarchical encoding. The text also discusses the characteristics and potential issues associated with each type, providing examples to illustrate their application. Additionally, it touches upon the concept of vector encoding, which involves a fixed number of components that collectively form a meaningful unit. The book also highlights the importance of well-designed encoding schemes and the problems that can arise from poorly implemented ones, particularly concerning missing or ambiguous data."
+      ],
+      "latency_s": 1.83,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Joe Celko's SQL Programming Style",
+      "error": ""
+    },
+    {
+      "question": "What are the three main techniques used for semantic definitions in programming languages?",
+      "ground_truth": "The three main techniques are denotational semantics, big-step operational semantics, and small-step operational semantics.",
+      "answer": "The three main techniques used for defining the semantics of a programming language are small-step operational semantics, big-step operational semantics, and denotational semantics.",
+      "contexts": [
+        "The three main techniques used for defining the semantics of a programming language are small-step operational semantics, big-step operational semantics, and denotational semantics."
+      ],
+      "latency_s": 2.72,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Introduction to the Theory of Programming Languages",
+      "error": ""
+    },
+    {
+      "question": "What are stored procedures (sprocs) and what advantages do they offer over sending individual SQL statements?",
+      "ground_truth": "Stored procedures are pre-compiled objects that contain a series of SQL statements. They offer advantages such as reduced network traffic, pre-optimization and precompilation, encapsulation of complex logic, and reusability.",
+      "answer": "Stored procedures, often abbreviated as sprocs, are an object type in SQL Server. They offer several advantages over sending individual SQL statements. One key benefit is that they can be reused by other procedures. Additionally, they can hide data, meaning that the underlying data structure is not exposed directly. Stored procedures also have a cached execution plan, which can improve performance. They utilize types and operate within the existing connection context. When calling a stored procedure, an `@outval` parameter can be used, and the procedure name itself acts as the method name. It is recommended that stored procedures start with a comment and can be added by right-clicking on a project. They can also be called for testing purposes.",
+      "contexts": [
+        "Stored procedures, often abbreviated as sprocs, are an object type in SQL Server. They offer several advantages over sending individual SQL statements. One key benefit is that they can be reused by other procedures. Additionally, they can hide data, meaning that the underlying data structure is not exposed directly. Stored procedures also have a cached execution plan, which can improve performance. They utilize types and operate within the existing connection context. When calling a stored procedure, an `@outval` parameter can be used, and the procedure name itself acts as the method name. It is recommended that stored procedures start with a comment and can be added by right-clicking on a project. They can also be called for testing purposes."
+      ],
+      "latency_s": 2.58,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Professional Microsoft SQL Server 2008 Programming",
+      "error": ""
+    },
+    {
+      "question": "What is the primary purpose of VBA in Office applications?",
+      "ground_truth": "The primary purpose of VBA in Office applications is to automate tasks and operations, allowing users to streamline complex and repetitive processes.",
+      "answer": "VBA is used to automate task requests and write code to carry out requests.",
+      "contexts": [
+        "VBA is used to automate task requests and write code to carry out requests."
+      ],
+      "latency_s": 1.81,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Mastering VBA for Microsoft Office 2013",
+      "error": ""
+    },
+    {
+      "question": "What is the role of confluence in the operational semantics of programming languages?",
+      "ground_truth": "Confluence ensures that regardless of the order in which reductions are applied, a term will always reduce to the same irreducible term, thus guaranteeing the uniqueness of the result of a computation.",
+      "answer": "Confluence implies that each term has at most one irreducible result. If a term can be reduced to two irreducible terms, confluence ensures that there exists a common term that both irreducible terms can reduce to, thus proving that they must be the same.",
+      "contexts": [
+        "Confluence implies that each term has at most one irreducible result. If a term can be reduced to two irreducible terms, confluence ensures that there exists a common term that both irreducible terms can reduce to, thus proving that they must be the same."
+      ],
+      "latency_s": 1.64,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Introduction to the Theory of Programming Languages",
+      "error": ""
+    },
+    {
+      "question": "How does the MovieLens dataset contribute to building recommendation engines?",
+      "ground_truth": "The MovieLens dataset, containing user ratings for movies, is used to train recommendation models. It provides the necessary data to apply collaborative filtering techniques, where user preferences are used to predict and recommend other movies they might like.",
+      "answer": "The MovieLens dataset is used for movie recommendations. Features can be extracted from it, and a clustering model can be trained on it. Performance metrics can be computed on the dataset, and cluster predictions can be interpreted. The dataset can also be converted into an implicit dataset.",
+      "contexts": [
+        "The MovieLens dataset is used for movie recommendations. Features can be extracted from it, and a clustering model can be trained on it. Performance metrics can be computed on the dataset, and cluster predictions can be interpreted. The dataset can also be converted into an implicit dataset."
+      ],
+      "latency_s": 1.39,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Machine Learning With Spark",
+      "error": ""
+    },
+    {
+      "question": "What is the primary goal of the book \"Introducing Regular Expressions\"?",
+      "ground_truth": "The primary goal of the book is to make learning regular expressions as easy as possible through examples and practical applications.",
+      "answer": "The primary goal of the book \"Introducing Regular Expressions\" is to introduce the most commonly used regular expression syntax, which can open up many possibilities for programmers. Learning regular expressions is presented as a way to save time.",
+      "contexts": [
+        "The primary goal of the book \"Introducing Regular Expressions\" is to introduce the most commonly used regular expression syntax, which can open up many possibilities for programmers. Learning regular expressions is presented as a way to save time."
+      ],
+      "latency_s": 2.11,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Introducing Regular Expressions",
+      "error": ""
+    },
+    {
+      "question": "What tools or methodologies does the text use to help readers understand and design programs?",
+      "ground_truth": "The text uses pseudocode to outline programs, making the logic clear without being tied to specific syntax. It also employs UML diagrams to visually represent the relationships among classes, aiding in the design of more complex programs.",
+      "answer": "The text mentions several tools and methodologies to help readers understand and design programs. These include:\n\n*   **Documentation**: This is described as helpful for programmer understanding of programs.\n*   **Visual Basic Editor (VBE)**: This environment offers features like an extensive Help system, the Object Browser, a List Properties/Methods feature, and the Auto List Members tool to locate objects' members and add them to code.\n*   **Functions**: These are presented as units of code that perform a task and return a value, with many built-in functions available for use.\n*   **Collections**: These are containers for groups of related objects and can have their own properties and methods.\n*   **Object variables**: These are used to represent objects in programming.\n*   **Semantics**: Specifically, small-step operational semantics, big-step operational semantics, and denotational semantics are discussed as tools to define the semantics of a programming language.\n*   **Fixed point theorem**: This is used in the definition of relations in mathematical language, playing a significant role in operational semantics and a minor role in denotational semantics.\n*   **Derivations**: These are used in operational semantics to establish that a term has a certain value.",
+      "contexts": [
+        "The text mentions several tools and methodologies to help readers understand and design programs. These include:\n\n*   **Documentation**: This is described as helpful for programmer understanding of programs.\n*   **Visual Basic Editor (VBE)**: This environment offers features like an extensive Help system, the Object Browser, a List Properties/Methods feature, and the Auto List Members tool to locate objects' members and add them to code.\n*   **Functions**: These are presented as units of code that perform a task and return a value, with many built-in functions available for use.\n*   **Collections**: These are containers for groups of related objects and can have their own properties and methods.\n*   **Object variables**: These are used to represent objects in programming.\n*   **Semantics**: Specifically, small-step operational semantics, big-step operational semantics, and denotational semantics are discussed as tools to define the semantics of a programming language.\n*   **Fixed point theorem**: This is used in the definition of relations in mathematical language, playing a significant role in operational semantics and a minor role in denotational semantics.\n*   **Derivations**: These are used in operational semantics to establish that a term has a certain value."
+      ],
+      "latency_s": 1.88,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Guide to Java",
+      "error": ""
+    },
+    {
+      "question": "How does the FOR XML clause in SQL Server facilitate the conversion of relational data into XML format?",
+      "ground_truth": "The FOR XML clause is an option added to the end of a SELECT statement to instruct SQL Server to return the result set in XML format. It provides several modes (RAW, AUTO, EXPLICIT, PATH) to control the structure and formatting of the XML output.",
+      "answer": "The FOR XML clause is an option added to a T-SQL SELECT statement that indicates you want XML data as the result, rather than a standard result set. It provides four formatting options: RAW, AUTO, EXPLICIT, and PATH. RAW formats each row as a single data element named \"row\" with columns as attributes. AUTO labels elements with table names or aliases and nests data from multiple tables. EXPLICIT offers a high degree of control by defining a data hierarchy. PATH, introduced in SQL Server 2005, provides a more user-friendly way to achieve the flexibility of EXPLICIT for output formatting.\n\nAdditionally, the FOR XML clause supports optional parameters that further modify the XML output. XMLDATA applies an XML schema to the results, defining structure and data types. ELEMENTS, available with AUTO, presents columns as nested elements instead of attributes. BINARY BASE64 encodes binary columns in base64 format. It's important to note that the FOR XML clause does not automatically provide a root element; you must wrap the results with appropriate opening and closing tags to create a well-formed XML document.",
+      "contexts": [
+        "The FOR XML clause is an option added to a T-SQL SELECT statement that indicates you want XML data as the result, rather than a standard result set. It provides four formatting options: RAW, AUTO, EXPLICIT, and PATH. RAW formats each row as a single data element named \"row\" with columns as attributes. AUTO labels elements with table names or aliases and nests data from multiple tables. EXPLICIT offers a high degree of control by defining a data hierarchy. PATH, introduced in SQL Server 2005, provides a more user-friendly way to achieve the flexibility of EXPLICIT for output formatting.\n\nAdditionally, the FOR XML clause supports optional parameters that further modify the XML output. XMLDATA applies an XML schema to the results, defining structure and data types. ELEMENTS, available with AUTO, presents columns as nested elements instead of attributes. BINARY BASE64 encodes binary columns in base64 format. It's important to note that the FOR XML clause does not automatically provide a root element; you must wrap the results with appropriate opening and closing tags to create a well-formed XML document."
+      ],
+      "latency_s": 2.47,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Professional Microsoft SQL Server 2008 Programming",
+      "error": ""
+    },
+    {
+      "question": "What role do examples and exercises play in the learning process according to the text?",
+      "ground_truth": "Examples and exercises are crucial in the learning process. The text includes numerous examples and illustrations throughout each chapter, and provides exercises at the end of each chapter to reinforce the concepts presented. Selected answers to exercises are provided in an appendix.",
+      "answer": "The text indicates that examples and exercises are marked with an asterisk (*) and have solutions provided in Appendix E. This suggests they are intended to reinforce learning and provide opportunities for practice.",
+      "contexts": [
+        "The text indicates that examples and exercises are marked with an asterisk (*) and have solutions provided in Appendix E. This suggests they are intended to reinforce learning and provide opportunities for practice."
+      ],
+      "latency_s": 1.82,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Guide to Java",
+      "error": ""
+    },
+    {
+      "question": "What is the significance of the correlation coefficient in the book?",
+      "ground_truth": "The correlation coefficient is significant as it measures the strength and direction of the relationship between two variables. It helps in predicting one variable from another and is a key tool in understanding data relationships.",
+      "answer": "The correlation coefficient is a measure that captures the correlation between x and y. It is known as the correlation coefficient or correlation.",
+      "contexts": [
+        "The correlation coefficient is a measure that captures the correlation between x and y. It is known as the correlation coefficient or correlation."
+      ],
+      "latency_s": 1.96,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Probability and Statistics for Computer Science",
+      "error": ""
+    },
+    {
+      "question": "What are the three main approaches to handle multi-objective tasks discussed in the book?",
+      "ground_truth": "The three main approaches discussed are the weighted-formula approach, lexicographic approach, and Pareto front approach.",
+      "answer": "The book discusses three main approaches to handle multi-objective tasks: Pareto multi-objective optimization, weighted-formula, and lexicographic methods.",
+      "contexts": [
+        "The book discusses three main approaches to handle multi-objective tasks: Pareto multi-objective optimization, weighted-formula, and lexicographic methods."
+      ],
+      "latency_s": 1.46,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Modern Optimization With R",
+      "error": ""
+    },
+    {
+      "question": "What is a view in SQL Server and what are its primary uses?",
+      "ground_truth": "A view is a virtual table based on the result-set of an SQL statement. It contains rows and columns, just like a real table, and is used for security (controlling what users see) and ease of use (hiding complexity and unnecessary information).",
+      "answer": "A view is a virtual table or a stored query. Its primary uses include providing a quick lookup for information behind a view, unifying multiple identical tables to appear as a single table, and acting as a mechanism for data isolation. Views can also be used to modify data, although this often requires an INSTEAD OF trigger, especially when the view involves multiple tables. Additionally, views can be used to limit what is inserted into them using the WITH CHECK OPTION.",
+      "contexts": [
+        "A view is a virtual table or a stored query. Its primary uses include providing a quick lookup for information behind a view, unifying multiple identical tables to appear as a single table, and acting as a mechanism for data isolation. Views can also be used to modify data, although this often requires an INSTEAD OF trigger, especially when the view involves multiple tables. Additionally, views can be used to limit what is inserted into them using the WITH CHECK OPTION."
+      ],
+      "latency_s": 1.75,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Professional Microsoft SQL Server 2008 Programming",
+      "error": ""
+    },
+    {
+      "question": "How can you debug a macro in the Visual Basic Editor?",
+      "ground_truth": "You can debug a macro in the Visual Basic Editor by setting breakpoints, stepping through the code line by line using the Step Into command, and examining variables and expressions in the Immediate window or other debugging windows.",
+      "answer": "You can execute a macro from within the Visual Basic Editor by placing the insertion cursor anywhere within the code of the macro (between the Sub and End Sub lines) and then pressing F5.",
+      "contexts": [
+        "You can execute a macro from within the Visual Basic Editor by placing the insertion cursor anywhere within the code of the macro (between the Sub and End Sub lines) and then pressing F5."
+      ],
+      "latency_s": 1.47,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Mastering VBA for Microsoft Office 2013",
+      "error": ""
+    },
+    {
+      "question": "How does the book differentiate between probability and statistics?",
+      "ground_truth": "The book differentiates between probability and statistics by explaining that probability deals with predicting the likelihood of future events based on known probabilities, while statistics involves making inferences about unknown probabilities based on observed data.",
+      "answer": "The book does not differentiate between probability and statistics. Instead, it states that \"Probability and statistics is title of Computer science\".",
+      "contexts": [
+        "The book does not differentiate between probability and statistics. Instead, it states that \"Probability and statistics is title of Computer science\"."
+      ],
+      "latency_s": 1.78,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Probability and Statistics for Computer Science",
+      "error": ""
+    },
+    {
+      "question": "What does the book consider as the biggest hurdle in learning SQL?",
+      "ground_truth": "According to the book, the biggest hurdle in learning SQL is thinking in sets and logic instead of in sequences and processes, which is a common mistake among new programmers.",
+      "answer": "The provided text does not contain information about the biggest hurdle in learning SQL.",
+      "contexts": [
+        "The provided text does not contain information about the biggest hurdle in learning SQL."
+      ],
+      "latency_s": 1.61,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Joe Celko's SQL Programming Style",
+      "error": ""
+    },
+    {
+      "question": "What are the four types of operators in VBA?",
+      "ground_truth": "The four types of operators in VBA are arithmetic operators, comparison operators, logical operators, and concatenation operators.",
+      "answer": "There are four types of operators in VBA: arithmetic, comparison, logical, and string concatenation.",
+      "contexts": [
+        "There are four types of operators in VBA: arithmetic, comparison, logical, and string concatenation."
+      ],
+      "latency_s": 1.15,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Mastering VBA for Microsoft Office 2013",
+      "error": ""
+    },
+    {
+      "question": "What is the book's stance on the use of jargon in regular expressions?",
+      "ground_truth": "The book takes a light approach to jargon, using it sparingly and only when necessary, to avoid creating barriers for readers.",
+      "answer": "The provided text does not contain information about the book's stance on the use of jargon in regular expressions.",
+      "contexts": [
+        "The provided text does not contain information about the book's stance on the use of jargon in regular expressions."
+      ],
+      "latency_s": 1.75,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Introducing Regular Expressions",
+      "error": ""
+    },
+    {
+      "question": "How does the book advocate for the use of views in SQL?",
+      "ground_truth": "The book advocates for the use of views to provide row- and column-level security, ensure efficient access paths, mask complexity from users, and enforce complicated integrity constraints, among other benefits.",
+      "answer": "The book discusses several ways views can be used in SQL Server. It explains how to obtain view definitions using `sp_helptext`, the `OBJECT_DEFINITION()` system function, or the `sys.comments` system view. The text also covers how to edit views using `ALTER VIEW` and how to drop them with `DROP VIEW`.\n\nFurthermore, the book delves into specific functionalities and considerations related to views:\n\n*   **Modifying Data:** It highlights that modifying data in views with joined data is often not possible by default unless an `INSTEAD OF` trigger is used. This is because multiple tables can create ambiguities in key arrangements.\n*   **Required Fields for Inserts:** For inserting data into views, all required fields (those that do not allow NULLs) must either appear in the view or have a default value. `INSTEAD OF` triggers can also be used to bypass this restriction.\n*   **`WITH CHECK OPTION`:** This feature ensures that any data inserted or updated through a view must still qualify to appear in the view's results, meaning it must meet any `WHERE` criteria defined in the underlying `SELECT` statement.\n*   **Partitioned Views:** These have been available since SQL Server 2000 and were a leading scalability option from Microsoft. They unify multiple identical tables into a single logical table, allowing data to be spread across different servers. This is achieved by defining mutually exclusive constraints on the underlying tables, enabling SQL Server to direct new data to the correct table. While partitioned tables are now preferred, partitioned views remain relevant for legacy code and specific scenarios where spanning multiple servers is necessary.",
+      "contexts": [
+        "The book discusses several ways views can be used in SQL Server. It explains how to obtain view definitions using `sp_helptext`, the `OBJECT_DEFINITION()` system function, or the `sys.comments` system view. The text also covers how to edit views using `ALTER VIEW` and how to drop them with `DROP VIEW`.\n\nFurthermore, the book delves into specific functionalities and considerations related to views:\n\n*   **Modifying Data:** It highlights that modifying data in views with joined data is often not possible by default unless an `INSTEAD OF` trigger is used. This is because multiple tables can create ambiguities in key arrangements.\n*   **Required Fields for Inserts:** For inserting data into views, all required fields (those that do not allow NULLs) must either appear in the view or have a default value. `INSTEAD OF` triggers can also be used to bypass this restriction.\n*   **`WITH CHECK OPTION`:** This feature ensures that any data inserted or updated through a view must still qualify to appear in the view's results, meaning it must meet any `WHERE` criteria defined in the underlying `SELECT` statement.\n*   **Partitioned Views:** These have been available since SQL Server 2000 and were a leading scalability option from Microsoft. They unify multiple identical tables into a single logical table, allowing data to be spread across different servers. This is achieved by defining mutually exclusive constraints on the underlying tables, enabling SQL Server to direct new data to the correct table. While partitioned tables are now preferred, partitioned views remain relevant for legacy code and specific scenarios where spanning multiple servers is necessary."
+      ],
+      "latency_s": 2.49,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Joe Celko's SQL Programming Style",
+      "error": ""
+    },
+    {
+      "question": "What are some of the tools and languages covered in the book for working with regular expressions?",
+      "ground_truth": "The book covers tools and languages such as sed, Perl, grep, RegExr, Reggy, and various programming languages like Ruby, Python, and JavaScript.",
+      "answer": "The book covers several tools and languages for working with regular expressions, including:\n\n*   **Unix command-line utilities:** `grep`, `egrep`, and `fgrep`.\n*   **Text editors:** `ed`, `vi`, and `vim`.\n*   **Programming languages:** Perl and Python.\n*   **Other tools:** `ack` and `sed`.",
+      "contexts": [
+        "The book covers several tools and languages for working with regular expressions, including:\n\n*   **Unix command-line utilities:** `grep`, `egrep`, and `fgrep`.\n*   **Text editors:** `ed`, `vi`, and `vim`.\n*   **Programming languages:** Perl and Python.\n*   **Other tools:** `ack` and `sed`."
+      ],
+      "latency_s": 1.9,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Introducing Regular Expressions",
+      "error": ""
+    },
+    {
+      "question": "What is the significance of the Option Explicit statement in VBA?",
+      "ground_truth": "The Option Explicit statement in VBA enforces explicit variable declarations, which helps in preventing errors and makes the code more readable and maintainable.",
+      "answer": "The `Option Explicit` statement forces explicit declarations of variables and enforces explicit variable declarations. It is placed at the top of a module.",
+      "contexts": [
+        "The `Option Explicit` statement forces explicit declarations of variables and enforces explicit variable declarations. It is placed at the top of a module."
+      ],
+      "latency_s": 1.6,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Mastering VBA for Microsoft Office 2013",
+      "error": ""
+    },
+    {
+      "question": "What is an object in the context of VBA?",
+      "ground_truth": "In the context of VBA, an object is a representation of a part of an application, such as a document in Word, a worksheet in Excel, or a slide in PowerPoint.",
+      "answer": "In the context of VBA, objects are encapsulated units that can be used as black boxes. They are available in applications like Word. VBA also allows for the creation of custom encapsulated objects using class modules. Objects are organized hierarchically, with the Application object at the top, providing access to lower-level objects. Collections are also considered objects, serving as containers for groups of related objects. Object variables are used to represent these objects in code.",
+      "contexts": [
+        "In the context of VBA, objects are encapsulated units that can be used as black boxes. They are available in applications like Word. VBA also allows for the creation of custom encapsulated objects using class modules. Objects are organized hierarchically, with the Application object at the top, providing access to lower-level objects. Collections are also considered objects, serving as containers for groups of related objects. Object variables are used to represent these objects in code."
+      ],
+      "latency_s": 2.07,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Mastering VBA for Microsoft Office 2013",
+      "error": ""
+    },
+    {
+      "question": "What is the purpose of the Object Browser in the Visual Basic Editor?",
+      "ground_truth": "The purpose of the Object Browser in the Visual Basic Editor is to help users find and understand objects, methods, properties, and events within VBA projects and libraries.",
+      "answer": "The Object Browser provides information.",
+      "contexts": [
+        "The Object Browser provides information."
+      ],
+      "latency_s": 2.03,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Mastering VBA for Microsoft Office 2013",
+      "error": ""
+    },
+    {
+      "question": "What is the rationale behind using full reserved words in SQL according to the book?",
+      "ground_truth": "The book suggests using full reserved words to document the program, making it easier to read and understand the code, as uppercase words are seen as a unit and act to announce a statement or clause.",
+      "answer": "The rationale behind using full reserved words in SQL is to make the code safer, more verifiable, and easier to maintain. This approach aligns with classic structured programming principles, which emphasize clear control structures with single entry and exit points, avoiding the use of statements like \"GO TO.\"",
+      "contexts": [
+        "The rationale behind using full reserved words in SQL is to make the code safer, more verifiable, and easier to maintain. This approach aligns with classic structured programming principles, which emphasize clear control structures with single entry and exit points, avoiding the use of statements like \"GO TO.\""
+      ],
+      "latency_s": 2.0,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Joe Celko's SQL Programming Style",
+      "error": ""
+    },
+    {
+      "question": "Can you name some popular modern optimization methods discussed in the book?",
+      "ground_truth": "Some popular modern optimization methods discussed in the book include simulated annealing, tabu search, genetic algorithms, genetic programming, NSGA-II (multi-objective optimization), differential evolution, and particle swarm optimization.",
+      "answer": "Some popular modern optimization methods discussed in the book include genetic algorithms, evolutionary algorithms, genetic programming, estimation of distribution algorithms, differential evolution, and particle swarm optimization.",
+      "contexts": [
+        "Some popular modern optimization methods discussed in the book include genetic algorithms, evolutionary algorithms, genetic programming, estimation of distribution algorithms, differential evolution, and particle swarm optimization."
+      ],
+      "latency_s": 1.22,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Modern Optimization With R",
+      "error": ""
+    },
+    {
+      "question": "What fundamental shift in thinking does the book encourage for effective SQL programming?",
+      "ground_truth": "The book encourages a shift from thinking in sequences and processes to thinking in sets and logic, which is fundamental to mastering SQL programming.",
+      "answer": "The book encourages a fundamental shift from thinking in process steps to thinking in sets for effective SQL programming. It advises against phrases like \"for each x...\" and instead promotes looking for set characteristics rather than individual ones. Additionally, it suggests removing active verbs from problem statements that imply a process, and instead phrasing them as descriptions of a \"state of being.\"",
+      "contexts": [
+        "The book encourages a fundamental shift from thinking in process steps to thinking in sets for effective SQL programming. It advises against phrases like \"for each x...\" and instead promotes looking for set characteristics rather than individual ones. Additionally, it suggests removing active verbs from problem statements that imply a process, and instead phrasing them as descriptions of a \"state of being.\""
+      ],
+      "latency_s": 2.04,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Joe Celko's SQL Programming Style",
+      "error": ""
+    },
+    {
+      "question": "How does the author approach the topic of statistical significance?",
+      "ground_truth": "The author approaches statistical significance by explaining its importance in determining the reliability of evidence in experiments. It involves discussing p-values, t-tests, F-tests, and χ²-tests, emphasizing the need to avoid misinterpretation and misuse of these tools.",
+      "answer": "The author uses the term \"statistical significance\" because it is commonly used, but personally finds it unhelpful. The author explains that significance testing procedures indicate the fraction of random samples that would yield an observed mean if a hypothesis were true, assuming correct data collection and testing. However, these procedures do not indicate whether the science conducted is important or interesting. The author also notes that strict protocols, while a solution to problems, can be expensive and cumbersome.",
+      "contexts": [
+        "The author uses the term \"statistical significance\" because it is commonly used, but personally finds it unhelpful. The author explains that significance testing procedures indicate the fraction of random samples that would yield an observed mean if a hypothesis were true, assuming correct data collection and testing. However, these procedures do not indicate whether the science conducted is important or interesting. The author also notes that strict protocols, while a solution to problems, can be expensive and cumbersome."
+      ],
+      "latency_s": 1.98,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Probability and Statistics for Computer Science",
+      "error": ""
+    },
+    {
+      "question": "What is the primary purpose of the text \"Guide to Java: A Concise Introduction to Programming\"?",
+      "ground_truth": "The primary purpose of the text is to help readers quickly learn how to program using the Java programming language, focusing on the fundamentals, providing illustrations and examples, and using visual contour diagrams to illustrate object-oriented semantics.",
+      "answer": "The provided context does not contain information about the text \"Guide to Java: A Concise Introduction to Programming\". Therefore, I cannot answer the query.",
+      "contexts": [
+        "The provided context does not contain information about the text \"Guide to Java: A Concise Introduction to Programming\". Therefore, I cannot answer the query."
+      ],
+      "latency_s": 2.07,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Guide to Java",
+      "error": ""
+    },
+    {
+      "question": "How can you customize the Visual Basic Editor in Office applications?",
+      "ground_truth": "You can customize the Visual Basic Editor by adjusting settings such as editor and view preferences, window layouts, toolbar and menu customizations, and Toolbox settings to suit your workflow and preferences.",
+      "answer": "The Visual Basic Editor supports toolbar and menu bar customizations.",
+      "contexts": [
+        "The Visual Basic Editor supports toolbar and menu bar customizations."
+      ],
+      "latency_s": 1.14,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Mastering VBA for Microsoft Office 2013",
+      "error": ""
+    },
+    {
+      "question": "What is the significance of the QED editor in the history of regular expressions?",
+      "ground_truth": "The QED editor, written by Ken Thompson, yielded one of the earliest practical implementations of regular expressions in computing.",
+      "answer": "The QED editor, also known as Quick Editor, holds significance as one of the earliest practical implementations of regular expressions in computing. Ken Thompson's rewrite of the original QED editor for MIT's Compatible Time-Sharing System led to this development. The QED editor was initially developed for the Berkeley Time-Sharing System.",
+      "contexts": [
+        "The QED editor, also known as Quick Editor, holds significance as one of the earliest practical implementations of regular expressions in computing. Ken Thompson's rewrite of the original QED editor for MIT's Compatible Time-Sharing System led to this development. The QED editor was initially developed for the Berkeley Time-Sharing System."
+      ],
+      "latency_s": 1.8,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Introducing Regular Expressions",
+      "error": ""
+    },
+    {
+      "question": "How does the book address the issue of infeasible solutions in optimization problems?",
+      "ground_truth": "The book addresses infeasible solutions through several methods, including the death-penalty approach (assigning a very large penalty value), penalty-weights (modifying the evaluation function to include penalties), repair (transforming an infeasible solution into a feasible one), and generating only feasible solutions using domain knowledge or special operators.",
+      "answer": "The book addresses infeasible solutions in optimization problems by explaining that they can arise from hard constraints. Several methods are presented to deal with these infeasible solutions, including the death-penalty scheme, penalty-weights, the repair approach, and methods that exclusively generate feasible solutions. The death-penalty scheme involves assigning a very large penalty value to quickly discard infeasible solutions. The penalty-weights approach modifies the evaluation function by subtracting a penalty term. The repair approach transforms an infeasible solution into a feasible one, often using domain-specific information or local search. Finally, methods that only generate feasible solutions rely on decoders and specialized operators that work within a feasible search space.",
+      "contexts": [
+        "The book addresses infeasible solutions in optimization problems by explaining that they can arise from hard constraints. Several methods are presented to deal with these infeasible solutions, including the death-penalty scheme, penalty-weights, the repair approach, and methods that exclusively generate feasible solutions. The death-penalty scheme involves assigning a very large penalty value to quickly discard infeasible solutions. The penalty-weights approach modifies the evaluation function by subtracting a penalty term. The repair approach transforms an infeasible solution into a feasible one, often using domain-specific information or local search. Finally, methods that only generate feasible solutions rely on decoders and specialized operators that work within a feasible search space."
+      ],
+      "latency_s": 2.04,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Modern Optimization With R",
+      "error": ""
+    },
+    {
+      "question": "What are the main components of a machine learning system designed with Spark?",
+      "ground_truth": "A machine learning system with Spark typically includes components such as data ingestion and storage, data cleansing and transformation, model training and testing, model deployment and integration, and model monitoring and feedback.",
+      "answer": "The main components of a data-driven machine learning system include data ingestion and storage, data cleansing and transformation, model training and testing, model deployment and integration, and model monitoring and feedback.",
+      "contexts": [
+        "The main components of a data-driven machine learning system include data ingestion and storage, data cleansing and transformation, model training and testing, model deployment and integration, and model monitoring and feedback."
+      ],
+      "latency_s": 1.25,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Machine Learning With Spark",
+      "error": ""
+    },
+    {
+      "question": "What is the purpose of the caret (^) in regular expressions?",
+      "ground_truth": "The caret (^) in regular expressions is used to match the beginning of a line or string.",
+      "answer": "The caret (^) signifies the beginning of a line or string of characters. It is also described as a metacharacter that matches the beginning of a line.",
+      "contexts": [
+        "The caret (^) signifies the beginning of a line or string of characters. It is also described as a metacharacter that matches the beginning of a line."
+      ],
+      "latency_s": 1.66,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Introducing Regular Expressions",
+      "error": ""
+    },
+    {
+      "question": "What is the significance of the `fix` construct in PCF (Programming language for computable functions)?",
+      "ground_truth": "The `fix` construct allows for the definition of recursive functions in PCF, enabling the computation of functions that would otherwise require iteration or recursive definitions.",
+      "answer": "The `fix` construct in PCF is used to define functions by fixed points. It represents the least fixed point of a continuous function.",
+      "contexts": [
+        "The `fix` construct in PCF is used to define functions by fixed points. It represents the least fixed point of a continuous function."
+      ],
+      "latency_s": 1.71,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Introduction to the Theory of Programming Languages",
+      "error": ""
+    },
+    {
+      "question": "What does the book suggest as a strategy for testing SQL?",
+      "ground_truth": "The book recommends testing all possible combinations of NULLs, inspecting and testing all CHECK () constraints, and being wary of character columns, as they often lack sufficient constraints.",
+      "answer": "If frequent schema changes are necessary, it is recommended to fully plan the change strategy before implementing replication.",
+      "contexts": [
+        "If frequent schema changes are necessary, it is recommended to fully plan the change strategy before implementing replication."
+      ],
+      "latency_s": 1.72,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Joe Celko's SQL Programming Style",
+      "error": ""
+    },
+    {
+      "question": "What is the purpose of normalization in database design and what are its benefits?",
+      "ground_truth": "Normalization is the process of organizing data in a database to reduce redundancy and improve data integrity. Its benefits include efficient data storage, fewer modification anomalies, and better adherence to the principles of relational database design.",
+      "answer": "Normalization is a concept in database design that aims to organize data to reduce redundancy and improve data integrity. Databases serving OLTP systems are usually highly normalized relational databases. The benefits of normalization include reducing data redundancy and improving data integrity.",
+      "contexts": [
+        "Normalization is a concept in database design that aims to organize data to reduce redundancy and improve data integrity. Databases serving OLTP systems are usually highly normalized relational databases. The benefits of normalization include reducing data redundancy and improving data integrity."
+      ],
+      "latency_s": 1.42,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Professional Microsoft SQL Server 2008 Programming",
+      "error": ""
+    },
+    {
+      "question": "What is the difference between a variable and a constant in VBA?",
+      "ground_truth": "A variable in VBA is a named storage location in memory that can hold different values during the execution of a program, whereas a constant holds a fixed value that does not change.",
+      "answer": "In VBA, a `CloseMode` argument can be a value or a constant that indicates the reason for the `QueryClose` event. The constants `vbFormControlMenu`, `vbFormCode`, `vbAppWindows`, and `vbAppTaskManager` represent specific values (0, 1, 2, and 3, respectively) that describe how the user form is being closed.",
+      "contexts": [
+        "In VBA, a `CloseMode` argument can be a value or a constant that indicates the reason for the `QueryClose` event. The constants `vbFormControlMenu`, `vbFormCode`, `vbAppWindows`, and `vbAppTaskManager` represent specific values (0, 1, 2, and 3, respectively) that describe how the user form is being closed."
+      ],
+      "latency_s": 1.73,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Mastering VBA for Microsoft Office 2013",
+      "error": ""
+    },
+    {
+      "question": "How does the concept of \"environment\" differ between denotational and operational semantics?",
+      "ground_truth": "In denotational semantics, an environment maps variables to their denotations (usually values or functions). In operational semantics, an environment maps variables to their current values or states during the execution of a program.",
+      "answer": "In denotational semantics, an environment is used to associate meanings with free variables. In contrast, in operational semantics, an environment is a list of variables, or it can be a function from variables to terms, or a customizable list of pairs. It can also be a finite domain.",
+      "contexts": [
+        "In denotational semantics, an environment is used to associate meanings with free variables. In contrast, in operational semantics, an environment is a list of variables, or it can be a function from variables to terms, or a customizable list of pairs. It can also be a finite domain."
+      ],
+      "latency_s": 4.73,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Introduction to the Theory of Programming Languages",
+      "error": ""
+    },
+    {
+      "question": "How can you ensure that a macro runs automatically when an application starts?",
+      "ground_truth": "You can ensure that a macro runs automatically when an application starts by naming the macro \"Auto_Open\" for Excel or using the appropriate event handler for other applications, such as \"Document_Open\" for Word.",
+      "answer": "You can ensure that a macro runs automatically when an application starts by naming it \"AutoExec\". This special reserved name will cause the macro to execute automatically when the application opens.",
+      "contexts": [
+        "You can ensure that a macro runs automatically when an application starts by naming it \"AutoExec\". This special reserved name will cause the macro to execute automatically when the application opens."
+      ],
+      "latency_s": 1.63,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Mastering VBA for Microsoft Office 2013",
+      "error": ""
+    },
+    {
+      "question": "What is the significance of the XML data type introduced in SQL Server 2005?",
+      "ground_truth": "The XML data type allows SQL Server to recognize and manage data as truly XML data, enabling advanced features like indexing, data validation through schema collections, and intrinsic methods for querying and modifying XML data.",
+      "answer": "The XML data type, introduced in SQL Server 2005, carries intrinsic methods, understands XML, and recognizes XML format. It allows for the definition of constraints and the mixing of relational and XML data.",
+      "contexts": [
+        "The XML data type, introduced in SQL Server 2005, carries intrinsic methods, understands XML, and recognizes XML format. It allows for the definition of constraints and the mixing of relational and XML data."
+      ],
+      "latency_s": 1.99,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Professional Microsoft SQL Server 2008 Programming",
+      "error": ""
+    },
+    {
+      "question": "What is the significance of the `DEoptim` package in R for optimization tasks?",
+      "ground_truth": "The `DEoptim` package in R implements the differential evolution algorithm, which is a global optimization method useful for continuous numerical optimization. It is significant because it provides a robust and efficient way to handle complex optimization problems that may be difficult to solve using traditional methods.",
+      "answer": "The `DEoptim` package in R is used for differential evolution, which is a global search strategy. The package provides the `DEoptim()` function to perform the differential evolution algorithm and `DEoptim.control()` to manage its control parameters. Additionally, it offers `plot.DEoptim()` and `summary.DEoptim()` for visualizing and summarizing the results of differential evolution.",
+      "contexts": [
+        "The `DEoptim` package in R is used for differential evolution, which is a global search strategy. The package provides the `DEoptim()` function to perform the differential evolution algorithm and `DEoptim.control()` to manage its control parameters. Additionally, it offers `plot.DEoptim()` and `summary.DEoptim()` for visualizing and summarizing the results of differential evolution."
+      ],
+      "latency_s": 2.12,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Modern Optimization With R",
+      "error": ""
+    },
+    {
+      "question": "How does the author suggest handling categorical data in the context of plotting?",
+      "ground_truth": "The author suggests using bar charts, pie charts, stacked bar charts, and heat maps to visualize categorical data effectively. Each method has its advantages depending on the specific dataset and the comparisons one wishes to make.",
+      "answer": "When plotting categorical data, it is generally advisable to avoid pie charts because judging angles by eye can be difficult. Similarly, 3D bar charts should be avoided as occlusion can obscure important effects.",
+      "contexts": [
+        "When plotting categorical data, it is generally advisable to avoid pie charts because judging angles by eye can be difficult. Similarly, 3D bar charts should be avoided as occlusion can obscure important effects."
+      ],
+      "latency_s": 3.94,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Probability and Statistics for Computer Science",
+      "error": ""
+    },
+    {
+      "question": "How does the text address the potential for errors in programming?",
+      "ground_truth": "The text acknowledges the possibility of errors and emphasizes the importance of careful program design to minimize logic errors. It also introduces debugging as a process for finding and fixing logic errors, and suggests using output statements at critical points in the program to assist in this process.",
+      "answer": "The text discusses error handling as a process that has changed over the years and was limited in earlier times. It also mentions that debugging is a process of finding logic errors and helps in understanding code. Debugging means removing bugs and is available in Management Studio. In the context of Ribbon programming, strategies for fixing bugs include validation, which is a feature in XML code editors that checks for well-formed XML and spots errors like missing tags, incorrect order, improper punctuation, wrong capitalization, or elements not part of the schema. Runtime exceptions in Java indicate programming errors and can be used to display messages instead of causing abnormal program termination, especially when critical tasks must not crash. Exception handling should be used when a problem can be corrected.",
+      "contexts": [
+        "The text discusses error handling as a process that has changed over the years and was limited in earlier times. It also mentions that debugging is a process of finding logic errors and helps in understanding code. Debugging means removing bugs and is available in Management Studio. In the context of Ribbon programming, strategies for fixing bugs include validation, which is a feature in XML code editors that checks for well-formed XML and spots errors like missing tags, incorrect order, improper punctuation, wrong capitalization, or elements not part of the schema. Runtime exceptions in Java indicate programming errors and can be used to display messages instead of causing abnormal program termination, especially when critical tasks must not crash. Exception handling should be used when a problem can be corrected."
+      ],
+      "latency_s": 1.94,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Guide to Java",
+      "error": ""
+    },
+    {
+      "question": "What is the role of the Immediate window in the Visual Basic Editor?",
+      "ground_truth": "The Immediate window in the Visual Basic Editor allows users to test individual lines of code, execute statements, and debug procedures quickly without running an entire macro.",
+      "answer": "The Immediate window serves as a virtual scratch pad for testing code and can be used to display information. It is a debugging tool that supports VBA editor keystrokes and Windows editing keystrokes. You can open it by pressing Ctrl+G or by navigating to View ⇒ Immediate window. It is preferable to check output in this window.",
+      "contexts": [
+        "The Immediate window serves as a virtual scratch pad for testing code and can be used to display information. It is a debugging tool that supports VBA editor keystrokes and Windows editing keystrokes. You can open it by pressing Ctrl+G or by navigating to View ⇒ Immediate window. It is preferable to check output in this window."
+      ],
+      "latency_s": 1.83,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Mastering VBA for Microsoft Office 2013",
+      "error": ""
+    },
+    {
+      "question": "What is the concept of Pareto front in multi-objective optimization?",
+      "ground_truth": "The Pareto front in multi-objective optimization consists of all non-dominated solutions, where a solution is non-dominated if there is no other solution that is better in all objectives. It represents the set of solutions that offer the best trade-offs between conflicting objectives.",
+      "answer": "In multi-objective optimization, the Pareto front represents a set of non-dominated solutions. These methods optimize distinct objectives and provide a set of distinct solutions, allowing the user to choose the best one after the optimization process. This approach is considered more natural than methods that require setting ad-hoc weights or tolerance values. However, a drawback is that it necessitates exploring and tracking a larger search space, making Pareto-based methods more complex than their single-objective counterparts. Evolutionary algorithms are commonly used to generate Pareto optimal solutions.",
+      "contexts": [
+        "In multi-objective optimization, the Pareto front represents a set of non-dominated solutions. These methods optimize distinct objectives and provide a set of distinct solutions, allowing the user to choose the best one after the optimization process. This approach is considered more natural than methods that require setting ad-hoc weights or tolerance values. However, a drawback is that it necessitates exploring and tracking a larger search space, making Pareto-based methods more complex than their single-objective counterparts. Evolutionary algorithms are commonly used to generate Pareto optimal solutions."
+      ],
+      "latency_s": 1.84,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Modern Optimization With R",
+      "error": ""
+    },
+    {
+      "question": "How does the text handle the introduction of complex topics like inheritance and polymorphism?",
+      "ground_truth": "The text introduces complex topics like inheritance and polymorphism gradually, ensuring that foundational concepts are well understood before advancing to more complex topics. It provides clear explanations and practical examples to facilitate understanding.",
+      "answer": "The text introduces complex topics like inheritance and polymorphism by developing a program that tracks employee information. This program allows users to enter employee details, computes their compensation, and displays the results. Inheritance is used to organize data, with an `Employee` class as the superclass and `FullTime` and `PartTime` classes as subclasses. Polymorphism is then utilized in the main method to calculate and display the compensation for each employee. The text also includes a UML class diagram to visually represent the relationships between these classes.",
+      "contexts": [
+        "The text introduces complex topics like inheritance and polymorphism by developing a program that tracks employee information. This program allows users to enter employee details, computes their compensation, and displays the results. Inheritance is used to organize data, with an `Employee` class as the superclass and `FullTime` and `PartTime` classes as subclasses. Polymorphism is then utilized in the main method to calculate and display the compensation for each employee. The text also includes a UML class diagram to visually represent the relationships between these classes."
+      ],
+      "latency_s": 2.35,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Guide to Java",
+      "error": ""
+    },
+    {
+      "question": "What is the role of the `optim` function in R when dealing with optimization problems?",
+      "ground_truth": "The `optim` function in R is a general-purpose optimization function that includes various methods such as Nelder-Mead, BFGS, CG, L-BFGS-B, and SANN (simulated annealing) for minimizing or maximizing a function. It is used to solve optimization problems by providing the function to be optimized and other parameters like initial values and bounds.",
+      "answer": "The `optim` function in R is used to perform optimization tasks. It can execute several optimization methods by setting the `method` argument. This function is designed to perform minimization tasks and returns a list containing components such as the optimized values and the evaluation of the best solution.",
+      "contexts": [
+        "The `optim` function in R is used to perform optimization tasks. It can execute several optimization methods by setting the `method` argument. This function is designed to perform minimization tasks and returns a list containing components such as the optimized values and the evaluation of the best solution."
+      ],
+      "latency_s": 1.84,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Modern Optimization With R",
+      "error": ""
+    },
+    {
+      "question": "What are the three main types of quantifiers discussed in the book?",
+      "ground_truth": "The three main types of quantifiers discussed in the book are greedy, lazy (reluctant), and possessive quantifiers.",
+      "answer": "The three main types of quantifiers discussed are greedy, lazy, and possessive.",
+      "contexts": [
+        "The three main types of quantifiers discussed are greedy, lazy, and possessive."
+      ],
+      "latency_s": 3.07,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Introducing Regular Expressions",
+      "error": ""
+    },
+    {
+      "question": "What are the three major types of relationships in database design and give an example of each?",
+      "ground_truth": "The three major types of relationships are one-to-one, one-to-many, and many-to-many. Examples include a person and their social security number (one-to-one), a customer and their orders (one-to-many), and products and orders (many-to-many).",
+      "answer": "The three major types of relationships in database design are:\n\n*   **One-to-one:** This occurs when a record in one table means there is exactly one matching record in another table.\n*   **One-to-many:** This is a common foreign key relationship, often seen in header/detail scenarios, and typically implements a parent-to-child hierarchy. An example is having one customer with multiple orders.\n*   **Many-to-many:** In this type, records on both sides of the relationship can have multiple matches. An example is the relationship between products and orders, where an order can have many products, and a product can appear on many orders. To implement this, an intermediate table is used.",
+      "contexts": [
+        "The three major types of relationships in database design are:\n\n*   **One-to-one:** This occurs when a record in one table means there is exactly one matching record in another table.\n*   **One-to-many:** This is a common foreign key relationship, often seen in header/detail scenarios, and typically implements a parent-to-child hierarchy. An example is having one customer with multiple orders.\n*   **Many-to-many:** In this type, records on both sides of the relationship can have multiple matches. An example is the relationship between products and orders, where an order can have many products, and a product can appear on many orders. To implement this, an intermediate table is used."
+      ],
+      "latency_s": 1.94,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Professional Microsoft SQL Server 2008 Programming",
+      "error": ""
+    },
+    {
+      "question": "What naming convention does the book recommend for tables and views?",
+      "ground_truth": "The book recommends that table and view names should be industry standards, collective, class, or plural nouns, following the principle that a table is a set and not a scalar value.",
+      "answer": "Tables and views should be named using a collective, class, or plural name.",
+      "contexts": [
+        "Tables and views should be named using a collective, class, or plural name."
+      ],
+      "latency_s": 2.12,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Joe Celko's SQL Programming Style",
+      "error": ""
+    },
+    {
+      "question": "What is the primary goal of the book \"Modern Optimization with R\"?",
+      "ground_truth": "The primary goal of the book is to gather relevant concepts related to modern optimization methods and demonstrate how these concepts and methods can be addressed using the R tool, providing a self-contained document with practical application examples.",
+      "answer": "The provided context does not contain information about the book \"Modern Optimization with R\".",
+      "contexts": [
+        "The provided context does not contain information about the book \"Modern Optimization with R\"."
+      ],
+      "latency_s": 1.26,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Modern Optimization With R",
+      "error": ""
+    },
+    {
+      "question": "How can you run Spark on Amazon EC2?",
+      "ground_truth": "Spark can be run on Amazon EC2 by using the provided scripts in the `ec2` directory of the Spark package. These scripts automate the process of launching a Spark cluster on EC2 instances, handling setup and configuration.",
+      "answer": "You can launch a Spark cluster on Amazon EC2 using the `spark-ec2` script. This script allows you to deploy a Spark master node and slave nodes. After launching, you can connect to the master node via SSH and test Spark in both local and cluster modes. You can also access the Spark Master web interface through a web browser to monitor applications.",
+      "contexts": [
+        "You can launch a Spark cluster on Amazon EC2 using the `spark-ec2` script. This script allows you to deploy a Spark master node and slave nodes. After launching, you can connect to the master node via SSH and test Spark in both local and cluster modes. You can also access the Spark Master web interface through a web browser to monitor applications."
+      ],
+      "latency_s": 2.25,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Machine Learning With Spark",
+      "error": ""
+    },
+    {
+      "question": "Describe the structure and function of the IPv4 header.",
+      "ground_truth": "The IPv4 header consists of fields such as version, IHL (Internet Header Length), Type of Service (TOS), total length, identification, flags, fragment offset, TTL (Time To Live), protocol, header checksum, source address, and destination address. It provides essential information for routing and handling packets in the network.",
+      "answer": "The IPv4 header is a 16-bit field that contains the offset and flags of a fragment. The 13 most significant bits represent the offset, with the unit of offset being 8 bytes. The 3 least significant bits are flags, which can indicate if there are more fragments (IP_MF), if fragmentation is not allowed (IP_DF), if there is congestion (IP_CE), or if it's an offset part (IP_OFFSET).",
+      "contexts": [
+        "The IPv4 header is a 16-bit field that contains the offset and flags of a fragment. The 13 most significant bits represent the offset, with the unit of offset being 8 bytes. The 3 least significant bits are flags, which can indicate if there are more fragments (IP_MF), if fragmentation is not allowed (IP_DF), if there is congestion (IP_CE), or if it's an offset part (IP_OFFSET)."
+      ],
+      "latency_s": 2.23,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Linux Kernel Networking",
+      "error": ""
+    },
+    {
+      "question": "How does the book suggest handling special characters in names?",
+      "ground_truth": "The book advises avoiding all special characters in names to ensure compatibility across different SQL products and host language programs, recommending the use of letters, digits, and underscores only.",
+      "answer": "Special characters in names can make them difficult to handle.",
+      "contexts": [
+        "Special characters in names can make them difficult to handle."
+      ],
+      "latency_s": 1.14,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Joe Celko's SQL Programming Style",
+      "error": ""
+    },
+    {
+      "question": "What are the challenges in defining a denotational semantics for a language with side effects like references and assignments?",
+      "ground_truth": "Defining a denotational semantics for languages with side effects requires modeling the state of the program and how it changes over time, which can be complex due to the need to track and update the state consistently across different program executions.",
+      "answer": "When defining a denotational semantics for a language with side effects like references and assignments, the interpretation of a term is not solely a value but also includes a new state of the universe. This modification of the state is considered a side effect of the interpretation. The formal semantics of references in PCF defines the global state as a function from a finite set of references to the set of values of PCF terms. The set of references itself can vary over time, as new references can be created during program execution using a construct like `ref`. The side effect of interpreting `ref t` is the creation of a new reference whose initial value is the current value of `t`, and the computed value is the reference itself.",
+      "contexts": [
+        "When defining a denotational semantics for a language with side effects like references and assignments, the interpretation of a term is not solely a value but also includes a new state of the universe. This modification of the state is considered a side effect of the interpretation. The formal semantics of references in PCF defines the global state as a function from a finite set of references to the set of values of PCF terms. The set of references itself can vary over time, as new references can be created during program execution using a construct like `ref`. The side effect of interpreting `ref t` is the creation of a new reference whose initial value is the current value of `t`, and the computed value is the reference itself."
+      ],
+      "latency_s": 2.01,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Introduction to the Theory of Programming Languages",
+      "error": ""
+    },
+    {
+      "question": "How does the Macro Recorder work in Word and Excel?",
+      "ground_truth": "The Macro Recorder in Word and Excel translates user actions into VBA code, allowing users to automate sequences of actions by recording them once and playing them back as needed.",
+      "answer": "The macro recorder is a tool that records a sequence of actions performed by the user. It generates code that can be used to automate repetitive tasks. The recorder starts when you click the Developer tab and then the Record Macro button. It records all settings and actions, and can be paused by clicking the pause recording button. To stop the recording, you click the stop recording button or the stop icon on the status bar. The recorded actions are then displayed in the Visual Basic Editor. A drawback of the macro recorder is that it may record unnecessary code.",
+      "contexts": [
+        "The macro recorder is a tool that records a sequence of actions performed by the user. It generates code that can be used to automate repetitive tasks. The recorder starts when you click the Developer tab and then the Record Macro button. It records all settings and actions, and can be paused by clicking the pause recording button. To stop the recording, you click the stop recording button or the stop icon on the status bar. The recorded actions are then displayed in the Visual Basic Editor. A drawback of the macro recorder is that it may record unnecessary code."
+      ],
+      "latency_s": 1.94,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Mastering VBA for Microsoft Office 2013",
+      "error": ""
+    },
+    {
+      "question": "What are the two types of procedures in VBA?",
+      "ground_truth": "The two types of procedures in VBA are functions and subprocedures (subs). Functions return a value, while subprocedures do not.",
+      "answer": "VBA includes two types of procedures.",
+      "contexts": [
+        "VBA includes two types of procedures."
+      ],
+      "latency_s": 2.63,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Mastering VBA for Microsoft Office 2013",
+      "error": ""
+    },
+    {
+      "question": "How does the use of de Bruijn indices simplify the interpretation of terms in programming languages?",
+      "ground_truth": "De Bruijn indices replace named variables with numerical indices, reducing the need for alpha-conversion and simplifying the handling of variable bindings and substitutions.",
+      "answer": "De Bruijn indices simplify the interpretation of terms by eliminating the need for variable names, which can make the process more straightforward for machines. This can also simplify compilation.",
+      "contexts": [
+        "De Bruijn indices simplify the interpretation of terms by eliminating the need for variable names, which can make the process more straightforward for machines. This can also simplify compilation."
+      ],
+      "latency_s": 1.85,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Introduction to the Theory of Programming Languages",
+      "error": ""
+    },
+    {
+      "question": "How does Spark differ from Hadoop in terms of performance?",
+      "ground_truth": "Spark is optimized for low-latency tasks and iterative analytics, storing intermediate data in memory, which significantly improves performance over Hadoop's MapReduce, where data is stored on disk, leading to slower processing times.",
+      "answer": "The provided context does not contain information about how Spark differs from Hadoop in terms of performance.",
+      "contexts": [
+        "The provided context does not contain information about how Spark differs from Hadoop in terms of performance."
+      ],
+      "latency_s": 0.96,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Machine Learning With Spark",
+      "error": ""
+    },
+    {
+      "question": "How does the model database function as a template in SQL Server?",
+      "ground_truth": "The model database serves as a template for any new database that you create. Altering the model database can change what standard, newly created databases look like, such as including audit tables or predefined user groups.",
+      "answer": "The model database functions as a template.",
+      "contexts": [
+        "The model database functions as a template."
+      ],
+      "latency_s": 2.8,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Professional Microsoft SQL Server 2008 Programming",
+      "error": ""
+    },
+    {
+      "question": "What is the primary purpose of the Linux Kernel Networking stack as described in the book?",
+      "ground_truth": "The primary purpose of the Linux Kernel Networking stack is to handle the traversal of packets in the network stack and interact with various networking layers and subsystems, describing how various networking protocols are implemented.",
+      "answer": "The Linux kernel networking stack is responsible for handling network traffic. It actively calls into the device driver when an application requests more data and none is available in the socket queue. The driver then checks for new data and passes it through the network layer to the socket.",
+      "contexts": [
+        "The Linux kernel networking stack is responsible for handling network traffic. It actively calls into the device driver when an application requests more data and none is available in the socket queue. The driver then checks for new data and passes it through the network layer to the socket."
+      ],
+      "latency_s": 1.86,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Linux Kernel Networking",
+      "error": ""
+    },
+    {
+      "question": "How does the fixed point theorem play a role in the semantics of programming languages?",
+      "ground_truth": "The fixed point theorem is used in operational semantics to give rise to inductive definitions and reflexive-transitive closures. In denotational semantics, it is primarily used to define the meaning of the `fix` construct.",
+      "answer": "The fixed point theorem is crucial for defining the semantics of programming languages. In operational semantics, it plays a significant role by giving rise to inductive definitions and reflexive-transitive closures. In contrast, its role in denotational semantics is more limited, primarily being used to define the meaning of the fixed-point construction. For languages without fixed points, the fixed point theorem is not necessary for defining their denotational semantics.\n\nWhen dealing with terms that do not terminate, the fixed point theorem is used to define the least fixed point of a function. This is particularly relevant in denotational semantics, where it helps to assign a meaning to non-terminating computations by introducing a special value, often denoted as ⊥. The theorem is also used to prove the existence of the least fixed point, which is essential for the correctness of the semantics.",
+      "contexts": [
+        "The fixed point theorem is crucial for defining the semantics of programming languages. In operational semantics, it plays a significant role by giving rise to inductive definitions and reflexive-transitive closures. In contrast, its role in denotational semantics is more limited, primarily being used to define the meaning of the fixed-point construction. For languages without fixed points, the fixed point theorem is not necessary for defining their denotational semantics.\n\nWhen dealing with terms that do not terminate, the fixed point theorem is used to define the least fixed point of a function. This is particularly relevant in denotational semantics, where it helps to assign a meaning to non-terminating computations by introducing a special value, often denoted as ⊥. The theorem is also used to prove the existence of the least fixed point, which is essential for the correctness of the semantics."
+      ],
+      "latency_s": 2.03,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Introduction to the Theory of Programming Languages",
+      "error": ""
+    },
+    {
+      "question": "Explain the process of IPv4 fragmentation and defragmentation.",
+      "ground_truth": "IPv4 fragmentation occurs when a packet is larger than the MTU (Maximum Transmission Unit) of the outgoing interface, and it needs to be broken into smaller fragments. Defragmentation is the process of reassembling these fragments back into the original packet at the destination.",
+      "answer": "The main fragmentation method for IPv4 is `ip_fragment`, and the main defragmentation method is `ip_defrag`. The `ip_defrag` method processes an incoming IP fragment. The `skb_has_frag_list` method returns true if `skb_shinfo(skb)->frag_list` is not NULL, indicating if an SKB can be fragmented via a list of SKBs. SKBs can also be fragmented via a page array.",
+      "contexts": [
+        "The main fragmentation method for IPv4 is `ip_fragment`, and the main defragmentation method is `ip_defrag`. The `ip_defrag` method processes an incoming IP fragment. The `skb_has_frag_list` method returns true if `skb_shinfo(skb)->frag_list` is not NULL, indicating if an SKB can be fragmented via a list of SKBs. SKBs can also be fragmented via a page array."
+      ],
+      "latency_s": 1.81,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Linux Kernel Networking",
+      "error": ""
+    },
+    {
+      "question": "What is the primary purpose of the master database in SQL Server?",
+      "ground_truth": "The master database is critical to the system and cannot be deleted. It holds a special set of tables (system tables) that keeps track of the system as a whole, including entries for new databases, extended and system stored procedures, and more.",
+      "answer": "The master database holds system tables and is considered critical. It relates to indexes.",
+      "contexts": [
+        "The master database holds system tables and is considered critical. It relates to indexes."
+      ],
+      "latency_s": 1.57,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Professional Microsoft SQL Server 2008 Programming",
+      "error": ""
+    },
+    {
+      "question": "What are some of the practical applications of Markov chains and Hidden Markov Models discussed in the book?",
+      "ground_truth": "The book discusses practical applications of Markov chains and Hidden Markov Models in areas such as text generation, web ranking, and dynamic programming for HMMs, illustrating their utility in modeling sequences and processes where future states depend on the current state.",
+      "answer": "Markov chains can be used to model text sequences and review wines. Hidden Markov models are useful for correcting text errors.",
+      "contexts": [
+        "Markov chains can be used to model text sequences and review wines. Hidden Markov models are useful for correcting text errors."
+      ],
+      "latency_s": 3.2,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Probability and Statistics for Computer Science",
+      "error": ""
+    },
+    {
+      "question": "What is the significance of the \"dotall\" option in regular expressions?",
+      "ground_truth": "The \"dotall\" option allows the dot (.) character in regular expressions to match all characters, including newline characters.",
+      "answer": "The \"dotall\" option means that the dot character will match newlines in addition to all other characters.",
+      "contexts": [
+        "The \"dotall\" option means that the dot character will match newlines in addition to all other characters."
+      ],
+      "latency_s": 1.63,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Introducing Regular Expressions",
+      "error": ""
+    },
+    {
+      "question": "How can you run a macro from the Visual Basic Editor?",
+      "ground_truth": "You can run a macro from the Visual Basic Editor by pressing the F5 key, choosing Run ⇒ Run Sub/UserForm, or clicking the Run Sub/UserForm button on the Standard toolbar.",
+      "answer": "You can run a macro from the Visual Basic Editor by creating a function that calls the subprocedure you want to execute. Then, you would create an Access-style macro that uses the RunCode action to execute the function, which in turn runs the subprocedure.",
+      "contexts": [
+        "You can run a macro from the Visual Basic Editor by creating a function that calls the subprocedure you want to execute. Then, you would create an Access-style macro that uses the RunCode action to execute the function, which in turn runs the subprocedure."
+      ],
+      "latency_s": 2.01,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Mastering VBA for Microsoft Office 2013",
+      "error": ""
+    },
+    {
+      "question": "What is the book's stance on using triggers in SQL programming?",
+      "ground_truth": "The book advises avoiding triggers in favor of Declarative Referential Integrity (DRI) actions, as triggers are often proprietary and can complicate schema design and maintenance.",
+      "answer": "The book suggests that triggers can be used for various actions like INSERT, UPDATE, or DELETE. It notes that `INSTEAD OF` triggers can be used to run custom code in place of user requests, which can help resolve ambiguous insert problems in views and clean up constraint violations before they are checked. `FOR` and `AFTER` triggers, on the other hand, create working tables after constraints have been checked. The book advises using the `AFTER` clause as the standard approach for triggers. It also mentions that `INSTEAD OF` triggers are created before constraints are checked, while `FOR` triggers create working tables after constraints are checked.",
+      "contexts": [
+        "The book suggests that triggers can be used for various actions like INSERT, UPDATE, or DELETE. It notes that `INSTEAD OF` triggers can be used to run custom code in place of user requests, which can help resolve ambiguous insert problems in views and clean up constraint violations before they are checked. `FOR` and `AFTER` triggers, on the other hand, create working tables after constraints have been checked. The book advises using the `AFTER` clause as the standard approach for triggers. It also mentions that `INSTEAD OF` triggers are created before constraints are checked, while `FOR` triggers create working tables after constraints are checked."
+      ],
+      "latency_s": 1.76,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Joe Celko's SQL Programming Style",
+      "error": ""
+    },
+    {
+      "question": "What are the challenges in using naive Bayes models with numerical features?",
+      "ground_truth": "Naive Bayes models assume that features are conditionally independent and typically work well with categorical data. When dealing with numerical features, special handling is required, such as binning or transforming the data to fit the model's assumptions.",
+      "answer": "Numerical features do not conform to the assumed input distribution for a naive Bayes model, which typically works with non-zero count data. This can lead to poor model performance.",
+      "contexts": [
+        "Numerical features do not conform to the assumed input distribution for a naive Bayes model, which typically works with non-zero count data. This can lead to poor model performance."
+      ],
+      "latency_s": 2.8,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Machine Learning With Spark",
+      "error": ""
+    },
+    {
+      "question": "What is the difference between call by name and call by value reduction strategies?",
+      "ground_truth": "Call by name evaluates arguments only when they are needed, while call by value evaluates arguments before the function is applied. Call by name can avoid unnecessary evaluations but may repeat evaluations of the same expression.",
+      "answer": "Call by name always reduces the leftmost redex first. In contrast, call by value always evaluates the arguments of a function before passing them to the function. This means that with call by name, terms of the form `fun x -> t` are irreducible. Call by value, however, can only reduce a term of the form `(fun x -> t) u` if `u` is a value.",
+      "contexts": [
+        "Call by name always reduces the leftmost redex first. In contrast, call by value always evaluates the arguments of a function before passing them to the function. This means that with call by name, terms of the form `fun x -> t` are irreducible. Call by value, however, can only reduce a term of the form `(fun x -> t) u` if `u` is a value."
+      ],
+      "latency_s": 1.89,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Introduction to the Theory of Programming Languages",
+      "error": ""
+    },
+    {
+      "question": "How does the book encourage the reader to engage with the R code examples?",
+      "ground_truth": "The book encourages the reader to execute the R code examples and try to solve the proposed exercises. This hands-on approach helps readers to better understand and apply the concepts and methods discussed in the book.",
+      "answer": "The book suggests that the reader try what happens if they have different numbers of classes with an even number of examples in each, and also with specific fractions for different classes. It also encourages the reader to try other examples to see if they can construct a scheme where they can send as few bits on average as the expression predicts.",
+      "contexts": [
+        "The book suggests that the reader try what happens if they have different numbers of classes with an even number of examples in each, and also with specific fractions for different classes. It also encourages the reader to try other examples to see if they can construct a scheme where they can send as few bits on average as the expression predicts."
+      ],
+      "latency_s": 2.17,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Modern Optimization With R",
+      "error": ""
+    },
+    {
+      "question": "How does the book introduce the concept of alternation in regular expressions?",
+      "ground_truth": "The book introduces alternation by explaining how to use the vertical bar (|) character to separate a list of regular expressions, indicating an \"or\" condition.",
+      "answer": "Alternation allows for a choice between two or more patterns.",
+      "contexts": [
+        "Alternation allows for a choice between two or more patterns."
+      ],
+      "latency_s": 1.54,
+      "rag_type": "llamaindex",
+      "dominio": "cs",
+      "titulo": "Introducing Regular Expressions",
+      "error": ""
+    }
+  ],
+  "ragas_scores": {
+    "faithfulness": 0.9983,
+    "answer_relevancy": 0.8224,
+    "context_precision": 0.57,
+    "context_recall": 0.4633
+  },
+  "avg_latency_s": 2.06,
+  "n_errors": 0
+}

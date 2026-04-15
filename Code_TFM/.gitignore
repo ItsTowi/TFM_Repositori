@@ -9,6 +9,10 @@ src/__pycache__
 src/baselines/__pycache__
 .DS_Store
 lightrag_graphs
+lightrag_eval
+chroma_db_eval_traditional
+chroma_db_RAGPlusPlus
 llamaindex_workspace
-ms_graphrag_workspace/input
-ms_graphrag_workspace/prompts
+ms_graphrag_workspace
+chroma_db_eval_traditional
+lightrag_eval

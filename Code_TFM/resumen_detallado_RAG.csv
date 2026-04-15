@@ -1,0 +1,5 @@
+archivo,rag_type,dominio,n_libros,n_preguntas,avg_latency_s,n_errors,faithfulness,answer_relevancy,context_precision,context_recall
+traditional_cs_2026-03-29.json,traditional,cs,10,100,3.29,0,0.9757,0.8928,0.5433,0.6767
+advanced_cs_2026-03-30.json,advanced,cs,10,100,2.18,0,0.946,0.8813,0.6306,0.695
+lightrag_cs_2026-04-05.json,lightrag,cs,10,100,1.88,0,0.9949,0.9322,0.95,0.8617
+llamaindex_cs_2026-04-12.json,llamaindex,cs,10,100,2.06,0,0.9983,0.8224,0.57,0.4633

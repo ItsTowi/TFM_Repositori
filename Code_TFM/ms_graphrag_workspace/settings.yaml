@@ -10,26 +10,26 @@ models:
     model_provider: gemini
     auth_type: api_key
     api_key: ${GRAPHRAG_API_KEY} # pon tu Gemini API key en el .env
-    model: gemini-2.0-flash-lite
+    model: gemini-2.5-flash-lite
     model_supports_json: true
-    concurrent_requests: 1 # Gemini tiene límites más bajos que OpenAI
+    concurrent_requests: 10 # Gemini tiene límites más bajos que OpenAI
     async_mode: asyncio
     retry_strategy: exponential_backoff
-    max_retries: 1
-    tokens_per_minute: 120000
-    requests_per_minute: 8
+    max_retries: 5
+    tokens_per_minute: 300000
+    requests_per_minute: 200
   default_embedding_model:
     type: embedding
     model_provider: gemini
     auth_type: api_key
     api_key: ${GRAPHRAG_API_KEY}
     model: gemini-embedding-001
-    concurrent_requests: 2
+    concurrent_requests: 10
     async_mode: asyncio
     retry_strategy: exponential_backoff
     max_retries: 10
-    tokens_per_minute: 25000
-    requests_per_minute: 80
+    tokens_per_minute: 80000
+    requests_per_minute: 200
 
 ### Input settings ###
 

@@ -6,12 +6,13 @@ Clase RAGEvaluator: orquesta queries, recoge resultados y calcula métricas.
 
 import os
 import json
+import math
 import time
 from dataclasses import asdict
 from datetime import datetime
 
 from .results import QAResult, ExperimentResult, RAGType
-from .query_adapters import query_traditional, query_lightrag, query_llamaindex
+from .query_adapters import query_traditional, query_lightrag, query_llamaindex, query_advanced, query_msgraphrag_global, query_msgraphrag_local
 from .metrics import build_ragas_wrappers, compute_ragas_scores
 
 
@@ -31,10 +32,16 @@ class RAGEvaluator:
     async def _query(self, question: str) -> tuple[str, list[str]]:
         if self.rag_type == "traditional":
             return await query_traditional(self.rag, question)
+        elif self.rag_type == "advanced":
+            return await query_advanced(self.rag, question)
         elif self.rag_type == "lightrag":
             return await query_lightrag(self.rag, question, self.lightrag_mode)
         elif self.rag_type == "llamaindex":
             return await query_llamaindex(self.rag, question)
+        elif self.rag_type == "msgraphrag_local":
+            return await query_msgraphrag_local(self.rag, question)
+        elif self.rag_type == "msgraphrag_global":
+            return await query_msgraphrag_global(self.rag, question)
         else:
             raise ValueError(f"rag_type desconocido: {self.rag_type}")
 
@@ -99,8 +106,17 @@ class RAGEvaluator:
         os.makedirs(path, exist_ok=True)
         filename = f"{result.rag_type}_{result.dominio}_{result.timestamp[:10]}.json"
         filepath = os.path.join(path, filename)
+
+        # Convertir NaN a None para serialización JSON válida
+        data = asdict(result)
+        if "ragas_scores" in data:
+            data["ragas_scores"] = {
+                k: (None if isinstance(v, float) and math.isnan(v) else v)
+                for k, v in data["ragas_scores"].items()
+            }
+
         with open(filepath, "w", encoding="utf-8") as f:
-            json.dump(asdict(result), f, ensure_ascii=False, indent=2)
+            json.dump(data, f, ensure_ascii=False, indent=2)
         print(f"💾 Guardado en: {filepath}")
         return filepath
 
@@ -115,11 +131,11 @@ class RAGEvaluator:
         print("\n  📊 Métricas RAGAS:")
         if result.ragas_scores:
             for metric, score in result.ragas_scores.items():
-                if isinstance(score, float):
+                if isinstance(score, float) and not math.isnan(score):
                     bar = "█" * int(score * 20) + "░" * (20 - int(score * 20))
                     print(f"    {metric:<25} {bar} {score:.4f}")
                 else:
-                    print(f"    {metric:<25} {score}")
+                    print(f"    {metric:<25} {'':>20} NaN")
         else:
             print("    (sin métricas)")
         if result.token_usage:
