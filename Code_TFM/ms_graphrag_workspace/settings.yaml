@@ -16,20 +16,20 @@ models:
     async_mode: asyncio
     retry_strategy: exponential_backoff
     max_retries: 5
-    tokens_per_minute: 300000
-    requests_per_minute: 200
+    tokens_per_minute: 2000000
+    requests_per_minute: 2000
   default_embedding_model:
     type: embedding
     model_provider: gemini
     auth_type: api_key
     api_key: ${GRAPHRAG_API_KEY}
     model: gemini-embedding-001
-    concurrent_requests: 10
+    concurrent_requests: 3
     async_mode: asyncio
     retry_strategy: exponential_backoff
     max_retries: 10
-    tokens_per_minute: 80000
-    requests_per_minute: 200
+    tokens_per_minute: 300000
+    requests_per_minute: 300
 
 ### Input settings ###
 
