@@ -1,26 +1,8 @@
-"""
-msgraphrag_rag.py
-=================
-Wrapper para MS-GraphRAG 2.7.1 con soporte local y global search.
-
-Uso:
-    from src.baselines.msgraphrag_rag import MSGraphRAG
-    
-    rag = MSGraphRAG(workspace_dir="./ms_graphrag_workspace")
-    rag.load()
-    answer, context = await rag.local_search("¿Qué es X?")
-    answer, context = await rag.global_search("¿Cuáles son los temas principales?")
-"""
-
 import pandas as pd
 from pathlib import Path
 
 
 class MSGraphRAG:
-    """
-    Wrapper sobre MS-GraphRAG 2.7.1 para local y global search.
-    """
-
     def __init__(self, workspace_dir: str = "./ms_graphrag_workspace"):
         self.workspace_dir = Path(workspace_dir)
         self.output_dir = self.workspace_dir / "output"
@@ -120,30 +102,32 @@ class MSGraphRAG:
         return str(response), contexts
 
     def _extract_contexts(self, context) -> list[str]:
-        """Extrae texto del contexto devuelto por GraphRAG."""
+        """Extrae texto del contexto devuelto por GraphRAG 2.7.1."""
         contexts = []
         try:
-            if isinstance(context, str):
+            if isinstance(context, dict):
+                # 1. Sources: chunks de texto original (más importantes para RAGAS)
+                if "sources" in context and isinstance(context["sources"], pd.DataFrame):
+                    df = context["sources"]
+                    if "text" in df.columns:
+                        contexts.extend(df["text"].dropna().astype(str).tolist())
+
+                # 2. Reports: resúmenes de comunidades
+                if "reports" in context and isinstance(context["reports"], pd.DataFrame):
+                    df = context["reports"]
+                    if "content" in df.columns:
+                        contexts.extend(df["content"].dropna().astype(str).tolist())
+
+                # 3. Entities: descripciones de entidades
+                if "entities" in context and isinstance(context["entities"], pd.DataFrame):
+                    df = context["entities"]
+                    if "description" in df.columns:
+                        contexts.extend(df["description"].dropna().astype(str).tolist())
+
+            elif isinstance(context, str) and context.strip():
                 contexts = [context]
-            elif isinstance(context, list):
-                for item in context:
-                    if isinstance(item, pd.DataFrame):
-                        for col in ["content", "text", "description", "full_content"]:
-                            if col in item.columns:
-                                contexts += item[col].dropna().tolist()
-                                break
-                    elif isinstance(item, dict):
-                        text = item.get("content") or item.get("text") or item.get("description", "")
-                        if text:
-                            contexts.append(str(text))
-            elif isinstance(context, dict):
-                for key in ["reports", "entities", "text_units", "sources"]:
-                    if key in context:
-                        for item in context[key]:
-                            text = item.get("content") or item.get("text") or item.get("description", "")
-                            if text:
-                                contexts.append(str(text))
-        except Exception:
-            pass
+
+        except Exception as e:
+            print(f"⚠️ _extract_contexts error: {e}")
 
         return contexts if contexts else [""]
