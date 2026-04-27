@@ -1,0 +1,32 @@
+{
+  "rag_type": "traditional",
+  "dominio": "Test_Local_01",
+  "n_libros": 0,
+  "timestamp": "2026-04-27T15:05:38.958702",
+  "qa_results": [
+    {
+      "question": "What is the general subject of these books?",
+      "ground_truth": "Computer Science",
+      "answer": "The general subject of these books is the **Java programming language**.",
+      "contexts": [
+        ". There will be no fanfare here, and anywhere from no real description to relatively minor discussion of key concepts. Several hundred pages in the Beginning book that is the companion of this one will be shrunk down to tens of pages here.",
+        "In many paragraphs of the text, questions are asked of the reader to help them interact with the material and think about the subject matter just presented. Hopefully the reader will take a few moments to try to answer these questions on their own before proceeding to the answer that immediately follows. To help further reinforce concepts, each chapter has one or more complete programs to illustrate many of the concepts presented and also to help readers learn how to write programs on their own. In addition, for review and practice, there are summaries and exercises provided at the end of each chapter. Further, in the appendices at the end of the text, there are answers to selected exercises and a glossary of important terms. A summary of these features is listed below:\n\n  * Stresses the fundamentals\n\n  * Provides many examples and illustrations\n\n  * Has an early introduction to objects\n\n  * Uses contour diagrams to illustrate object-oriented concepts",
+        "How This Book Is Structured\n\nAs is the case for all my books, this book takes something of a lassez faire writing style. We roam around a bit within a relatively loose structure. Each chapter begins with an explanation of the things to be covered in that chapter, and then we go through those items. Within each topic covered, some background is provided, and then we work through an example if appropriate. Examples are generally created to be short, and yet still quickly get at several of the concepts you need for whatever topic is being covered at the time.\n\nIn terms of \"what to cover next,\" there is a logical progression. We review tools and data types early on (since there are changes there), but move on very fast to topics that assume you are already comfortable with the product.",
+        "## Need\n\nThis text attempts to fill the gap between the above two types of books. First, it provides plenty of examples and concentrates primarily on the fundamentals of the Java programming language so that the reader can stay focused on the key concepts. Second, by concentrating on the fundamentals, it allows the text to be more concise and yet still accessible to readers who have no prior programming experience. The result is that the reader can learn the Java programming language very quickly and also have a good foundation to learn more complex topics later.\n\n## Features of This Text"
+      ],
+      "latency_s": 3.17,
+      "rag_type": "traditional",
+      "dominio": "Test_Local_01",
+      "titulo": "",
+      "error": ""
+    }
+  ],
+  "ragas_scores": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_precision": 0.25,
+    "context_recall": 1.0
+  },
+  "avg_latency_s": 3.17,
+  "n_errors": 0
+}

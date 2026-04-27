@@ -82,13 +82,18 @@ class AdvancedRAG:
             persist_directory=self.persist_directory,
             embedding_function=self.embeddings
         )
-        # Recuperar los docs almacenados para BM25
         results = self.vector_store.get(include=["documents", "metadatas"])
+        
+        # Debug: verificar qué devuelve Chroma
+        print(f"   Docs recuperados de Chroma: {len(results.get('documents', []))}")
+        
         from langchain_core.documents import Document
         self._all_docs = [
-            Document(page_content=text, metadata=meta)
-            for text, meta in zip(results["documents"], results["metadatas"])
+            Document(page_content=text, metadata=meta or {})
+            for text, meta in zip(results.get("documents", []), results.get("metadatas", []))
+            if text  # filtrar documentos vacíos
         ]
+        print(f"   _all_docs construidos: {len(self._all_docs)}")
 
     def _build_retriever(self):
         """
@@ -149,3 +154,21 @@ class AdvancedRAG:
 
         response = rag_chain.invoke({"input": question})
         return response["answer"]
+    
+    async def query(self, question: str) -> tuple[str, list[str]]:
+        retriever = self._build_retriever()
+        system_prompt = (
+            "You are an expert assistant. Use ONLY the following retrieved context "
+            "to answer the question. If you don't know, say you don't know.\n\n"
+            "CONTEXT:\n{context}"
+        )
+        prompt = ChatPromptTemplate.from_messages([
+            ("system", system_prompt),
+            ("human", "{input}"),
+        ])
+        question_answer_chain = create_stuff_documents_chain(self.llm, prompt)
+        rag_chain = create_retrieval_chain(retriever, question_answer_chain)
+        response = await rag_chain.ainvoke({"input": question})
+        answer = response["answer"]
+        contexts = [doc.page_content for doc in response["context"]]
+        return answer, contexts  # ← solo 2, el try/except del evaluador gestiona errores

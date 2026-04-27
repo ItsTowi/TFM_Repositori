@@ -21,10 +21,7 @@ async def query_advanced(rag, question: str) -> tuple[str, list[str]]:
     """
     RAG++ — usa el pipeline híbrido completo de AdvancedRAG.
     """
-    retriever = rag._build_retriever()
-    docs = retriever.invoke(question)
-    contexts = [d.page_content for d in docs]
-    answer = rag.ask(question)
+    answer, contexts = await rag.query(question)
     return answer, contexts
 
 

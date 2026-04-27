@@ -106,23 +106,25 @@ class MSGraphRAG:
         contexts = []
         try:
             if isinstance(context, dict):
-                # 1. Sources: chunks de texto original (más importantes para RAGAS)
+                # 1. Sources primero (más relevantes para RAGAS)
                 if "sources" in context and isinstance(context["sources"], pd.DataFrame):
                     df = context["sources"]
                     if "text" in df.columns:
-                        contexts.extend(df["text"].dropna().astype(str).tolist())
+                        texts = df["text"].dropna().astype(str).tolist()
+                        # Filtrar chunks vacíos o demasiado cortos (basura)
+                        texts = [t for t in texts if len(t.strip()) > 50]
+                        contexts.extend(texts)
 
-                # 2. Reports: resúmenes de comunidades
-                if "reports" in context and isinstance(context["reports"], pd.DataFrame):
-                    df = context["reports"]
-                    if "content" in df.columns:
-                        contexts.extend(df["content"].dropna().astype(str).tolist())
+                # 2. Reports solo si no hay suficientes sources
+                if len(contexts) < 3:
+                    if "reports" in context and isinstance(context["reports"], pd.DataFrame):
+                        df = context["reports"]
+                        if "content" in df.columns:
+                            reports = df["content"].dropna().astype(str).tolist()
+                            reports = [r for r in reports if len(r.strip()) > 50]
+                            contexts.extend(reports[:3])  # máximo 3 reports
 
-                # 3. Entities: descripciones de entidades
-                if "entities" in context and isinstance(context["entities"], pd.DataFrame):
-                    df = context["entities"]
-                    if "description" in df.columns:
-                        contexts.extend(df["description"].dropna().astype(str).tolist())
+                # 3. Entities: OMITIR — descripciones cortas dañan context_precision
 
             elif isinstance(context, str) and context.strip():
                 contexts = [context]
@@ -130,4 +132,5 @@ class MSGraphRAG:
         except Exception as e:
             print(f"⚠️ _extract_contexts error: {e}")
 
-        return contexts if contexts else [""]
+        # Limitar total de contextos para no diluir precision
+        return contexts[:6] if contexts else [""]

@@ -1,13 +1,8 @@
-"""
-evaluator.py
-============
-Clase RAGEvaluator: orquesta queries, recoge resultados y calcula métricas.
-"""
-
 import os
 import json
 import math
 import time
+import traceback
 from dataclasses import asdict
 from datetime import datetime
 
@@ -72,6 +67,7 @@ class RAGEvaluator:
                 answer, contexts = await self._query(qa["question"])
                 error = ""
             except Exception as e:
+                traceback.print_exc()  # ← añade esta línea
                 answer, contexts, error = "", [], str(e)
                 result.n_errors += 1
                 print(f"    ⚠️ Error: {e}")

@@ -6,6 +6,8 @@ FunciÃ³n de alto nivel para lanzar experimentos desde el notebook en una sola lÃ
 
 from .results import RAGType, ExperimentResult
 from .evaluator import RAGEvaluator
+import json
+import os
 
 
 async def run_experiment(
@@ -60,6 +62,46 @@ async def run_experiment(
 
     result = await evaluator.run(libros, qas, dominio, max_questions=max_questions)
     evaluator.print_summary(result)
+    evaluator.save(result, path=save_path)
+
+    return result
+
+
+async def run_local_experiment(
+    rag_type: str,
+    rag_object,
+    questions_path: str,
+    max_questions: int = None,
+    lightrag_mode: str = "hybrid",
+    save_path: str = "./results/",
+    nombre_experimento: str = "local_test"
+) -> ExperimentResult:
+    
+    with open(questions_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    
+    qas_formateadas = []
+    for item in data:
+        qas_formateadas.append({
+            "question": item.get("question", ""),
+            "answer": item.get("answer", item.get("ground_truth", "")),
+            "context_id": item.get("context_id", "local_doc")
+        })
+        
+    evaluator = RAGEvaluator(
+        rag_type=rag_type,
+        rag_object=rag_object,
+        lightrag_mode=lightrag_mode,
+    )
+
+    result = await evaluator.run(
+        libros=[], 
+        qas=qas_formateadas, 
+        dominio=nombre_experimento, 
+        max_questions=max_questions
+    )
+
+    os.makedirs(save_path, exist_ok=True)
     evaluator.save(result, path=save_path)
 
     return result
