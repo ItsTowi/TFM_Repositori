@@ -1,6 +1,82 @@
 [
     {
-        "question": "What is the general subject of these books?",
-        "answer": "Computer Science"
+        "question": "Which VBA keyword is used to declare a constant instead of a variable?",
+        "answer": "Const"
+    },
+    {
+        "question": "What is the name of the root object in the Excel object model hierarchy?",
+        "answer": "Application"
+    },
+    {
+        "question": "What is the expected value of the squared deviation from the mean called in computer science statistics?",
+        "answer": "Variance"
+    },
+    {
+        "question": "Which mathematical inequality provides an upper bound for the probability of a random variable deviating from its mean?",
+        "answer": "Chebyshev's inequality"
+    },
+    {
+        "question": "In regular expressions, which metacharacter is used to represent the beginning of a line or string?",
+        "answer": "^"
+    },
+    {
+        "question": "What term describes a regex quantifier that matches as much text as possible?",
+        "answer": "Greedy"
+    },
+    {
+        "question": "In lambda calculus theory, what is the operation of substituting a parameter for an argument called?",
+        "answer": "Beta-reduction"
+    },
+    {
+        "question": "In the theory of programming languages, which theorem states that if a term has a normal form, it is unique?",
+        "answer": "Church-Rosser theorem"
+    },
+    {
+        "question": "Which specific algorithm is used by default in Spark MLlib for collaborative filtering?",
+        "answer": "ALS"
+    },
+    {
+        "question": "What is the Spark class that represents a distributed and strongly typed collection of data?",
+        "answer": "Dataset"
+    },
+    {
+        "question": "Which SQL Server command or hint forces the query optimizer to use a specific index?",
+        "answer": "INDEX hint"
+    },
+    {
+        "question": "What is the default transaction isolation level for Microsoft SQL Server 2008?",
+        "answer": "READ COMMITTED"
+    },
+    {
+        "question": "Which Java keyword prevents a class from being extended through inheritance?",
+        "answer": "final"
+    },
+    {
+        "question": "What is the mechanism in Java where a subclass provides a specific implementation of a method already defined in its superclass?",
+        "answer": "Overriding"
+    },
+    {
+        "question": "What derogatory term does Joe Celko use for the practice of adding prefixes like 'tbl_' to table names?",
+        "answer": "Tibbling"
+    },
+    {
+        "question": "According to SQL programming best practices, what name is given to tables used to resolve many-to-many relationships?",
+        "answer": "Associative tables"
+    },
+    {
+        "question": "What is the name of the primary data structure that represents a network packet in the Linux kernel?",
+        "answer": "sk_buff"
+    },
+    {
+        "question": "Which Linux kernel macro is used to iterate over the system's list of network devices?",
+        "answer": "for_each_netdev"
+    },
+    {
+        "question": "What is the name of the standard R function used to perform Nelder-Mead optimization?",
+        "answer": "optim()"
+    },
+    {
+        "question": "Which heuristic search algorithm for optimization is inspired by the cooling process in metallurgy?",
+        "answer": "Simulated Annealing"
     }
-] 
+]
