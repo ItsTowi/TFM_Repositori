@@ -1,0 +1,82 @@
+[
+  {
+    "question": "Both the SQL Server book and the Linux Kernel Networking book deal with data at scale. What is the primary data unit used to represent a row in SQL Server, and what is the primary data unit used to represent a network packet in the Linux kernel?",
+    "answer": "A row or record in SQL Server; sk_buff (socket buffer) in the Linux kernel"
+  },
+  {
+    "question": "The Spark MLlib book and the Modern Optimization With R book both cover metaheuristic techniques. Which specific algorithm appears in both books as an example of population-based optimization?",
+    "answer": "Genetic algorithms"
+  },
+  {
+    "question": "The VBA book teaches automation of Microsoft Office applications. If a developer wanted to use Spark to process data exported from Excel using VBA, which Spark data abstraction would they use to load the resulting CSV file?",
+    "answer": "A DataFrame (or Dataset) loaded via SparkSession"
+  },
+  {
+    "question": "The Java book and the programming languages theory book both touch on type systems. What concept from lambda calculus theory in Dowek's book corresponds to Java's method overriding described in Streib's book?",
+    "answer": "Dynamic dispatch, related to the substitution principle formalized as beta-reduction in lambda calculus"
+  },
+  {
+    "question": "Joe Celko emphasizes naming conventions in SQL. If the Linux kernel naming convention for network device iteration macros like for_each_netdev were applied to SQL, what anti-pattern would Celko likely criticize?",
+    "answer": "Hungarian notation or tibbling — adding type prefixes to identifiers"
+  },
+  {
+    "question": "Both the regular expressions book and the programming languages theory book deal with formal grammars. What formal language class do regular expressions belong to according to the Chomsky hierarchy discussed in programming language theory?",
+    "answer": "Type-3 or regular languages, the lowest level of the Chomsky hierarchy"
+  },
+  {
+    "question": "The statistics book covers probability distributions and the Spark book applies them to machine learning. Which probability distribution is foundational to the Naive Bayes classifier available in Spark MLlib?",
+    "answer": "The multinomial or Bernoulli distribution (conditional probability)"
+  },
+  {
+    "question": "The SQL Server book and the statistics book both deal with aggregation. What SQL aggregate function directly computes the statistical concept of variance described by Forsyth?",
+    "answer": "VAR() or VARIANCE()"
+  },
+  {
+    "question": "Both the Linux Kernel and the Spark book operate on distributed or parallel data flows. What kernel networking concept is analogous to Spark's concept of data partitioning across nodes?",
+    "answer": "Network packet routing across multiple network interfaces or NUMA nodes"
+  },
+  {
+    "question": "The regular expressions book and the SQL book both provide pattern-matching capabilities. What SQL operator uses a simplified form of pattern matching analogous to regular expressions?",
+    "answer": "LIKE operator"
+  },
+  {
+    "question": "The Java book covers object-oriented inheritance and the VBA book covers object models. What object in the Excel object model, described in the VBA book, would a Java developer recognize as equivalent to the root object in a class hierarchy?",
+    "answer": "The Application object, equivalent to a root superclass"
+  },
+  {
+    "question": "The optimization book uses the R function optim() and the Spark book uses MLlib. If a data scientist wanted to implement Simulated Annealing from the R book as a Spark job, which Spark abstraction would be most appropriate for distributing candidate solution evaluations?",
+    "answer": "RDD or DataFrame with parallel map transformations"
+  },
+  {
+    "question": "Dowek's programming languages book discusses type checking and Streib's Java book covers the final keyword. What type-theoretic property does marking a Java class as final enforce, in terms of the substitution principle?",
+    "answer": "It prevents subtype polymorphism for that class, violating open extensibility but enforcing a closed type"
+  },
+  {
+    "question": "The statistics book covers Chebyshev's inequality and the machine learning book uses model evaluation metrics. How does Chebyshev's inequality relate to the concept of model variance in the bias-variance tradeoff discussed in machine learning?",
+    "answer": "Chebyshev's inequality provides a probabilistic upper bound on deviation from the mean, directly formalizing the concept of high variance in model predictions"
+  },
+  {
+    "question": "Both Celko's SQL book and the SQL Server book discuss query performance. What SQL Server feature described by Vieira enforces the style rule Celko advocates of avoiding implicit column ordering?",
+    "answer": "Explicit column lists in SELECT statements, enforced by good practice and partially by SQL Server's strict mode or stored procedure linting"
+  },
+  {
+    "question": "The regular expressions book covers greedy vs lazy quantifiers and the programming languages theory book covers normal forms. What property of a regex engine's greedy matching strategy is analogous to the concept of outermost reduction strategy in lambda calculus?",
+    "answer": "Both apply the reduction or match at the outermost or leftmost position first, corresponding to normal-order reduction"
+  },
+  {
+    "question": "The Linux Kernel book discusses the sk_buff structure and the SQL Server book discusses buffer pool management. What common computer science concept underlies both the kernel's socket buffer and SQL Server's buffer pool?",
+    "answer": "Memory buffering to decouple I/O speeds — caching data in RAM to minimize latency between producers and consumers"
+  },
+  {
+    "question": "The VBA book covers error handling and the Java book covers exception handling. What structural difference exists between VBA's On Error GoTo mechanism and Java's try-catch-finally block?",
+    "answer": "VBA uses unstructured goto-based error handling while Java uses structured block-based exception handling with typed exceptions"
+  },
+  {
+    "question": "The optimization book covers the Traveling Salesman Problem and the statistics book covers combinatorics. What combinatorial formula gives the exact number of possible tours for the TSP with n cities, making exact solutions infeasible?",
+    "answer": "(n-1)! / 2"
+  },
+  {
+    "question": "Both the Spark book and the Linux Kernel book deal with parallel execution. What Linux kernel mechanism for deferring work asynchronously is conceptually similar to Spark's lazy evaluation of transformations?",
+    "answer": "Workqueues or tasklets, which defer processing outside the interrupt context similarly to how Spark defers computation until an action is called"
+  }
+]

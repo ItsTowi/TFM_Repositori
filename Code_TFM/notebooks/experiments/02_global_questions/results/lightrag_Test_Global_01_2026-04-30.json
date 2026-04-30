@@ -1,0 +1,276 @@
+{
+  "rag_type": "lightrag",
+  "dominio": "Test_Global_01",
+  "n_libros": 0,
+  "timestamp": "2026-04-30T14:36:12.265342",
+  "qa_results": [
+    {
+      "question": "Which of the 10 books deals primarily with low-level operating system internals rather than application-level programming?",
+      "ground_truth": "Linux Kernel Networking by Rami Rosen",
+      "answer": "I am sorry, but I cannot answer your question. The provided context does not contain a list of 10 books, nor does it provide enough information to differentiate between books that focus on low-level operating system internals versus application-level programming.",
+      "contexts": [
+        "I am sorry, but I cannot answer your question. The provided context does not contain a list of 10 books, nor does it provide enough information to differentiate between books that focus on low-level operating system internals versus application-level programming."
+      ],
+      "latency_s": 17.4,
+      "rag_type": "lightrag",
+      "dominio": "Test_Global_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "How many of the 10 books are focused specifically on a Microsoft technology or product?",
+      "ground_truth": "Three: Mastering VBA for Microsoft Office 2013, Professional Microsoft SQL Server 2008 Programming, and Joe Celko's SQL Programming Style",
+      "answer": "I am sorry, but I do not have enough information to answer your question. The provided context does not list the titles of 10 books, nor does it specify which technologies or products they focus on.",
+      "contexts": [
+        "I am sorry, but I do not have enough information to answer your question. The provided context does not list the titles of 10 books, nor does it specify which technologies or products they focus on."
+      ],
+      "latency_s": 16.0,
+      "rag_type": "lightrag",
+      "dominio": "Test_Global_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Which books in the collection target an undergraduate or introductory academic audience?",
+      "ground_truth": "Guide to Java, Introduction to the Theory of Programming Languages, and Probability and Statistics for Computer Science",
+      "answer": "The following books are intended for an undergraduate or introductory academic audience:\n\n*   **Undergraduate Topics in Computer Science** series: This series publishes introductory material and books on various computer science subjects, specifically aimed at undergraduate computer science students. It includes titles like \"Guide to Java\" and \"Introduction to the Theory of Programming Languages.\" [1] [6]\n*   **Introductory Text**: One book is described as an introductory text. [2]\n*   **Beginner's Book**: A book is identified as a beginner's book for \"rank beginners who need some hand-holding,\" and is recommended for those who haven't written a regular expression before or are new to programming. [3]\n*   **Text for Introductory Programming Course**: A text is suitable for use in an introductory programming course or as a self-study guide. [5]\n*   **\"Guide to Java\"**: This book is part of the \"Undergraduate Topics in Computer Science\" series and is intended for readers with no prior programming experience. [7]\n*   **\"Introduction to the Theory of Programming Languages\"**: This book is part of the \"Undergraduate Topics in Computer Science\" series and falls within the domain of Computer Science. [6]\n*   **Book for Computer Science Undergraduates**: A book's topics are selected specifically for computer science undergraduates, aiming to cover essential probability and statistics concepts. [0]\n\n### References\n\n- [1] Undergraduate Topics in Computer Science\n- [2] Book\n- [3] Introducing Regular Expressions\n- [4] Undergraduate Topics in Computer Science: Guide to Java\n- [5] Text\n- [6] Introduction to the Theory of Programming Languages\n- [7] Guide to Java",
+      "contexts": [
+        "The following books are intended for an undergraduate or introductory academic audience:\n\n*   **Undergraduate Topics in Computer Science** series: This series publishes introductory material and books on various computer science subjects, specifically aimed at undergraduate computer science students. It includes titles like \"Guide to Java\" and \"Introduction to the Theory of Programming Languages.\" [1] [6]\n*   **Introductory Text**: One book is described as an introductory text. [2]\n*   **Beginner's Book**: A book is identified as a beginner's book for \"rank beginners who need some hand-holding,\" and is recommended for those who haven't written a regular expression before or are new to programming. [3]\n*   **Text for Introductory Programming Course**: A text is suitable for use in an introductory programming course or as a self-study guide. [5]\n*   **\"Guide to Java\"**: This book is part of the \"Undergraduate Topics in Computer Science\" series and is intended for readers with no prior programming experience. [7]\n*   **\"Introduction to the Theory of Programming Languages\"**: This book is part of the \"Undergraduate Topics in Computer Science\" series and falls within the domain of Computer Science. [6]\n*   **Book for Computer Science Undergraduates**: A book's topics are selected specifically for computer science undergraduates, aiming to cover essential probability and statistics concepts. [0]\n\n### References\n\n- [1] Undergraduate Topics in Computer Science\n- [2] Book\n- [3] Introducing Regular Expressions\n- [4] Undergraduate Topics in Computer Science: Guide to Java\n- [5] Text\n- [6] Introduction to the Theory of Programming Languages\n- [7] Guide to Java"
+      ],
+      "latency_s": 11.66,
+      "rag_type": "lightrag",
+      "dominio": "Test_Global_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Which book in the collection has the most questions associated with it in the UltraDomain dataset?",
+      "ground_truth": "Mastering VBA for Microsoft Office 2013 with 15 questions",
+      "answer": "I am sorry, but I cannot answer this question. The provided context does not contain information about a dataset named \"UltraDomain\" or any direct counts of questions associated with specific books within a dataset.",
+      "contexts": [
+        "I am sorry, but I cannot answer this question. The provided context does not contain information about a dataset named \"UltraDomain\" or any direct counts of questions associated with specific books within a dataset."
+      ],
+      "latency_s": 15.39,
+      "rag_type": "lightrag",
+      "dominio": "Test_Global_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Which two books in the collection share a focus on database query languages?",
+      "ground_truth": "Joe Celko's SQL Programming Style and Professional Microsoft SQL Server 2008 Programming",
+      "answer": "The following two books in the collection share a focus on database query languages:\n\n*   \"SQL for Smarties\"\n*   \"Trees & Hierarchies in SQL\"",
+      "contexts": [
+        "The following two books in the collection share a focus on database query languages:\n\n*   \"SQL for Smarties\"\n*   \"Trees & Hierarchies in SQL\""
+      ],
+      "latency_s": 16.98,
+      "rag_type": "lightrag",
+      "dominio": "Test_Global_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "What is the common programming paradigm shared by the Java and VBA books in the collection?",
+      "ground_truth": "Object-oriented programming",
+      "answer": "The Java and VBA programming languages share the object-oriented programming (OOP) paradigm. This paradigm structures applications around discrete objects and their interactions, organizing code into reusable components through classes and objects. OOP also emphasizes data encapsulation, which promotes modularity and task isolation, benefiting code construction, maintenance, and comprehension. [1] [4] [5]\n\n### References\n\n- [1] Object-Oriented Programming (OOP) is a programming paradigm and methodology that structures applications around discrete objects and their interactions. This approach organizes code into reusable components, often through the creation of classes and objects. OOP emphasizes data encapsulation, promoting modularity and the isolation of tasks, which in turn offers benefits in code construction, maintenance, and understanding.\n- [4] Objects are fundamental entities in object-oriented programming, encapsulating data and methods.\n- [5] Object-Oriented Programming (OOP) is a programming paradigm that, in this context, is associated with the improper naming of data elements, particularly the overuse of \"id\".",
+      "contexts": [
+        "The Java and VBA programming languages share the object-oriented programming (OOP) paradigm. This paradigm structures applications around discrete objects and their interactions, organizing code into reusable components through classes and objects. OOP also emphasizes data encapsulation, which promotes modularity and task isolation, benefiting code construction, maintenance, and comprehension. [1] [4] [5]\n\n### References\n\n- [1] Object-Oriented Programming (OOP) is a programming paradigm and methodology that structures applications around discrete objects and their interactions. This approach organizes code into reusable components, often through the creation of classes and objects. OOP emphasizes data encapsulation, promoting modularity and the isolation of tasks, which in turn offers benefits in code construction, maintenance, and understanding.\n- [4] Objects are fundamental entities in object-oriented programming, encapsulating data and methods.\n- [5] Object-Oriented Programming (OOP) is a programming paradigm that, in this context, is associated with the improper naming of data elements, particularly the overuse of \"id\"."
+      ],
+      "latency_s": 12.27,
+      "rag_type": "lightrag",
+      "dominio": "Test_Global_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Which book in the collection is most focused on mathematical theory rather than practical programming?",
+      "ground_truth": "Introduction to the Theory of Programming Languages by Gilles Dowek",
+      "answer": "The book \"Introduction to the Theory of Programming Languages\" is most focused on mathematical theory. It delves into the theoretical aspects of programming languages, covering fundamental concepts and serving as an introduction to the field. The book is co-authored by Gilles Dowek and Jean-Jacques Lévy and includes a chapter on the PCF language. [1]",
+      "contexts": [
+        "The book \"Introduction to the Theory of Programming Languages\" is most focused on mathematical theory. It delves into the theoretical aspects of programming languages, covering fundamental concepts and serving as an introduction to the field. The book is co-authored by Gilles Dowek and Jean-Jacques Lévy and includes a chapter on the PCF language. [1]"
+      ],
+      "latency_s": 19.87,
+      "rag_type": "lightrag",
+      "dominio": "Test_Global_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Which books in the collection use R as their primary programming language?",
+      "ground_truth": "Modern Optimization With R by Paulo Cortez",
+      "answer": "The following books utilize R as their primary programming language:\n* \"Modern Optimization with R\" by Paulo Cortez. This book focuses on optimization techniques and their implementation using R, with practical examples and code. [ref]\n* \"Data Manipulation with R\" by Spector. [ref]\n* \"Interactive and Dynamic Graphics for Data Analysis: With R and GGobi\" co-authored by Cook and Swayne. [ref]\n* \"Lattice: Multivariate Data Visualization with R\" by Sarkar. [ref]\n\nAdditionally, the book \"Modern Optimization with R\" by Paulo Cortez is noted for using R to demonstrate optimization methods and includes R code examples for readers to test. [ref]",
+      "contexts": [
+        "The following books utilize R as their primary programming language:\n* \"Modern Optimization with R\" by Paulo Cortez. This book focuses on optimization techniques and their implementation using R, with practical examples and code. [ref]\n* \"Data Manipulation with R\" by Spector. [ref]\n* \"Interactive and Dynamic Graphics for Data Analysis: With R and GGobi\" co-authored by Cook and Swayne. [ref]\n* \"Lattice: Multivariate Data Visualization with R\" by Sarkar. [ref]\n\nAdditionally, the book \"Modern Optimization with R\" by Paulo Cortez is noted for using R to demonstrate optimization methods and includes R code examples for readers to test. [ref]"
+      ],
+      "latency_s": 22.19,
+      "rag_type": "lightrag",
+      "dominio": "Test_Global_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Which book in the collection deals with distributed computing and big data processing?",
+      "ground_truth": "Machine Learning With Spark by Nick Pentreath",
+      "answer": "The book \"Machine Learning With Spark\" covers the application of machine learning techniques using Spark, which is a framework for distributed computing designed for big data processing and machine learning. Additionally, the book discusses Apache Spark as an open-source unified analytics engine for large-scale data processing. Another book mentioned, \"Data & Database,\" is by J. Celko and collects material previously published in magazines. The book \"Book\" is a written work that combines the author's passion for machine learning and Apache Spark.\n\n### References\n\n* [0] Machine Learning With Spark\n* [2] Machine Learning With Spark\n* [7] Machine Learning With Spark\n* [4] Machine Learning With Spark\n* [6] Machine Learning With Spark",
+      "contexts": [
+        "The book \"Machine Learning With Spark\" covers the application of machine learning techniques using Spark, which is a framework for distributed computing designed for big data processing and machine learning. Additionally, the book discusses Apache Spark as an open-source unified analytics engine for large-scale data processing. Another book mentioned, \"Data & Database,\" is by J. Celko and collects material previously published in magazines. The book \"Book\" is a written work that combines the author's passion for machine learning and Apache Spark.\n\n### References\n\n* [0] Machine Learning With Spark\n* [2] Machine Learning With Spark\n* [7] Machine Learning With Spark\n* [4] Machine Learning With Spark\n* [6] Machine Learning With Spark"
+      ],
+      "latency_s": 35.56,
+      "rag_type": "lightrag",
+      "dominio": "Test_Global_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "What mathematical discipline forms the theoretical foundation shared by both the statistics book and the machine learning book?",
+      "ground_truth": "Probability theory",
+      "answer": "The theoretical foundation shared by both the statistics book and the machine learning book is **probability theory**. This is because probability theory is a branch of mathematics concerned with probability, which is a framework for quantifying uncertainty and randomness. It is essential for understanding randomized algorithms, the probabilistic method in graph theory, and approximation techniques. [ref:4]",
+      "contexts": [
+        "The theoretical foundation shared by both the statistics book and the machine learning book is **probability theory**. This is because probability theory is a branch of mathematics concerned with probability, which is a framework for quantifying uncertainty and randomness. It is essential for understanding randomized algorithms, the probabilistic method in graph theory, and approximation techniques. [ref:4]"
+      ],
+      "latency_s": 18.03,
+      "rag_type": "lightrag",
+      "dominio": "Test_Global_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Which books in the collection would be most relevant for a software engineer working on network infrastructure?",
+      "ground_truth": "Linux Kernel Networking and Professional Microsoft SQL Server 2008 Programming",
+      "answer": "The book \"Linux Kernel Networking: Implementation and Theory\" by Rami Rosen is highly relevant for software engineers working on network infrastructure. It provides an in-depth analysis of the Linux kernel networking subsystem and its architecture, covering the implementation and theory behind it. The book also details various networking protocols and their implementation within the Linux kernel, including IPv4, IPv6, ICMP, IPsec, and wireless subsystems.\n\nAdditionally, \"Unix Network Programming, Volume 1: The Sockets Networking API (3rd Edition)\" and \"The Linux Programming Interface\" are recommended for further information on the userspace socket API.\n\nThe book \"Linux Kernel Networking Implementation and Theory\" is available in both print (ISBN 978-1-4302-6196-4) and electronic (e-ISBN 978-1-4302-6197-1) formats and was published by Apress in 2014.\n\n### References\n\n- [Linux Kernel Networking: Implementation and Theory]\n- [Unix Network Programming, Volume 1: The Sockets Networking API (3rd Edition)]\n- [The Linux Programming Interface]",
+      "contexts": [
+        "The book \"Linux Kernel Networking: Implementation and Theory\" by Rami Rosen is highly relevant for software engineers working on network infrastructure. It provides an in-depth analysis of the Linux kernel networking subsystem and its architecture, covering the implementation and theory behind it. The book also details various networking protocols and their implementation within the Linux kernel, including IPv4, IPv6, ICMP, IPsec, and wireless subsystems.\n\nAdditionally, \"Unix Network Programming, Volume 1: The Sockets Networking API (3rd Edition)\" and \"The Linux Programming Interface\" are recommended for further information on the userspace socket API.\n\nThe book \"Linux Kernel Networking Implementation and Theory\" is available in both print (ISBN 978-1-4302-6196-4) and electronic (e-ISBN 978-1-4302-6197-1) formats and was published by Apress in 2014.\n\n### References\n\n- [Linux Kernel Networking: Implementation and Theory]\n- [Unix Network Programming, Volume 1: The Sockets Networking API (3rd Edition)]\n- [The Linux Programming Interface]"
+      ],
+      "latency_s": 16.7,
+      "rag_type": "lightrag",
+      "dominio": "Test_Global_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "How many books in the collection are published as part of an academic or university-oriented series?",
+      "ground_truth": "Three: Introduction to the Theory of Programming Languages, Probability and Statistics for Computer Science, and Guide to Java",
+      "answer": "I don't have enough information to answer your question. The provided context does not contain a list of all books in the collection or specify which ones are part of academic or university-oriented series.",
+      "contexts": [
+        "I don't have enough information to answer your question. The provided context does not contain a list of all books in the collection or specify which ones are part of academic or university-oriented series."
+      ],
+      "latency_s": 21.01,
+      "rag_type": "lightrag",
+      "dominio": "Test_Global_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Which book in the collection is most focused on code style and software craftsmanship rather than language features?",
+      "ground_truth": "Joe Celko's SQL Programming Style",
+      "answer": "The book most focused on code style and software craftsmanship, rather than language features, is **Programming Proverbs** by Henry Ledgard and colleagues at MIT. This book is known for its subtitle \"Principles of Good Programming with Numerous Examples to Improve Programming Style and Proficiency.\" [1]",
+      "contexts": [
+        "The book most focused on code style and software craftsmanship, rather than language features, is **Programming Proverbs** by Henry Ledgard and colleagues at MIT. This book is known for its subtitle \"Principles of Good Programming with Numerous Examples to Improve Programming Style and Proficiency.\" [1]"
+      ],
+      "latency_s": 11.65,
+      "rag_type": "lightrag",
+      "dominio": "Test_Global_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Which books in the collection cover metaprogramming or scripting to automate other software?",
+      "ground_truth": "Mastering VBA for Microsoft Office 2013 and Introducing Regular Expressions",
+      "answer": "I cannot answer your question. The provided context does not contain information about books covering metaprogramming or scripting to automate other software.",
+      "contexts": [
+        "I cannot answer your question. The provided context does not contain information about books covering metaprogramming or scripting to automate other software."
+      ],
+      "latency_s": 14.22,
+      "rag_type": "lightrag",
+      "dominio": "Test_Global_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Which author in the collection has also written a companion beginner-level book referenced within the text?",
+      "ground_truth": "James T. Streib, who references a companion Beginning Java book",
+      "answer": "Based on the provided text, Rob Vieira is the author who has written a companion beginner-level book. The text mentions that \"Beginning SQL Server 2008 Programming\" is a companion book designed to work with the current book and focuses on beginner-level content. Rob Vieira is identified as the author of \"this book\" and has published six books on SQL Server development.\n\n### References\n\n* [4] A Grand Performance: Designing a Database That Performs Well\n* [7] Beginning SQL Server 2008 Programming\n* [14] About the Authors",
+      "contexts": [
+        "Based on the provided text, Rob Vieira is the author who has written a companion beginner-level book. The text mentions that \"Beginning SQL Server 2008 Programming\" is a companion book designed to work with the current book and focuses on beginner-level content. Rob Vieira is identified as the author of \"this book\" and has published six books on SQL Server development.\n\n### References\n\n* [4] A Grand Performance: Designing a Database That Performs Well\n* [7] Beginning SQL Server 2008 Programming\n* [14] About the Authors"
+      ],
+      "latency_s": 18.33,
+      "rag_type": "lightrag",
+      "dominio": "Test_Global_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Which books in the collection explicitly target practitioners rather than students as their primary audience?",
+      "ground_truth": "Joe Celko's SQL Programming Style, Professional Microsoft SQL Server 2008 Programming, and Linux Kernel Networking",
+      "answer": "The following books explicitly target practitioners:\n\n*   A book on optimization methods and the R tool is addressed to practitioners, including R users interested in applying modern optimization methods and non-R expert data analysts or optimization practitioners who want to test R's capabilities for optimizing real-world tasks. [10]\n*   A book on machine learning aims at entry-level to intermediate data scientists, data analysts, software engineers, and practitioners involved in machine learning or data mining with an interest in large-scale machine learning approaches. [4]\n*   A book that teaches how to use VBA to automate work in Office 2013 applications is intended for computer professionals, developers, designers, project managers, software architects, CTOs, and theorists in academia. [6, 1, 9]",
+      "contexts": [
+        "The following books explicitly target practitioners:\n\n*   A book on optimization methods and the R tool is addressed to practitioners, including R users interested in applying modern optimization methods and non-R expert data analysts or optimization practitioners who want to test R's capabilities for optimizing real-world tasks. [10]\n*   A book on machine learning aims at entry-level to intermediate data scientists, data analysts, software engineers, and practitioners involved in machine learning or data mining with an interest in large-scale machine learning approaches. [4]\n*   A book that teaches how to use VBA to automate work in Office 2013 applications is intended for computer professionals, developers, designers, project managers, software architects, CTOs, and theorists in academia. [6, 1, 9]"
+      ],
+      "latency_s": 24.88,
+      "rag_type": "lightrag",
+      "dominio": "Test_Global_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "What is the general programming language category shared by the largest number of books in the collection?",
+      "ground_truth": "Imperative and object-oriented languages (Java, VBA, SQL, R)",
+      "answer": "I do not have enough information to answer this question. The provided context does not contain a consolidated list of books and their corresponding programming language categories.",
+      "contexts": [
+        "I do not have enough information to answer this question. The provided context does not contain a consolidated list of books and their corresponding programming language categories."
+      ],
+      "latency_s": 7.53,
+      "rag_type": "lightrag",
+      "dominio": "Test_Global_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Which book in the collection most directly connects formal language theory with practical compiler construction?",
+      "ground_truth": "Introduction to the Theory of Programming Languages by Gilles Dowek",
+      "answer": "The book \"Introduction to the Theory of Programming Languages\" by Gilles Dowek and Jean-Jacques Lévy appears to most directly connect formal language theory with practical compiler construction. This is indicated by its inclusion of chapters on compilation and abstract machines, as well as its discussion of the relationship between operational semantics and compiler structure. The book also covers topics such as PCF (Programming Computable Functions), which is a language often used in theoretical studies of programming languages and compiler design.\n\n### References\n\n* [1] Introduction to the Theory of Programming Languages",
+      "contexts": [
+        "The book \"Introduction to the Theory of Programming Languages\" by Gilles Dowek and Jean-Jacques Lévy appears to most directly connect formal language theory with practical compiler construction. This is indicated by its inclusion of chapters on compilation and abstract machines, as well as its discussion of the relationship between operational semantics and compiler structure. The book also covers topics such as PCF (Programming Computable Functions), which is a language often used in theoretical studies of programming languages and compiler design.\n\n### References\n\n* [1] Introduction to the Theory of Programming Languages"
+      ],
+      "latency_s": 24.01,
+      "rag_type": "lightrag",
+      "dominio": "Test_Global_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Which two books in the collection focus on optimization, whether in queries or algorithms?",
+      "ground_truth": "Modern Optimization With R and Joe Celko's SQL Programming Style",
+      "answer": "The following two books in the collection focus on optimization:\n\n*   **Modern Optimization with R**: This book, authored by Paulo Cortez, specifically addresses modern optimization techniques using the R programming language and includes numerous R code examples. It covers concepts like the representation of a solution, evaluation functions, and constraints, and explores various optimization methods.\n*   **Convex optimization**: This book focuses on the topic of convex optimization.",
+      "contexts": [
+        "The following two books in the collection focus on optimization:\n\n*   **Modern Optimization with R**: This book, authored by Paulo Cortez, specifically addresses modern optimization techniques using the R programming language and includes numerous R code examples. It covers concepts like the representation of a solution, evaluation functions, and constraints, and explores various optimization methods.\n*   **Convex optimization**: This book focuses on the topic of convex optimization."
+      ],
+      "latency_s": 10.66,
+      "rag_type": "lightrag",
+      "dominio": "Test_Global_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "What is the predominant application domain of the machine learning book in this collection?",
+      "ground_truth": "Large-scale distributed data processing using the Apache Spark framework",
+      "answer": "The book primarily focuses on machine learning within **Business Applications** and explores its use cases in various industries and domains. It delves into practical applications for business, including personalization, targeted marketing, and customer segmentation. Additionally, the book touches upon machine learning applications in scientific fields, healthcare, sensor networks, and web and mobile applications.",
+      "contexts": [
+        "The book primarily focuses on machine learning within **Business Applications** and explores its use cases in various industries and domains. It delves into practical applications for business, including personalization, targeted marketing, and customer segmentation. Additionally, the book touches upon machine learning applications in scientific fields, healthcare, sensor networks, and web and mobile applications."
+      ],
+      "latency_s": 5.02,
+      "rag_type": "lightrag",
+      "dominio": "Test_Global_01",
+      "titulo": "",
+      "error": ""
+    }
+  ],
+  "ragas_scores": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.5825,
+    "context_precision": 0.35,
+    "context_recall": 0.35
+  },
+  "avg_latency_s": 16.97,
+  "n_errors": 0
+}

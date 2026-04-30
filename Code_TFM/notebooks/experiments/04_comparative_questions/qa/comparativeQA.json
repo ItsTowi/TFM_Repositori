@@ -1,0 +1,82 @@
+[
+  {
+    "question": "Compare the error handling approach in Java as described in Streib's book versus the error handling in VBA as described in Mansfield's book. Which provides stronger type safety?",
+    "answer": "Java provides stronger type safety through structured try-catch blocks with typed exception classes, while VBA uses unstructured On Error GoTo statements without typed exceptions"
+  },
+  {
+    "question": "Both Celko's SQL book and the SQL Server book by Vieira discuss indexing. How does Celko's philosophical approach to indexing differ from Vieira's practical approach?",
+    "answer": "Celko focuses on style and design principles — avoiding over-indexing and naming conventions — while Vieira focuses on practical performance tuning including index hints and execution plans"
+  },
+  {
+    "question": "Compare the target audience of Modern Optimization With R versus Machine Learning With Spark. Which book assumes more prior programming experience?",
+    "answer": "Machine Learning With Spark assumes more prior programming experience, targeting practitioners already familiar with Scala or Python, while the R book explicitly addresses non-R-expert practitioners and students"
+  },
+  {
+    "question": "Both the regular expressions book and the SQL books provide pattern matching tools. What are two key limitations of SQL's LIKE operator compared to full regular expressions?",
+    "answer": "LIKE only supports % and _ wildcards without quantifiers, alternation, capturing groups, or lookaheads that regular expressions provide"
+  },
+  {
+    "question": "Compare the use of lambda calculus in Dowek's theory book versus the use of anonymous functions in the Spark book. What is the key theoretical difference?",
+    "answer": "Dowek treats lambda calculus as a formal foundation for type theory and reduction semantics, while the Spark book uses lambda expressions as practical anonymous functions for functional transformations without formal theoretical grounding"
+  },
+  {
+    "question": "Compare how the Java book and the VBA book handle object-oriented programming. Which language enforces encapsulation more strictly?",
+    "answer": "Java enforces encapsulation more strictly through access modifiers (private, protected, public) at the compiler level, while VBA has weaker encapsulation with less strict access control"
+  },
+  {
+    "question": "Both the statistics book and the optimization book use probabilistic methods. How does the role of probability differ between Simulated Annealing in the R book and probability distributions in Forsyth's statistics book?",
+    "answer": "In Simulated Annealing, probability controls the acceptance of worse solutions to escape local optima; in Forsyth's book, probability distributions model uncertainty and variability in data"
+  },
+  {
+    "question": "Compare the abstraction level of the Linux Kernel Networking book versus the Spark book when dealing with distributed data. Which operates closer to the hardware?",
+    "answer": "Linux Kernel Networking operates much closer to hardware, dealing with network interfaces, packet buffers, and kernel data structures, while Spark abstracts data distribution at the application level"
+  },
+  {
+    "question": "Compare SQL Server's transaction isolation levels described by Vieira with the consistency guarantees in distributed Spark jobs described by Pentreath. Which system provides stronger ACID guarantees?",
+    "answer": "SQL Server provides full ACID guarantees with configurable isolation levels, while Spark's RDD model provides fault tolerance through lineage but does not natively guarantee full ACID transactional consistency"
+  },
+  {
+    "question": "Both the regular expressions book and the programming languages theory book deal with formal languages. How does the expressive power of regular expressions compare to the lambda calculus described by Dowek?",
+    "answer": "Lambda calculus is Turing-complete and can express any computable function, while regular expressions can only recognize Type-3 regular languages and cannot express context-free or more complex structures"
+  },
+  {
+    "question": "Compare the optimization strategies in Modern Optimization With R and Joe Celko's SQL Programming Style. What is the fundamental difference in what is being optimized?",
+    "answer": "The R book optimizes mathematical objective functions using metaheuristics, while Celko optimizes query readability, maintainability, and performance through coding style and schema design"
+  },
+  {
+    "question": "Both the Java book and the programming languages theory book cover type systems. How does Java's static type system relate to the simply typed lambda calculus presented by Dowek?",
+    "answer": "Java's static type system is an applied implementation of concepts from simply typed lambda calculus — types are assigned at compile time and the type checker enforces substitution safety, analogous to type preservation in lambda calculus"
+  },
+  {
+    "question": "Compare the scalability of the optimization algorithms in the R book versus the machine learning algorithms in the Spark book. What is the key architectural difference?",
+    "answer": "R optimization runs on a single machine and is limited by RAM and CPU, while Spark distributes computation across a cluster, making it horizontally scalable for large datasets"
+  },
+  {
+    "question": "Both Vieira's SQL Server book and Rosen's Linux Kernel book describe systems that manage concurrent access to shared resources. How does SQL Server's lock manager differ from the Linux kernel's spinlock mechanism?",
+    "answer": "SQL Server's lock manager operates at the logical data level (rows, pages, tables) with transaction semantics, while Linux kernel spinlocks operate at the hardware memory level with no blocking, only busy-waiting"
+  },
+  {
+    "question": "Compare the use of recursion in Dowek's programming languages theory book versus its treatment in Streib's Java book. Which book treats recursion more formally?",
+    "answer": "Dowek treats recursion formally through fixed-point combinators and recursive type definitions in lambda calculus, while Streib treats recursion practically as a programming technique with base cases and stack behavior"
+  },
+  {
+    "question": "Both the statistics book and the machine learning book deal with model evaluation. How does the theoretical treatment of error in Forsyth's book compare to the practical evaluation metrics in Pentreath's book?",
+    "answer": "Forsyth derives error bounds theoretically using probability inequalities and expected values, while Pentreath uses empirical metrics like accuracy, precision, recall, and RMSE on held-out test sets"
+  },
+  {
+    "question": "Compare the naming convention philosophies of Celko's SQL book and the Linux Kernel Networking book. What does each prioritize?",
+    "answer": "Celko prioritizes semantic clarity and ISO standard naming without type prefixes, while the Linux kernel uses terse, abbreviation-heavy names optimized for conciseness in a large low-level codebase"
+  },
+  {
+    "question": "Both the VBA book and the Spark book automate repetitive operations. How does VBA macro execution differ architecturally from Spark job execution?",
+    "answer": "VBA macros execute sequentially on a single local machine within the Office application process, while Spark jobs are decomposed into parallel tasks distributed across a cluster via a DAG scheduler"
+  },
+  {
+    "question": "Compare how the Java book and the SQL book approach the concept of null values. Which language handles null more safely by design?",
+    "answer": "Java treats null as a special reference value that can cause NullPointerExceptions at runtime, while SQL's NULL is a first-class three-valued logic concept; Celko argues SQL NULL is semantically richer but both handle it unsafely by default"
+  },
+  {
+    "question": "Both the regular expressions book and the SQL book provide declarative pattern languages. Which is more expressive for text search and why?",
+    "answer": "Regular expressions are more expressive for text search, supporting quantifiers, alternation, capturing groups, lookaheads, and character classes, while SQL LIKE is limited to simple wildcard patterns"
+  }
+]
