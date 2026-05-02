@@ -1,0 +1,276 @@
+{
+  "rag_type": "lightrag",
+  "dominio": "Test_Negative_01",
+  "n_libros": 0,
+  "timestamp": "2026-05-02T13:12:49.375875",
+  "qa_results": [
+    {
+      "question": "Does the Linux Kernel Networking book by Rami Rosen cover the implementation of HTTP/2 protocol in the kernel?",
+      "ground_truth": "No. The book focuses on the kernel networking stack at the transport and network layers (TCP/IP, sk_buff, netfilter), not application-layer protocols like HTTP/2",
+      "answer": "I am sorry, but the provided context does not contain information about whether the book \"Linux Kernel Networking: Implementation and Theory\" by Rami Rosen covers the implementation of the HTTP/2 protocol in the kernel. The book discusses various networking aspects of the Linux kernel, including IPv4, IPv6, ICMP, IPsec, and wireless networking, but HTTP/2 is not mentioned.",
+      "contexts": [
+        "I am sorry, but the provided context does not contain information about whether the book \"Linux Kernel Networking: Implementation and Theory\" by Rami Rosen covers the implementation of the HTTP/2 protocol in the kernel. The book discusses various networking aspects of the Linux kernel, including IPv4, IPv6, ICMP, IPsec, and wireless networking, but HTTP/2 is not mentioned."
+      ],
+      "latency_s": 5.14,
+      "rag_type": "lightrag",
+      "dominio": "Test_Negative_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Does Joe Celko's SQL Programming Style book provide a complete reference for all SQL Server 2008 stored procedure syntax?",
+      "ground_truth": "No. Celko's book focuses on style, naming conventions, and design philosophy applicable to standard SQL, not SQL Server-specific syntax or stored procedure reference",
+      "answer": "I do not have enough information to answer your question. The provided context mentions that Joe Celko's SQL Programming Style is a book about SQL programming, but it does not specify if it offers a complete reference for all SQL Server 2008 stored procedure syntax.",
+      "contexts": [
+        "I do not have enough information to answer your question. The provided context mentions that Joe Celko's SQL Programming Style is a book about SQL programming, but it does not specify if it offers a complete reference for all SQL Server 2008 stored procedure syntax."
+      ],
+      "latency_s": 5.93,
+      "rag_type": "lightrag",
+      "dominio": "Test_Negative_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Does the Modern Optimization With R book cover deep learning optimization algorithms such as Adam or RMSProp?",
+      "ground_truth": "No. The book covers classical metaheuristics such as simulated annealing, genetic algorithms, and particle swarm optimization, not gradient-based deep learning optimizers",
+      "answer": "I am sorry, but I do not have enough information to answer your question. The document does not mention whether the \"Modern Optimization With R\" book covers deep learning optimization algorithms like Adam or RMSProp.",
+      "contexts": [
+        "I am sorry, but I do not have enough information to answer your question. The document does not mention whether the \"Modern Optimization With R\" book covers deep learning optimization algorithms like Adam or RMSProp."
+      ],
+      "latency_s": 5.55,
+      "rag_type": "lightrag",
+      "dominio": "Test_Negative_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Is the ALS algorithm used by Spark MLlib for collaborative filtering a supervised learning method?",
+      "ground_truth": "No. ALS (Alternating Least Squares) for collaborative filtering is an unsupervised or semi-supervised matrix factorization technique, not a supervised classification or regression method",
+      "answer": "Yes, the ALS (Alternating Least Squares) algorithm used by Spark MLlib for collaborative filtering is considered a supervised learning method. Recommendation engines, which utilize algorithms like ALS, are a type of supervised learning method that uses labeled data, such as user-movie ratings, as labels. [1, 2]",
+      "contexts": [
+        "Yes, the ALS (Alternating Least Squares) algorithm used by Spark MLlib for collaborative filtering is considered a supervised learning method. Recommendation engines, which utilize algorithms like ALS, are a type of supervised learning method that uses labeled data, such as user-movie ratings, as labels. [1, 2]"
+      ],
+      "latency_s": 4.8,
+      "rag_type": "lightrag",
+      "dominio": "Test_Negative_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Does the Introduction to the Theory of Programming Languages book provide a practical guide to building a production compiler?",
+      "ground_truth": "No. The book is a theoretical text focused on lambda calculus, type systems, and formal semantics, not a practical compiler construction guide",
+      "answer": "The book \"Introduction to the Theory of Programming Languages\" discusses the process of transforming an interpreter into a compiler and the construction of an abstract machine, which is a key part of developing a compiler. It also mentions advancements in compilation techniques, particularly for functional languages [1, 4]. Additionally, the book covers the structure of a compiler being derived from the operational semantics of the language it compiles [5]. However, it does not explicitly state whether it provides a practical guide to building a production compiler.",
+      "contexts": [
+        "The book \"Introduction to the Theory of Programming Languages\" discusses the process of transforming an interpreter into a compiler and the construction of an abstract machine, which is a key part of developing a compiler. It also mentions advancements in compilation techniques, particularly for functional languages [1, 4]. Additionally, the book covers the structure of a compiler being derived from the operational semantics of the language it compiles [5]. However, it does not explicitly state whether it provides a practical guide to building a production compiler."
+      ],
+      "latency_s": 4.81,
+      "rag_type": "lightrag",
+      "dominio": "Test_Negative_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Does the Probability and Statistics for Computer Science book by Forsyth include practical exercises on implementing statistical models in Python?",
+      "ground_truth": "No. The book focuses on mathematical theory and derivations of probability and statistics concepts, without practical Python or programming implementations",
+      "answer": "The book \"Probability and Statistics for Computer Science\" by David Forsyth includes programming exercises related to probability and statistics. These exercises are designed to practice programming skills. Additionally, the book contains Python code that includes an example of using `categoricalFeaturesInfo`. [1] [2] [3]",
+      "contexts": [
+        "The book \"Probability and Statistics for Computer Science\" by David Forsyth includes programming exercises related to probability and statistics. These exercises are designed to practice programming skills. Additionally, the book contains Python code that includes an example of using `categoricalFeaturesInfo`. [1] [2] [3]"
+      ],
+      "latency_s": 4.49,
+      "rag_type": "lightrag",
+      "dominio": "Test_Negative_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Can regular expressions as described in Fitzgerald's book parse arbitrarily nested HTML structures reliably?",
+      "ground_truth": "No. Regular expressions can only recognize regular languages and cannot correctly parse arbitrarily nested or recursive structures like HTML; a proper parser is required",
+      "answer": "The provided context does not contain information about whether regular expressions, as described in Fitzgerald's book, can reliably parse arbitrarily nested HTML structures. However, it does mention that regular expressions are frequently employed to find and manipulate HTML tags, and that Chapter 9 covers matching HTML tags. Additionally, it notes that XML tags are used to structure data in XML documents and that methods are provided to match them reliably. Another document chunk mentions that XML mistakes can occur if the XML nesting structure is violated.",
+      "contexts": [
+        "The provided context does not contain information about whether regular expressions, as described in Fitzgerald's book, can reliably parse arbitrarily nested HTML structures. However, it does mention that regular expressions are frequently employed to find and manipulate HTML tags, and that Chapter 9 covers matching HTML tags. Additionally, it notes that XML tags are used to structure data in XML documents and that methods are provided to match them reliably. Another document chunk mentions that XML mistakes can occur if the XML nesting structure is violated."
+      ],
+      "latency_s": 4.83,
+      "rag_type": "lightrag",
+      "dominio": "Test_Negative_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Does the Guide to Java book by Streib cover Java concurrency features such as the Fork/Join framework or CompletableFuture?",
+      "ground_truth": "No. The book is an introductory text focused on core OOP fundamentals — it does not cover advanced concurrency APIs introduced in Java 7 and 8",
+      "answer": "I do not have enough information to answer your question. The provided context mentions that \"Guide to Java\" covers fundamentals of Java programming language such as input/output, object-oriented programming, arithmetic and logic instructions, control structures, strings, arrays, recursion, and files. It also mentions that Java is used to implement concurrency and that a Thread is created to handle each connected Socket. However, it does not specifically mention the Fork/Join framework or CompletableFuture.",
+      "contexts": [
+        "I do not have enough information to answer your question. The provided context mentions that \"Guide to Java\" covers fundamentals of Java programming language such as input/output, object-oriented programming, arithmetic and logic instructions, control structures, strings, arrays, recursion, and files. It also mentions that Java is used to implement concurrency and that a Thread is created to handle each connected Socket. However, it does not specifically mention the Fork/Join framework or CompletableFuture."
+      ],
+      "latency_s": 4.52,
+      "rag_type": "lightrag",
+      "dominio": "Test_Negative_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Does Mastering VBA for Microsoft Office 2013 cover developing Office Add-ins using JavaScript and the modern Office Add-in model?",
+      "ground_truth": "No. The book is exclusively about VBA (Visual Basic for Applications) macro development within Office 2013, not the modern JavaScript-based Office Add-in framework",
+      "answer": "I do not have enough information to answer that question. The provided context does not specify whether \"Mastering VBA for Microsoft Office 2013\" covers developing Office Add-ins using JavaScript and the modern Office Add-in model. The context indicates that new Office apps cannot be written using VBA [ref:1].",
+      "contexts": [
+        "I do not have enough information to answer that question. The provided context does not specify whether \"Mastering VBA for Microsoft Office 2013\" covers developing Office Add-ins using JavaScript and the modern Office Add-in model. The context indicates that new Office apps cannot be written using VBA [ref:1]."
+      ],
+      "latency_s": 4.81,
+      "rag_type": "lightrag",
+      "dominio": "Test_Negative_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Does Professional Microsoft SQL Server 2008 Programming by Vieira cover the in-memory OLTP (Hekaton) engine introduced in later SQL Server versions?",
+      "ground_truth": "No. In-memory OLTP (Hekaton) was introduced in SQL Server 2014, well after the 2008 version covered by this book",
+      "answer": "I do not have enough information to answer your question. The provided context does not contain details about the in-memory OLTP (Hekaton) engine.",
+      "contexts": [
+        "I do not have enough information to answer your question. The provided context does not contain details about the in-memory OLTP (Hekaton) engine."
+      ],
+      "latency_s": 4.8,
+      "rag_type": "lightrag",
+      "dominio": "Test_Negative_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Is lambda calculus as described by Dowek Turing-complete without the addition of a fixed-point combinator?",
+      "ground_truth": "No. The pure untyped lambda calculus requires a fixed-point combinator such as the Y combinator to express general recursion; without it, recursive definitions cannot be encoded",
+      "answer": "I do not have enough information to answer your question. The provided context explains that PCF is Turing-complete and all computable functions can be programmed in it. It also mentions that the `fix` symbol, which represents a fixed-point combinator, is used for recursive definitions in PCF. However, it does not explicitly state whether lambda calculus itself, without a fixed-point combinator, is Turing-complete.",
+      "contexts": [
+        "I do not have enough information to answer your question. The provided context explains that PCF is Turing-complete and all computable functions can be programmed in it. It also mentions that the `fix` symbol, which represents a fixed-point combinator, is used for recursive definitions in PCF. However, it does not explicitly state whether lambda calculus itself, without a fixed-point combinator, is Turing-complete."
+      ],
+      "latency_s": 4.49,
+      "rag_type": "lightrag",
+      "dominio": "Test_Negative_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Does the Machine Learning With Spark book cover reinforcement learning algorithms?",
+      "ground_truth": "No. The book focuses on supervised and unsupervised learning using Spark MLlib; reinforcement learning is not covered",
+      "answer": "I do not have enough information to answer your question. The provided context does not mention reinforcement learning algorithms in relation to the \"Machine Learning With Spark\" book.",
+      "contexts": [
+        "I do not have enough information to answer your question. The provided context does not mention reinforcement learning algorithms in relation to the \"Machine Learning With Spark\" book."
+      ],
+      "latency_s": 4.33,
+      "rag_type": "lightrag",
+      "dominio": "Test_Negative_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Does SQL's standard GROUP BY clause allow referencing a column alias defined in the SELECT clause in the same query?",
+      "ground_truth": "No. In standard SQL and SQL Server, column aliases defined in SELECT cannot be referenced in GROUP BY because SELECT is logically evaluated after GROUP BY",
+      "answer": "The provided context does not contain information about whether the standard `GROUP BY` clause allows referencing a column alias defined in the `SELECT` clause in the same query. However, it does state that columns specified in the `SELECT` list must either be part of the `GROUP BY` list or be the target of an aggregate function when using `GROUP BY`.",
+      "contexts": [
+        "The provided context does not contain information about whether the standard `GROUP BY` clause allows referencing a column alias defined in the `SELECT` clause in the same query. However, it does state that columns specified in the `SELECT` list must either be part of the `GROUP BY` list or be the target of an aggregate function when using `GROUP BY`."
+      ],
+      "latency_s": 4.7,
+      "rag_type": "lightrag",
+      "dominio": "Test_Negative_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Does the Linux kernel's sk_buff structure store the actual payload data directly within the structure itself?",
+      "ground_truth": "No. The sk_buff structure stores metadata and pointers to the packet data; the actual payload is stored in a separate memory buffer pointed to by sk_buff, not inline within the structure",
+      "answer": "No, the `sk_buff` structure itself does not store the actual payload data directly within it. Instead, it contains pointers that point to the location of the packet data. The `sk_buff` structure encapsulates network packet data along with essential metadata for its processing. The actual packet data is typically stored in a separate data block that is allocated dynamically. The `head` and `data` members of the `sk_buff` structure point to the beginning and current position of this data block, respectively. [1, 3]",
+      "contexts": [
+        "No, the `sk_buff` structure itself does not store the actual payload data directly within it. Instead, it contains pointers that point to the location of the packet data. The `sk_buff` structure encapsulates network packet data along with essential metadata for its processing. The actual packet data is typically stored in a separate data block that is allocated dynamically. The `head` and `data` members of the `sk_buff` structure point to the beginning and current position of this data block, respectively. [1, 3]"
+      ],
+      "latency_s": 5.07,
+      "rag_type": "lightrag",
+      "dominio": "Test_Negative_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Does R's optim() function guarantee finding the global optimum for non-convex objective functions?",
+      "ground_truth": "No. optim() uses local search methods like Nelder-Mead that are not guaranteed to find the global optimum for non-convex functions; metaheuristics like simulated annealing are needed for that",
+      "answer": "No, R's `optim()` function does not guarantee finding the global optimum for non-convex objective functions. Non-convex functions can have multiple local minima, and `optim()` may converge to a local minimum instead of the global one. Modern optimization algorithms are often used to tackle non-convex functions [1, 2].\n\n### References\n\n- [1] Paulo Cortez. Modern Optimization with R. Use R! Springer, 2014.\n- [2] Paulo Cortez. Modern Optimization with R. Use R! Springer, 2014.",
+      "contexts": [
+        "No, R's `optim()` function does not guarantee finding the global optimum for non-convex objective functions. Non-convex functions can have multiple local minima, and `optim()` may converge to a local minimum instead of the global one. Modern optimization algorithms are often used to tackle non-convex functions [1, 2].\n\n### References\n\n- [1] Paulo Cortez. Modern Optimization with R. Use R! Springer, 2014.\n- [2] Paulo Cortez. Modern Optimization with R. Use R! Springer, 2014."
+      ],
+      "latency_s": 4.76,
+      "rag_type": "lightrag",
+      "dominio": "Test_Negative_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Does the simply typed lambda calculus described by Dowek allow the definition of self-applying functions like (λx. x x)?",
+      "ground_truth": "No. In the simply typed lambda calculus, self-application (λx. x x) is not typeable because it would require x to have a type that is simultaneously A and A→B, which is impossible in a simple type system",
+      "answer": "The simply typed lambda calculus described by Dowek does not allow the definition of self-applying functions like `(λx. x x)`. This is because such a term would require assigning a type to the variable `x` that is the same as the type of the expression `x x`. If `x` has type `A`, then `x x` would be an application of a term of type `A` to another term of type `A`. For this application to be valid, `A` must be of the form `B -> C`, and the first `x` (the function) must have type `B -> C`. This leads to a contradiction where `A` must be both `B -> C` and `A` itself, which is not possible in a simply typed system.\n\nHowever, the text mentions that if polymorphic types are introduced, specifically the type `∀X (X -> X)`, then a term like `fun x -> x x` could be typed. This is achieved by assigning this polymorphic type to the variable `x`, allowing it to be used with any type. [1]",
+      "contexts": [
+        "The simply typed lambda calculus described by Dowek does not allow the definition of self-applying functions like `(λx. x x)`. This is because such a term would require assigning a type to the variable `x` that is the same as the type of the expression `x x`. If `x` has type `A`, then `x x` would be an application of a term of type `A` to another term of type `A`. For this application to be valid, `A` must be of the form `B -> C`, and the first `x` (the function) must have type `B -> C`. This leads to a contradiction where `A` must be both `B -> C` and `A` itself, which is not possible in a simply typed system.\n\nHowever, the text mentions that if polymorphic types are introduced, specifically the type `∀X (X -> X)`, then a term like `fun x -> x x` could be typed. This is achieved by assigning this polymorphic type to the variable `x`, allowing it to be used with any type. [1]"
+      ],
+      "latency_s": 4.8,
+      "rag_type": "lightrag",
+      "dominio": "Test_Negative_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Can Spark DataFrames natively enforce foreign key constraints between tables the way SQL Server does?",
+      "ground_truth": "No. Spark has no concept of foreign key constraints or referential integrity; it is a data processing engine, not a relational database management system",
+      "answer": "Spark DataFrames do not natively enforce foreign key constraints between tables in the same way that SQL Server does. SQL Server enforces these constraints at the database level, ensuring data integrity by preventing operations that would violate referential integrity.\n\nWhile Spark DataFrames can represent relational data and you can write code to check for referential integrity, Spark itself does not have built-in mechanisms to automatically enforce foreign key constraints during data operations like inserts or updates. You would typically need to implement custom logic or use external tools to achieve similar data integrity guarantees in Spark.",
+      "contexts": [
+        "Spark DataFrames do not natively enforce foreign key constraints between tables in the same way that SQL Server does. SQL Server enforces these constraints at the database level, ensuring data integrity by preventing operations that would violate referential integrity.\n\nWhile Spark DataFrames can represent relational data and you can write code to check for referential integrity, Spark itself does not have built-in mechanisms to automatically enforce foreign key constraints during data operations like inserts or updates. You would typically need to implement custom logic or use external tools to achieve similar data integrity guarantees in Spark."
+      ],
+      "latency_s": 4.37,
+      "rag_type": "lightrag",
+      "dominio": "Test_Negative_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Does Java's final keyword prevent a class's fields from being modified at runtime via reflection?",
+      "ground_truth": "No. Java reflection can access and modify final fields at runtime using Field.setAccessible(true), bypassing the final constraint enforced at compile time",
+      "answer": "I am sorry, but I do not have enough information to answer your question. The provided context discusses the `final` keyword in Java, its use in defining constants, and mentions that it can modify data members. However, it does not contain information about reflection or how `final` fields behave when accessed through reflection at runtime.",
+      "contexts": [
+        "I am sorry, but I do not have enough information to answer your question. The provided context discusses the `final` keyword in Java, its use in defining constants, and mentions that it can modify data members. However, it does not contain information about reflection or how `final` fields behave when accessed through reflection at runtime."
+      ],
+      "latency_s": 5.1,
+      "rag_type": "lightrag",
+      "dominio": "Test_Negative_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Does Chebyshev's inequality as described in Forsyth's book require the data to follow a normal distribution to be valid?",
+      "ground_truth": "No. Chebyshev's inequality is distribution-free and applies to any distribution with a finite mean and variance; it does not assume normality",
+      "answer": "No, Chebyshev's Inequality does not require the data to follow a normal distribution to be valid. It provides a bound on the probability of a random variable deviating from its mean for any probability distribution with a finite mean and variance. This makes it a broadly applicable mathematical result, useful for understanding the spread of a random variable without needing to know its specific probability distribution [1].",
+      "contexts": [
+        "No, Chebyshev's Inequality does not require the data to follow a normal distribution to be valid. It provides a bound on the probability of a random variable deviating from its mean for any probability distribution with a finite mean and variance. This makes it a broadly applicable mathematical result, useful for understanding the spread of a random variable without needing to know its specific probability distribution [1]."
+      ],
+      "latency_s": 4.45,
+      "rag_type": "lightrag",
+      "dominio": "Test_Negative_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Does the VBA book cover automating Microsoft Teams or SharePoint using VBA macros directly?",
+      "ground_truth": "No. The book covers automation of the classic Office 2013 desktop applications (Word, Excel, PowerPoint, Outlook, Access); Teams and modern SharePoint automation require different technologies such as Power Automate or the Microsoft Graph API",
+      "answer": "This book does not cover automating Microsoft Teams or SharePoint using VBA macros directly. The book focuses on using VBA to automate tasks within Microsoft Office applications such as Word, Excel, PowerPoint, Outlook, and Access. [1, 5, 6, 8]",
+      "contexts": [
+        "This book does not cover automating Microsoft Teams or SharePoint using VBA macros directly. The book focuses on using VBA to automate tasks within Microsoft Office applications such as Word, Excel, PowerPoint, Outlook, and Access. [1, 5, 6, 8]"
+      ],
+      "latency_s": 4.71,
+      "rag_type": "lightrag",
+      "dominio": "Test_Negative_01",
+      "titulo": "",
+      "error": ""
+    }
+  ],
+  "ragas_scores": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.7175,
+    "context_precision": 0.55,
+    "context_recall": 0.45
+  },
+  "avg_latency_s": 4.82,
+  "n_errors": 0
+}

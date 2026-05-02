@@ -1,0 +1,276 @@
+{
+  "rag_type": "lightrag",
+  "dominio": "Test_MultiHop_01",
+  "n_libros": 0,
+  "timestamp": "2026-05-02T11:09:42.145642",
+  "qa_results": [
+    {
+      "question": "Both the SQL Server book and the Linux Kernel Networking book deal with data at scale. What is the primary data unit used to represent a row in SQL Server, and what is the primary data unit used to represent a network packet in the Linux kernel?",
+      "ground_truth": "A row or record in SQL Server; sk_buff (socket buffer) in the Linux kernel",
+      "answer": "In SQL Server, a row is the primary data unit. Rows represent individual records within a database table. For network packets within the Linux kernel, the primary data unit is the `sk_buff` structure, which encapsulates network packet information.\n\n### References\n\n* [6] SQL Server Storage\n* [7] The Linux Network Stack",
+      "contexts": [
+        "In SQL Server, a row is the primary data unit. Rows represent individual records within a database table. For network packets within the Linux kernel, the primary data unit is the `sk_buff` structure, which encapsulates network packet information.\n\n### References\n\n* [6] SQL Server Storage\n* [7] The Linux Network Stack"
+      ],
+      "latency_s": 4.8,
+      "rag_type": "lightrag",
+      "dominio": "Test_MultiHop_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "The Spark MLlib book and the Modern Optimization With R book both cover metaheuristic techniques. Which specific algorithm appears in both books as an example of population-based optimization?",
+      "ground_truth": "Genetic algorithms",
+      "answer": "Particle swarm optimization is presented as a population-based optimization algorithm in both \"Machine Learning with Spark\" and \"Modern Optimization with R\". [2, 4]",
+      "contexts": [
+        "Particle swarm optimization is presented as a population-based optimization algorithm in both \"Machine Learning with Spark\" and \"Modern Optimization with R\". [2, 4]"
+      ],
+      "latency_s": 4.96,
+      "rag_type": "lightrag",
+      "dominio": "Test_MultiHop_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "The VBA book teaches automation of Microsoft Office applications. If a developer wanted to use Spark to process data exported from Excel using VBA, which Spark data abstraction would they use to load the resulting CSV file?",
+      "ground_truth": "A DataFrame (or Dataset) loaded via SparkSession",
+      "answer": "This document does not contain the answer to this question, so I cannot answer it.",
+      "contexts": [
+        "This document does not contain the answer to this question, so I cannot answer it."
+      ],
+      "latency_s": 4.9,
+      "rag_type": "lightrag",
+      "dominio": "Test_MultiHop_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "The Java book and the programming languages theory book both touch on type systems. What concept from lambda calculus theory in Dowek's book corresponds to Java's method overriding described in Streib's book?",
+      "ground_truth": "Dynamic dispatch, related to the substitution principle formalized as beta-reduction in lambda calculus",
+      "answer": "In Gilles Dowek's book, \"Introduction to the Theory of Programming Languages,\" the concept of method overriding in Java, as described by James T. Streib, does not have a direct, single-word equivalent from lambda calculus theory. However, the underlying principle of providing specific implementations for general definitions is touched upon in discussions related to **polymorphism** and **type systems**.\n\nWhile method overriding in Java allows a subclass to provide a specific implementation for a method inherited from its superclass, allowing objects to be treated as instances of their superclass or subclass, the lambda calculus theory discussed in Dowek's book focuses on defining the meaning and behavior of programming languages. Concepts like **type verification algorithms** and **typing relations** in PCF (Programming Computable Functions) with types are used to ensure that programs behave as expected and that specific types of data are handled correctly.\n\nThe ability to define functions that can be applied to different types of data or to have different behaviors based on context, which is a facet of polymorphism, is a key theme. In the context of lambda calculus and its extensions like PCF with types, this relates to how types constrain or define the behavior of functions and terms. Method overriding, in a broader sense, achieves a similar goal by allowing a general method signature to have specialized implementations depending on the object's type.",
+      "contexts": [
+        "In Gilles Dowek's book, \"Introduction to the Theory of Programming Languages,\" the concept of method overriding in Java, as described by James T. Streib, does not have a direct, single-word equivalent from lambda calculus theory. However, the underlying principle of providing specific implementations for general definitions is touched upon in discussions related to **polymorphism** and **type systems**.\n\nWhile method overriding in Java allows a subclass to provide a specific implementation for a method inherited from its superclass, allowing objects to be treated as instances of their superclass or subclass, the lambda calculus theory discussed in Dowek's book focuses on defining the meaning and behavior of programming languages. Concepts like **type verification algorithms** and **typing relations** in PCF (Programming Computable Functions) with types are used to ensure that programs behave as expected and that specific types of data are handled correctly.\n\nThe ability to define functions that can be applied to different types of data or to have different behaviors based on context, which is a facet of polymorphism, is a key theme. In the context of lambda calculus and its extensions like PCF with types, this relates to how types constrain or define the behavior of functions and terms. Method overriding, in a broader sense, achieves a similar goal by allowing a general method signature to have specialized implementations depending on the object's type."
+      ],
+      "latency_s": 5.4,
+      "rag_type": "lightrag",
+      "dominio": "Test_MultiHop_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Joe Celko emphasizes naming conventions in SQL. If the Linux kernel naming convention for network device iteration macros like for_each_netdev were applied to SQL, what anti-pattern would Celko likely criticize?",
+      "ground_truth": "Hungarian notation or tibbling — adding type prefixes to identifiers",
+      "answer": "If the Linux kernel's naming convention for network device iteration macros like `for_each_netdev` were applied to SQL, Joe Celko would likely criticize the anti-pattern of using **singular names for tables that represent sets of data**.\n\nCelko emphasizes that tables, sets, and other collections should be named with a **collective, class, or plural name**. He argues that using a singular name, like \"Employee,\" creates a mental image of a single, generic entity, whereas a plural name, like \"Employees\" or \"Personnel,\" better represents a collection of distinct entities. This aligns with his principle of naming data elements to reflect their nature, stating that tables are sets and not scalar values.\n\nApplying a macro naming convention like `for_each_netdev` to SQL could lead to structures where iteration implies a collection. If such a structure were named with a singular entity (e.g., `for_each_employee`), it would directly contradict Celko's advice on using plural or collective names for tables that represent multiple items.",
+      "contexts": [
+        "If the Linux kernel's naming convention for network device iteration macros like `for_each_netdev` were applied to SQL, Joe Celko would likely criticize the anti-pattern of using **singular names for tables that represent sets of data**.\n\nCelko emphasizes that tables, sets, and other collections should be named with a **collective, class, or plural name**. He argues that using a singular name, like \"Employee,\" creates a mental image of a single, generic entity, whereas a plural name, like \"Employees\" or \"Personnel,\" better represents a collection of distinct entities. This aligns with his principle of naming data elements to reflect their nature, stating that tables are sets and not scalar values.\n\nApplying a macro naming convention like `for_each_netdev` to SQL could lead to structures where iteration implies a collection. If such a structure were named with a singular entity (e.g., `for_each_employee`), it would directly contradict Celko's advice on using plural or collective names for tables that represent multiple items."
+      ],
+      "latency_s": 4.72,
+      "rag_type": "lightrag",
+      "dominio": "Test_MultiHop_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Both the regular expressions book and the programming languages theory book deal with formal grammars. What formal language class do regular expressions belong to according to the Chomsky hierarchy discussed in programming language theory?",
+      "ground_truth": "Type-3 or regular languages, the lowest level of the Chomsky hierarchy",
+      "answer": "Regular expressions belong to the class of regular languages. This field of study, which includes regular expressions, was worked on by Stephen Kleene. Regular expressions began to emerge in the 1940s as a way to describe regular languages. [1, 2, 3]",
+      "contexts": [
+        "Regular expressions belong to the class of regular languages. This field of study, which includes regular expressions, was worked on by Stephen Kleene. Regular expressions began to emerge in the 1940s as a way to describe regular languages. [1, 2, 3]"
+      ],
+      "latency_s": 4.37,
+      "rag_type": "lightrag",
+      "dominio": "Test_MultiHop_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "The statistics book covers probability distributions and the Spark book applies them to machine learning. Which probability distribution is foundational to the Naive Bayes classifier available in Spark MLlib?",
+      "ground_truth": "The multinomial or Bernoulli distribution (conditional probability)",
+      "answer": "The Naive Bayes classifier available in Spark MLlib is foundational to probability models. Specifically, it is derived from a probability model and uses Bayes' theorem. [reference_id: ]",
+      "contexts": [
+        "The Naive Bayes classifier available in Spark MLlib is foundational to probability models. Specifically, it is derived from a probability model and uses Bayes' theorem. [reference_id: ]"
+      ],
+      "latency_s": 4.26,
+      "rag_type": "lightrag",
+      "dominio": "Test_MultiHop_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "The SQL Server book and the statistics book both deal with aggregation. What SQL aggregate function directly computes the statistical concept of variance described by Forsyth?",
+      "ground_truth": "VAR() or VARIANCE()",
+      "answer": "The SQL aggregate function that directly computes the statistical concept of variance is `VAR`. This function calculates the variance of all values in an expression, ignoring NULL values. The `VARP` function is also available, which returns the variance for the population of all values in an expression. Both `VAR` and `VARP` support the `OVER` operator. [4, 7]",
+      "contexts": [
+        "The SQL aggregate function that directly computes the statistical concept of variance is `VAR`. This function calculates the variance of all values in an expression, ignoring NULL values. The `VARP` function is also available, which returns the variance for the population of all values in an expression. Both `VAR` and `VARP` support the `OVER` operator. [4, 7]"
+      ],
+      "latency_s": 4.78,
+      "rag_type": "lightrag",
+      "dominio": "Test_MultiHop_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Both the Linux Kernel and the Spark book operate on distributed or parallel data flows. What kernel networking concept is analogous to Spark's concept of data partitioning across nodes?",
+      "ground_truth": "Network packet routing across multiple network interfaces or NUMA nodes",
+      "answer": "The concept analogous to Spark's data partitioning across nodes in the context of the Linux Kernel is **Packet Traversal**.\n\nPacket traversal describes the path a data packet takes through the Linux Kernel Networking stack. Similar to how Spark partitions data to be processed in parallel across different nodes, the Linux Kernel Networking stack handles individual packets as they move through various layers and subsystems, facilitating the flow of data within a distributed environment.\n\n### References\n\n*   [Linux Kernel Networking Stack]",
+      "contexts": [
+        "The concept analogous to Spark's data partitioning across nodes in the context of the Linux Kernel is **Packet Traversal**.\n\nPacket traversal describes the path a data packet takes through the Linux Kernel Networking stack. Similar to how Spark partitions data to be processed in parallel across different nodes, the Linux Kernel Networking stack handles individual packets as they move through various layers and subsystems, facilitating the flow of data within a distributed environment.\n\n### References\n\n*   [Linux Kernel Networking Stack]"
+      ],
+      "latency_s": 5.25,
+      "rag_type": "lightrag",
+      "dominio": "Test_MultiHop_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "The regular expressions book and the SQL book both provide pattern-matching capabilities. What SQL operator uses a simplified form of pattern matching analogous to regular expressions?",
+      "ground_truth": "LIKE operator",
+      "answer": "The SQL operator that uses a simplified form of pattern matching analogous to regular expressions is the `LIKE` operator. It is used in `WHERE` clauses for pattern matching with wildcard characters like '%' and '_' (reference_id: \"\").",
+      "contexts": [
+        "The SQL operator that uses a simplified form of pattern matching analogous to regular expressions is the `LIKE` operator. It is used in `WHERE` clauses for pattern matching with wildcard characters like '%' and '_' (reference_id: \"\")."
+      ],
+      "latency_s": 4.27,
+      "rag_type": "lightrag",
+      "dominio": "Test_MultiHop_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "The Java book covers object-oriented inheritance and the VBA book covers object models. What object in the Excel object model, described in the VBA book, would a Java developer recognize as equivalent to the root object in a class hierarchy?",
+      "ground_truth": "The Application object, equivalent to a root superclass",
+      "answer": "A Java developer would recognize the **Application object** in the Excel object model as equivalent to the root object in a class hierarchy. This object represents the entire Excel application and serves as the primary entry point for interacting with it programmatically. It typically sits at the apex of the Excel object hierarchy, similar to how a root object sits at the top of a class hierarchy in Java.",
+      "contexts": [
+        "A Java developer would recognize the **Application object** in the Excel object model as equivalent to the root object in a class hierarchy. This object represents the entire Excel application and serves as the primary entry point for interacting with it programmatically. It typically sits at the apex of the Excel object hierarchy, similar to how a root object sits at the top of a class hierarchy in Java."
+      ],
+      "latency_s": 5.36,
+      "rag_type": "lightrag",
+      "dominio": "Test_MultiHop_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "The optimization book uses the R function optim() and the Spark book uses MLlib. If a data scientist wanted to implement Simulated Annealing from the R book as a Spark job, which Spark abstraction would be most appropriate for distributing candidate solution evaluations?",
+      "ground_truth": "RDD or DataFrame with parallel map transformations",
+      "answer": "If a data scientist wants to implement Simulated Annealing from the R book as a Spark job, the most appropriate Spark abstraction for distributing candidate solution evaluations would be **Resilient Distributed Datasets (RDDs)**.\n\nHere's why:\n\n*   **RDDs** are the core data structure in Spark for distributed data processing. They represent a collection of items distributed across a cluster that can be operated on in parallel.\n*   In the context of Simulated Annealing, each candidate solution's evaluation can be seen as an independent task. RDDs allow you to parallelize these evaluations by applying functions to each element of the RDD across the Spark cluster.\n*   While Spark offers other abstractions like DStreams for stream processing, the core task of evaluating individual candidate solutions in Simulated Annealing aligns well with the batch processing capabilities and parallel transformation functions (like `map`) available with RDDs.\n\nWhile MLlib is mentioned in the context of Spark, it's a library for machine learning algorithms. For distributing a custom optimization algorithm like Simulated Annealing, RDDs provide the fundamental building blocks for parallel computation.",
+      "contexts": [
+        "If a data scientist wants to implement Simulated Annealing from the R book as a Spark job, the most appropriate Spark abstraction for distributing candidate solution evaluations would be **Resilient Distributed Datasets (RDDs)**.\n\nHere's why:\n\n*   **RDDs** are the core data structure in Spark for distributed data processing. They represent a collection of items distributed across a cluster that can be operated on in parallel.\n*   In the context of Simulated Annealing, each candidate solution's evaluation can be seen as an independent task. RDDs allow you to parallelize these evaluations by applying functions to each element of the RDD across the Spark cluster.\n*   While Spark offers other abstractions like DStreams for stream processing, the core task of evaluating individual candidate solutions in Simulated Annealing aligns well with the batch processing capabilities and parallel transformation functions (like `map`) available with RDDs.\n\nWhile MLlib is mentioned in the context of Spark, it's a library for machine learning algorithms. For distributing a custom optimization algorithm like Simulated Annealing, RDDs provide the fundamental building blocks for parallel computation."
+      ],
+      "latency_s": 6.37,
+      "rag_type": "lightrag",
+      "dominio": "Test_MultiHop_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Dowek's programming languages book discusses type checking and Streib's Java book covers the final keyword. What type-theoretic property does marking a Java class as final enforce, in terms of the substitution principle?",
+      "ground_truth": "It prevents subtype polymorphism for that class, violating open extensibility but enforcing a closed type",
+      "answer": "The provided context does not contain information about the type-theoretic property enforced by marking a Java class as `final` in terms of the substitution principle. Therefore, I cannot answer your question.",
+      "contexts": [
+        "The provided context does not contain information about the type-theoretic property enforced by marking a Java class as `final` in terms of the substitution principle. Therefore, I cannot answer your question."
+      ],
+      "latency_s": 5.18,
+      "rag_type": "lightrag",
+      "dominio": "Test_MultiHop_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "The statistics book covers Chebyshev's inequality and the machine learning book uses model evaluation metrics. How does Chebyshev's inequality relate to the concept of model variance in the bias-variance tradeoff discussed in machine learning?",
+      "ground_truth": "Chebyshev's inequality provides a probabilistic upper bound on deviation from the mean, directly formalizing the concept of high variance in model predictions",
+      "answer": "Chebyshev's Inequality is a fundamental theorem in probability theory that provides a mathematical bound on the probability of a random variable deviating from its mean or expected value. It is useful for understanding the spread of a random variable without needing to know its specific probability distribution. In the context of machine learning, this relates to the concept of variance within the bias-variance tradeoff.\n\nVariance in machine learning, particularly in the bias-variance tradeoff, refers to the amount by which a model's prediction would change if it were trained on a different training dataset. A model with high variance is sensitive to the training data and can lead to overfitting, where the model performs well on the training data but poorly on unseen data. Chebyshev's Inequality can provide a theoretical bound on how likely it is for a model's predictions to deviate significantly from its expected value, which is analogous to understanding the potential spread (variance) of a model's performance. While Chebyshev's Inequality itself doesn't directly calculate model variance, its principle of bounding deviations from the mean is conceptually related to understanding the potential spread or variability in model predictions or performance metrics.",
+      "contexts": [
+        "Chebyshev's Inequality is a fundamental theorem in probability theory that provides a mathematical bound on the probability of a random variable deviating from its mean or expected value. It is useful for understanding the spread of a random variable without needing to know its specific probability distribution. In the context of machine learning, this relates to the concept of variance within the bias-variance tradeoff.\n\nVariance in machine learning, particularly in the bias-variance tradeoff, refers to the amount by which a model's prediction would change if it were trained on a different training dataset. A model with high variance is sensitive to the training data and can lead to overfitting, where the model performs well on the training data but poorly on unseen data. Chebyshev's Inequality can provide a theoretical bound on how likely it is for a model's predictions to deviate significantly from its expected value, which is analogous to understanding the potential spread (variance) of a model's performance. While Chebyshev's Inequality itself doesn't directly calculate model variance, its principle of bounding deviations from the mean is conceptually related to understanding the potential spread or variability in model predictions or performance metrics."
+      ],
+      "latency_s": 5.19,
+      "rag_type": "lightrag",
+      "dominio": "Test_MultiHop_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Both Celko's SQL book and the SQL Server book discuss query performance. What SQL Server feature described by Vieira enforces the style rule Celko advocates of avoiding implicit column ordering?",
+      "ground_truth": "Explicit column lists in SELECT statements, enforced by good practice and partially by SQL Server's strict mode or stored procedure linting",
+      "answer": "The SQL Server feature described by Robert Vieira that enforces the style rule of avoiding implicit column ordering, as advocated by Joe Celko, is **VIEWs**. Specifically, the documentation mentions that VIEWs can be used to \"rename tables and/or columns\" and that \"data as 'SELECT b, c, a FROM TableX' because things are located by name, not position.\" This implies that when a VIEW is used, the column order is explicitly defined by name within the VIEW definition, rather than relying on the implicit order of columns in the underlying table.\n\nThis aligns with Celko's advocacy for explicit naming and avoidance of implicit reliance on column order, which can lead to fragile code if the underlying table structure changes.\n\n### References\n\n* [7] Professional Microsoft SQL Server 2008 Programming\n* [4] Joe Celko's SQL Programming Style",
+      "contexts": [
+        "The SQL Server feature described by Robert Vieira that enforces the style rule of avoiding implicit column ordering, as advocated by Joe Celko, is **VIEWs**. Specifically, the documentation mentions that VIEWs can be used to \"rename tables and/or columns\" and that \"data as 'SELECT b, c, a FROM TableX' because things are located by name, not position.\" This implies that when a VIEW is used, the column order is explicitly defined by name within the VIEW definition, rather than relying on the implicit order of columns in the underlying table.\n\nThis aligns with Celko's advocacy for explicit naming and avoidance of implicit reliance on column order, which can lead to fragile code if the underlying table structure changes.\n\n### References\n\n* [7] Professional Microsoft SQL Server 2008 Programming\n* [4] Joe Celko's SQL Programming Style"
+      ],
+      "latency_s": 4.87,
+      "rag_type": "lightrag",
+      "dominio": "Test_MultiHop_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "The regular expressions book covers greedy vs lazy quantifiers and the programming languages theory book covers normal forms. What property of a regex engine's greedy matching strategy is analogous to the concept of outermost reduction strategy in lambda calculus?",
+      "ground_truth": "Both apply the reduction or match at the outermost or leftmost position first, corresponding to normal-order reduction",
+      "answer": "The greedy matching strategy in regex engines is analogous to the outermost reduction strategy in lambda calculus because both attempt to match or reduce from the outside in. [1]",
+      "contexts": [
+        "The greedy matching strategy in regex engines is analogous to the outermost reduction strategy in lambda calculus because both attempt to match or reduce from the outside in. [1]"
+      ],
+      "latency_s": 4.43,
+      "rag_type": "lightrag",
+      "dominio": "Test_MultiHop_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "The Linux Kernel book discusses the sk_buff structure and the SQL Server book discusses buffer pool management. What common computer science concept underlies both the kernel's socket buffer and SQL Server's buffer pool?",
+      "ground_truth": "Memory buffering to decouple I/O speeds — caching data in RAM to minimize latency between producers and consumers",
+      "answer": "The common computer science concept that underlies both the Linux kernel's socket buffer (sk_buff) and SQL Server's buffer pool management is **memory management**.\n\nThe `sk_buff` structure is a fundamental data structure in the Linux kernel for handling network packets, and its allocation and management fall under memory management. Similarly, SQL Server's buffer pool is a region of memory used to cache data pages for efficient access, and its management is a critical aspect of memory management within the database system. Both concepts involve reserving, organizing, and accessing memory for specific operational needs.",
+      "contexts": [
+        "The common computer science concept that underlies both the Linux kernel's socket buffer (sk_buff) and SQL Server's buffer pool management is **memory management**.\n\nThe `sk_buff` structure is a fundamental data structure in the Linux kernel for handling network packets, and its allocation and management fall under memory management. Similarly, SQL Server's buffer pool is a region of memory used to cache data pages for efficient access, and its management is a critical aspect of memory management within the database system. Both concepts involve reserving, organizing, and accessing memory for specific operational needs."
+      ],
+      "latency_s": 5.21,
+      "rag_type": "lightrag",
+      "dominio": "Test_MultiHop_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "The VBA book covers error handling and the Java book covers exception handling. What structural difference exists between VBA's On Error GoTo mechanism and Java's try-catch-finally block?",
+      "ground_truth": "VBA uses unstructured goto-based error handling while Java uses structured block-based exception handling with typed exceptions",
+      "answer": "In VBA, the `On Error GoTo` statement is used to enable error trapping. When a runtime error occurs, execution branches to a specified label, typically named `ErrorHandler`, within the same procedure. This `ErrorHandler` section contains the code that will manage and respond to the error. To prevent the error handler from running when no error has occurred, an `Exit Sub` statement (or `Exit Function` for functions) is placed just before the error handler code, or a `GoTo` statement can be used to skip over the error-handling code to a label located after it. [1, 13]\n\nIn contrast, Java's `try-catch-finally` block provides a more structured approach to exception handling. Code that might throw an exception is placed within the `try` block. If an exception occurs, control is passed to a `catch` block, which is specifically designed to handle that type of exception. A `finally` block can also be included, which contains code that will execute regardless of whether an exception was thrown or caught. This structure allows for separate handling of potential errors and ensures that cleanup code in the `finally` block is always executed. [5, 10]\n\nA key structural difference is that VBA's `On Error GoTo` relies on line labels and branching to transfer control to an error-handling section, which is part of the main procedure's flow. Java's `try-catch-finally` uses distinct blocks of code to delineate the code that might cause an error, the code that handles the error, and code that executes regardless of error occurrence. [1, 5, 10]\n\n### References\n\n- [1] Chapter 17: Debugging Your Code and Handling Errors\n- [5] B.2 Handling an Exception\n- [10] B.4 Checked and Unchecked Exceptions",
+      "contexts": [
+        "In VBA, the `On Error GoTo` statement is used to enable error trapping. When a runtime error occurs, execution branches to a specified label, typically named `ErrorHandler`, within the same procedure. This `ErrorHandler` section contains the code that will manage and respond to the error. To prevent the error handler from running when no error has occurred, an `Exit Sub` statement (or `Exit Function` for functions) is placed just before the error handler code, or a `GoTo` statement can be used to skip over the error-handling code to a label located after it. [1, 13]\n\nIn contrast, Java's `try-catch-finally` block provides a more structured approach to exception handling. Code that might throw an exception is placed within the `try` block. If an exception occurs, control is passed to a `catch` block, which is specifically designed to handle that type of exception. A `finally` block can also be included, which contains code that will execute regardless of whether an exception was thrown or caught. This structure allows for separate handling of potential errors and ensures that cleanup code in the `finally` block is always executed. [5, 10]\n\nA key structural difference is that VBA's `On Error GoTo` relies on line labels and branching to transfer control to an error-handling section, which is part of the main procedure's flow. Java's `try-catch-finally` uses distinct blocks of code to delineate the code that might cause an error, the code that handles the error, and code that executes regardless of error occurrence. [1, 5, 10]\n\n### References\n\n- [1] Chapter 17: Debugging Your Code and Handling Errors\n- [5] B.2 Handling an Exception\n- [10] B.4 Checked and Unchecked Exceptions"
+      ],
+      "latency_s": 5.53,
+      "rag_type": "lightrag",
+      "dominio": "Test_MultiHop_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "The optimization book covers the Traveling Salesman Problem and the statistics book covers combinatorics. What combinatorial formula gives the exact number of possible tours for the TSP with n cities, making exact solutions infeasible?",
+      "ground_truth": "(n-1)! / 2",
+      "answer": "The number of distinct permutations of N items is N!, which represents the number of ways to arrange N items where the order is important. This formula, N!, gives the exact number of possible tours for the Traveling Salesman Problem (TSP) with n cities, making exact solutions infeasible [Chunk 1].",
+      "contexts": [
+        "The number of distinct permutations of N items is N!, which represents the number of ways to arrange N items where the order is important. This formula, N!, gives the exact number of possible tours for the Traveling Salesman Problem (TSP) with n cities, making exact solutions infeasible [Chunk 1]."
+      ],
+      "latency_s": 5.81,
+      "rag_type": "lightrag",
+      "dominio": "Test_MultiHop_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Both the Spark book and the Linux Kernel book deal with parallel execution. What Linux kernel mechanism for deferring work asynchronously is conceptually similar to Spark's lazy evaluation of transformations?",
+      "ground_truth": "Workqueues or tasklets, which defer processing outside the interrupt context similarly to how Spark defers computation until an action is called",
+      "answer": "The Linux kernel mechanism for deferring work asynchronously that is conceptually similar to Spark's lazy evaluation of transformations is `neigh_periodic_work()`. This method acts as an asynchronous garbage collector handler.\n\nSpark transformations are lazy, meaning they don't trigger immediate computation but are deferred until an action is called. This allows Spark to optimize execution by performing operations in parallel on the cluster when an action finally initiates the computation. Similarly, `neigh_periodic_work()` handles deferred asynchronous tasks in the Linux kernel.",
+      "contexts": [
+        "The Linux kernel mechanism for deferring work asynchronously that is conceptually similar to Spark's lazy evaluation of transformations is `neigh_periodic_work()`. This method acts as an asynchronous garbage collector handler.\n\nSpark transformations are lazy, meaning they don't trigger immediate computation but are deferred until an action is called. This allows Spark to optimize execution by performing operations in parallel on the cluster when an action finally initiates the computation. Similarly, `neigh_periodic_work()` handles deferred asynchronous tasks in the Linux kernel."
+      ],
+      "latency_s": 4.21,
+      "rag_type": "lightrag",
+      "dominio": "Test_MultiHop_01",
+      "titulo": "",
+      "error": ""
+    }
+  ],
+  "ragas_scores": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.7817,
+    "context_precision": 0.45,
+    "context_recall": 0.5
+  },
+  "avg_latency_s": 4.99,
+  "n_errors": 0
+}
