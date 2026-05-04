@@ -58,3 +58,33 @@ async def query_msgraphrag_local(rag, question: str) -> tuple[str, list[str]]:
 
 async def query_msgraphrag_global(rag, question: str) -> tuple[str, list[str]]:
     return await rag.global_search(question)
+
+# Añade esto a src/evaluation/query_adapters.py
+
+async def query_literag(engine, question: str) -> tuple[str, list[str]]:
+    """
+    Adapter para LiteRAG corregido.
+    Extrae la respuesta y los contextos para RAGAS.
+    """
+    # Ejecutamos la consulta
+    result = await engine.aquery(question, expand_query=True)
+    
+    if not result.success:
+        raise Exception(f"LiteRAG Error: {result.error}")
+    
+    # 1. Intentamos obtener la lista de entidades (si el objeto las expone)
+    # En LiteRAG, 'entities' suele ser la lista, mientras que 'entities_in_context' es el int.
+    if hasattr(result, 'entities') and isinstance(result.entities, list):
+        contexts = [f"Entity: {e.name}. Description: {e.description}" for e in result.entities]
+    
+    # 2. Si no hay lista de entidades, usamos el contexto bruto (string) que LiteRAG
+    # suele guardar en result.context o result.formatted_context
+    elif hasattr(result, 'context') and result.context:
+        # Ragas espera una lista de strings, así que metemos el bloque de texto en una lista
+        contexts = [str(result.context)]
+    
+    else:
+        # Fallback por si no encontramos nada
+        contexts = ["Context information not explicitly exposed by the engine."]
+        
+    return result.answer, contexts

@@ -7,7 +7,7 @@ Dataclasses que representan los resultados de un experimento RAG.
 from dataclasses import dataclass, field
 from typing import Literal
 
-RAGType = Literal["traditional", "lightrag", "llamaindex"]
+RAGType = Literal["traditional", "lightrag", "llamaindex", "literag"]
 
 
 @dataclass

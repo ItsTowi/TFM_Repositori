@@ -1,0 +1,82 @@
+[
+  {
+    "question": "Which of the 10 books deals primarily with low-level operating system internals rather than application-level programming?",
+    "answer": "Linux Kernel Networking by Rami Rosen"
+  },
+  {
+    "question": "How many of the 10 books are focused specifically on a Microsoft technology or product?",
+    "answer": "Three: Mastering VBA for Microsoft Office 2013, Professional Microsoft SQL Server 2008 Programming, and Joe Celko's SQL Programming Style"
+  },
+  {
+    "question": "Which books in the collection target an undergraduate or introductory academic audience?",
+    "answer": "Guide to Java, Introduction to the Theory of Programming Languages, and Probability and Statistics for Computer Science"
+  },
+  {
+    "question": "Which book in the collection has the most questions associated with it in the UltraDomain dataset?",
+    "answer": "Mastering VBA for Microsoft Office 2013 with 15 questions"
+  },
+  {
+    "question": "Which two books in the collection share a focus on database query languages?",
+    "answer": "Joe Celko's SQL Programming Style and Professional Microsoft SQL Server 2008 Programming"
+  },
+  {
+    "question": "What is the common programming paradigm shared by the Java and VBA books in the collection?",
+    "answer": "Object-oriented programming"
+  },
+  {
+    "question": "Which book in the collection is most focused on mathematical theory rather than practical programming?",
+    "answer": "Introduction to the Theory of Programming Languages by Gilles Dowek"
+  },
+  {
+    "question": "Which books in the collection use R as their primary programming language?",
+    "answer": "Modern Optimization With R by Paulo Cortez"
+  },
+  {
+    "question": "Which book in the collection deals with distributed computing and big data processing?",
+    "answer": "Machine Learning With Spark by Nick Pentreath"
+  },
+  {
+    "question": "What mathematical discipline forms the theoretical foundation shared by both the statistics book and the machine learning book?",
+    "answer": "Probability theory"
+  },
+  {
+    "question": "Which books in the collection would be most relevant for a software engineer working on network infrastructure?",
+    "answer": "Linux Kernel Networking and Professional Microsoft SQL Server 2008 Programming"
+  },
+  {
+    "question": "How many books in the collection are published as part of an academic or university-oriented series?",
+    "answer": "Three: Introduction to the Theory of Programming Languages, Probability and Statistics for Computer Science, and Guide to Java"
+  },
+  {
+    "question": "Which book in the collection is most focused on code style and software craftsmanship rather than language features?",
+    "answer": "Joe Celko's SQL Programming Style"
+  },
+  {
+    "question": "Which books in the collection cover metaprogramming or scripting to automate other software?",
+    "answer": "Mastering VBA for Microsoft Office 2013 and Introducing Regular Expressions"
+  },
+  {
+    "question": "Which author in the collection has also written a companion beginner-level book referenced within the text?",
+    "answer": "James T. Streib, who references a companion Beginning Java book"
+  },
+  {
+    "question": "Which books in the collection explicitly target practitioners rather than students as their primary audience?",
+    "answer": "Joe Celko's SQL Programming Style, Professional Microsoft SQL Server 2008 Programming, and Linux Kernel Networking"
+  },
+  {
+    "question": "What is the general programming language category shared by the largest number of books in the collection?",
+    "answer": "Imperative and object-oriented languages (Java, VBA, SQL, R)"
+  },
+  {
+    "question": "Which book in the collection most directly connects formal language theory with practical compiler construction?",
+    "answer": "Introduction to the Theory of Programming Languages by Gilles Dowek"
+  },
+  {
+    "question": "Which two books in the collection focus on optimization, whether in queries or algorithms?",
+    "answer": "Modern Optimization With R and Joe Celko's SQL Programming Style"
+  },
+  {
+    "question": "What is the predominant application domain of the machine learning book in this collection?",
+    "answer": "Large-scale distributed data processing using the Apache Spark framework"
+  }
+]

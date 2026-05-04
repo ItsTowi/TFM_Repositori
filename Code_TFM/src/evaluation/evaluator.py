@@ -7,7 +7,7 @@ from dataclasses import asdict
 from datetime import datetime
 
 from .results import QAResult, ExperimentResult, RAGType
-from .query_adapters import query_traditional, query_lightrag, query_llamaindex, query_advanced, query_msgraphrag_global, query_msgraphrag_local
+from .query_adapters import query_traditional, query_lightrag, query_llamaindex, query_advanced, query_msgraphrag_global, query_msgraphrag_local, query_literag
 from .metrics import build_ragas_wrappers, compute_ragas_scores
 
 
@@ -37,6 +37,8 @@ class RAGEvaluator:
             return await query_msgraphrag_local(self.rag, question)
         elif self.rag_type == "msgraphrag_global":
             return await query_msgraphrag_global(self.rag, question)
+        elif self.rag_type == "literag":
+            return await query_literag(self.rag, question)
         else:
             raise ValueError(f"rag_type desconocido: {self.rag_type}")
 

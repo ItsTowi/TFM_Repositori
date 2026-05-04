@@ -1,0 +1,82 @@
+[
+  {
+    "question": "Does the Linux Kernel Networking book by Rami Rosen cover the implementation of HTTP/2 protocol in the kernel?",
+    "answer": "No. The book focuses on the kernel networking stack at the transport and network layers (TCP/IP, sk_buff, netfilter), not application-layer protocols like HTTP/2"
+  },
+  {
+    "question": "Does Joe Celko's SQL Programming Style book provide a complete reference for all SQL Server 2008 stored procedure syntax?",
+    "answer": "No. Celko's book focuses on style, naming conventions, and design philosophy applicable to standard SQL, not SQL Server-specific syntax or stored procedure reference"
+  },
+  {
+    "question": "Does the Modern Optimization With R book cover deep learning optimization algorithms such as Adam or RMSProp?",
+    "answer": "No. The book covers classical metaheuristics such as simulated annealing, genetic algorithms, and particle swarm optimization, not gradient-based deep learning optimizers"
+  },
+  {
+    "question": "Is the ALS algorithm used by Spark MLlib for collaborative filtering a supervised learning method?",
+    "answer": "No. ALS (Alternating Least Squares) for collaborative filtering is an unsupervised or semi-supervised matrix factorization technique, not a supervised classification or regression method"
+  },
+  {
+    "question": "Does the Introduction to the Theory of Programming Languages book provide a practical guide to building a production compiler?",
+    "answer": "No. The book is a theoretical text focused on lambda calculus, type systems, and formal semantics, not a practical compiler construction guide"
+  },
+  {
+    "question": "Does the Probability and Statistics for Computer Science book by Forsyth include practical exercises on implementing statistical models in Python?",
+    "answer": "No. The book focuses on mathematical theory and derivations of probability and statistics concepts, without practical Python or programming implementations"
+  },
+  {
+    "question": "Can regular expressions as described in Fitzgerald's book parse arbitrarily nested HTML structures reliably?",
+    "answer": "No. Regular expressions can only recognize regular languages and cannot correctly parse arbitrarily nested or recursive structures like HTML; a proper parser is required"
+  },
+  {
+    "question": "Does the Guide to Java book by Streib cover Java concurrency features such as the Fork/Join framework or CompletableFuture?",
+    "answer": "No. The book is an introductory text focused on core OOP fundamentals — it does not cover advanced concurrency APIs introduced in Java 7 and 8"
+  },
+  {
+    "question": "Does Mastering VBA for Microsoft Office 2013 cover developing Office Add-ins using JavaScript and the modern Office Add-in model?",
+    "answer": "No. The book is exclusively about VBA (Visual Basic for Applications) macro development within Office 2013, not the modern JavaScript-based Office Add-in framework"
+  },
+  {
+    "question": "Does Professional Microsoft SQL Server 2008 Programming by Vieira cover the in-memory OLTP (Hekaton) engine introduced in later SQL Server versions?",
+    "answer": "No. In-memory OLTP (Hekaton) was introduced in SQL Server 2014, well after the 2008 version covered by this book"
+  },
+  {
+    "question": "Is lambda calculus as described by Dowek Turing-complete without the addition of a fixed-point combinator?",
+    "answer": "No. The pure untyped lambda calculus requires a fixed-point combinator such as the Y combinator to express general recursion; without it, recursive definitions cannot be encoded"
+  },
+  {
+    "question": "Does the Machine Learning With Spark book cover reinforcement learning algorithms?",
+    "answer": "No. The book focuses on supervised and unsupervised learning using Spark MLlib; reinforcement learning is not covered"
+  },
+  {
+    "question": "Does SQL's standard GROUP BY clause allow referencing a column alias defined in the SELECT clause in the same query?",
+    "answer": "No. In standard SQL and SQL Server, column aliases defined in SELECT cannot be referenced in GROUP BY because SELECT is logically evaluated after GROUP BY"
+  },
+  {
+    "question": "Does the Linux kernel's sk_buff structure store the actual payload data directly within the structure itself?",
+    "answer": "No. The sk_buff structure stores metadata and pointers to the packet data; the actual payload is stored in a separate memory buffer pointed to by sk_buff, not inline within the structure"
+  },
+  {
+    "question": "Does R's optim() function guarantee finding the global optimum for non-convex objective functions?",
+    "answer": "No. optim() uses local search methods like Nelder-Mead that are not guaranteed to find the global optimum for non-convex functions; metaheuristics like simulated annealing are needed for that"
+  },
+  {
+    "question": "Does the simply typed lambda calculus described by Dowek allow the definition of self-applying functions like (λx. x x)?",
+    "answer": "No. In the simply typed lambda calculus, self-application (λx. x x) is not typeable because it would require x to have a type that is simultaneously A and A→B, which is impossible in a simple type system"
+  },
+  {
+    "question": "Can Spark DataFrames natively enforce foreign key constraints between tables the way SQL Server does?",
+    "answer": "No. Spark has no concept of foreign key constraints or referential integrity; it is a data processing engine, not a relational database management system"
+  },
+  {
+    "question": "Does Java's final keyword prevent a class's fields from being modified at runtime via reflection?",
+    "answer": "No. Java reflection can access and modify final fields at runtime using Field.setAccessible(true), bypassing the final constraint enforced at compile time"
+  },
+  {
+    "question": "Does Chebyshev's inequality as described in Forsyth's book require the data to follow a normal distribution to be valid?",
+    "answer": "No. Chebyshev's inequality is distribution-free and applies to any distribution with a finite mean and variance; it does not assume normality"
+  },
+  {
+    "question": "Does the VBA book cover automating Microsoft Teams or SharePoint using VBA macros directly?",
+    "answer": "No. The book covers automation of the classic Office 2013 desktop applications (Word, Excel, PowerPoint, Outlook, Access); Teams and modern SharePoint automation require different technologies such as Power Automate or the Microsoft Graph API"
+  }
+]
