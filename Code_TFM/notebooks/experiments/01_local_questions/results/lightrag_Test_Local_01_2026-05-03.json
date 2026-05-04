@@ -1,0 +1,276 @@
+{
+  "rag_type": "lightrag",
+  "dominio": "Test_Local_01",
+  "n_libros": 0,
+  "timestamp": "2026-05-03T15:35:13.404202",
+  "qa_results": [
+    {
+      "question": "Which VBA keyword is used to declare a constant instead of a variable?",
+      "ground_truth": "Const",
+      "answer": "The `Const` statement is used to declare constants in VBA, which are named items that retain a fixed value during program execution, unlike variables whose values can change. You can also use the `Final` keyword to define a constant rather than a variable. To declare user-defined constants, you use the `Const` statement. For example, `conVenue` is declared as a String data type and assigned the value \"Davies Hall,\" and `conDate` is declared as a Date data type and assigned the date December 31, 2013.\n\nYou can specify the scope of a constant using `Public` or `Private` keywords. A `Private` constant is available only to procedures within the module where it's declared, while a `Public` constant is available to all procedures in all modules within the project.\n\n### References\n\n* [1] Declaring Your Own Constants\n* [2] Choosing the Scope and Lifetime for Your Constants\n* [3] Working with Constants\n* [4] Declaration of a Variable",
+      "contexts": [
+        "The `Const` statement is used to declare constants in VBA, which are named items that retain a fixed value during program execution, unlike variables whose values can change. You can also use the `Final` keyword to define a constant rather than a variable. To declare user-defined constants, you use the `Const` statement. For example, `conVenue` is declared as a String data type and assigned the value \"Davies Hall,\" and `conDate` is declared as a Date data type and assigned the date December 31, 2013.\n\nYou can specify the scope of a constant using `Public` or `Private` keywords. A `Private` constant is available only to procedures within the module where it's declared, while a `Public` constant is available to all procedures in all modules within the project.\n\n### References\n\n* [1] Declaring Your Own Constants\n* [2] Choosing the Scope and Lifetime for Your Constants\n* [3] Working with Constants\n* [4] Declaration of a Variable"
+      ],
+      "latency_s": 6.45,
+      "rag_type": "lightrag",
+      "dominio": "Test_Local_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "What is the name of the root object in the Excel object model hierarchy?",
+      "ground_truth": "Application",
+      "answer": "The root object in the Excel object model hierarchy is the **Application** object. This object represents the running instance of Microsoft Excel itself and serves as the primary entry point for interacting with the application programmatically. It contains most of the application's options and settings and provides access to other objects within Excel. [1]",
+      "contexts": [
+        "The root object in the Excel object model hierarchy is the **Application** object. This object represents the running instance of Microsoft Excel itself and serves as the primary entry point for interacting with the application programmatically. It contains most of the application's options and settings and provides access to other objects within Excel. [1]"
+      ],
+      "latency_s": 5.52,
+      "rag_type": "lightrag",
+      "dominio": "Test_Local_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "What is the expected value of the squared deviation from the mean called in computer science statistics?",
+      "ground_truth": "Variance",
+      "answer": "The expected value of the squared deviation from the mean is called variance. Variance quantifies the spread or dispersion of data points around the mean and is a statistical measure computed from the data. [1, 3, 4]",
+      "contexts": [
+        "The expected value of the squared deviation from the mean is called variance. Variance quantifies the spread or dispersion of data points around the mean and is a statistical measure computed from the data. [1, 3, 4]"
+      ],
+      "latency_s": 5.32,
+      "rag_type": "lightrag",
+      "dominio": "Test_Local_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Which mathematical inequality provides an upper bound for the probability of a random variable deviating from its mean?",
+      "ground_truth": "Chebyshev's inequality",
+      "answer": "Chebyshev's Inequality provides a mathematical bound on the probability of a random variable deviating from its mean or expected value. It states that for any probability distribution with a finite mean and variance, the probability that a random variable will deviate from its mean by more than a certain amount is bounded. This bound is expressed as an upper bound on the probability of such a deviation. Specifically, it can be written as:\n\n$P(|X - E[X]| \\geq a) \\leq \\frac{\\mathsf{var}[X]}{a^2}$\n\nwhere $X$ is the random variable, $E[X]$ is its expected value (mean), $\\mathsf{var}[X]$ is its variance, and $a$ is a positive value representing the deviation from the mean.\n\nThis inequality can also be expressed in terms of the standard deviation ($\\sigma$) by substituting $a = k\\sigma$, which yields:\n\n$P(|X - E[X]| \\geq k\\sigma) \\leq \\frac{1}{k^2}$\n\nThis form indicates that the probability of a random variable deviating from its mean by $k$ or more standard deviations is bounded by $1/k^2$. [1, 3]",
+      "contexts": [
+        "Chebyshev's Inequality provides a mathematical bound on the probability of a random variable deviating from its mean or expected value. It states that for any probability distribution with a finite mean and variance, the probability that a random variable will deviate from its mean by more than a certain amount is bounded. This bound is expressed as an upper bound on the probability of such a deviation. Specifically, it can be written as:\n\n$P(|X - E[X]| \\geq a) \\leq \\frac{\\mathsf{var}[X]}{a^2}$\n\nwhere $X$ is the random variable, $E[X]$ is its expected value (mean), $\\mathsf{var}[X]$ is its variance, and $a$ is a positive value representing the deviation from the mean.\n\nThis inequality can also be expressed in terms of the standard deviation ($\\sigma$) by substituting $a = k\\sigma$, which yields:\n\n$P(|X - E[X]| \\geq k\\sigma) \\leq \\frac{1}{k^2}$\n\nThis form indicates that the probability of a random variable deviating from its mean by $k$ or more standard deviations is bounded by $1/k^2$. [1, 3]"
+      ],
+      "latency_s": 5.64,
+      "rag_type": "lightrag",
+      "dominio": "Test_Local_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "In regular expressions, which metacharacter is used to represent the beginning of a line or string?",
+      "ground_truth": "^",
+      "answer": "In regular expressions, the caret symbol (`^`) is used to represent the beginning of a line or string. It is also referred to as the circumflex character. [0, 5, 12, 20, 30, 41]",
+      "contexts": [
+        "In regular expressions, the caret symbol (`^`) is used to represent the beginning of a line or string. It is also referred to as the circumflex character. [0, 5, 12, 20, 30, 41]"
+      ],
+      "latency_s": 4.31,
+      "rag_type": "lightrag",
+      "dominio": "Test_Local_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "What term describes a regex quantifier that matches as much text as possible?",
+      "ground_truth": "Greedy",
+      "answer": "A regex quantifier that matches as much text as possible is described as **greedy**. Greedy quantifiers attempt to match the entire string first and then backtrack if necessary. They match as many characters as possible. [1, 4]",
+      "contexts": [
+        "A regex quantifier that matches as much text as possible is described as **greedy**. Greedy quantifiers attempt to match the entire string first and then backtrack if necessary. They match as many characters as possible. [1, 4]"
+      ],
+      "latency_s": 4.69,
+      "rag_type": "lightrag",
+      "dominio": "Test_Local_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "In lambda calculus theory, what is the operation of substituting a parameter for an argument called?",
+      "ground_truth": "Beta-reduction",
+      "answer": "In lambda calculus theory, the operation of substituting a parameter for an argument is called **variable substitution**. This is a core operation where a variable within a term is replaced by another term. [reference_id: ]",
+      "contexts": [
+        "In lambda calculus theory, the operation of substituting a parameter for an argument is called **variable substitution**. This is a core operation where a variable within a term is replaced by another term. [reference_id: ]"
+      ],
+      "latency_s": 4.07,
+      "rag_type": "lightrag",
+      "dominio": "Test_Local_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "In the theory of programming languages, which theorem states that if a term has a normal form, it is unique?",
+      "ground_truth": "Church-Rosser theorem",
+      "answer": "The **Unicity Property** in PCF states that each term has at most one irreducible result. This is related to the concept of **Confluence**, which implies that a relation is confluent if each term has at most one irreducible result. If a term can be reduced to two different irreducible terms, then due to confluence, these two terms must eventually reduce to the same irreducible term, thus proving the uniqueness of the irreducible result. [10.1007/978-0-85729-076-2_1] [10.1007/978-0-85729-076-2_2]\n\n### References\n\n* [10.1007/978-0-85729-076-2_1] Introduction to the Theory of Programming Languages\n* [10.1007/978-0-85729-076-2_2] The Language PCF",
+      "contexts": [
+        "The **Unicity Property** in PCF states that each term has at most one irreducible result. This is related to the concept of **Confluence**, which implies that a relation is confluent if each term has at most one irreducible result. If a term can be reduced to two different irreducible terms, then due to confluence, these two terms must eventually reduce to the same irreducible term, thus proving the uniqueness of the irreducible result. [10.1007/978-0-85729-076-2_1] [10.1007/978-0-85729-076-2_2]\n\n### References\n\n* [10.1007/978-0-85729-076-2_1] Introduction to the Theory of Programming Languages\n* [10.1007/978-0-85729-076-2_2] The Language PCF"
+      ],
+      "latency_s": 5.07,
+      "rag_type": "lightrag",
+      "dominio": "Test_Local_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Which specific algorithm is used by default in Spark MLlib for collaborative filtering?",
+      "ground_truth": "ALS",
+      "answer": "The specific algorithm used by default in Spark MLlib for collaborative filtering is **Alternating Least Squares (ALS)**. [1] MLlib implements ALS as its sole recommendation model for collaborative filtering. [1, 4]",
+      "contexts": [
+        "The specific algorithm used by default in Spark MLlib for collaborative filtering is **Alternating Least Squares (ALS)**. [1] MLlib implements ALS as its sole recommendation model for collaborative filtering. [1, 4]"
+      ],
+      "latency_s": 4.39,
+      "rag_type": "lightrag",
+      "dominio": "Test_Local_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "What is the Spark class that represents a distributed and strongly typed collection of data?",
+      "ground_truth": "Dataset",
+      "answer": "I am sorry, but I do not have enough information to answer your question. The context provided does not mention a Spark class that represents a distributed and strongly typed collection of data.",
+      "contexts": [
+        "I am sorry, but I do not have enough information to answer your question. The context provided does not mention a Spark class that represents a distributed and strongly typed collection of data."
+      ],
+      "latency_s": 4.32,
+      "rag_type": "lightrag",
+      "dominio": "Test_Local_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Which SQL Server command or hint forces the query optimizer to use a specific index?",
+      "ground_truth": "INDEX hint",
+      "answer": "SQL Server does not have a command or hint that *forces* the query optimizer to use a specific index. However, `Optimizer Hints` can be provided to influence the query optimizer's decisions regarding query execution plans. These hints are proprietary syntax used to influence how the optimizer executes a query [reference_id: ].\n\nIt's important to note that while hints can influence the optimizer, they do not guarantee a specific outcome, and their effectiveness can vary. Performance can be negatively impacted by skewed data distributions, which might lead to the use of hints, but these should be reviewed to ensure they are still necessary, especially after database updates or changes in table statistics.",
+      "contexts": [
+        "SQL Server does not have a command or hint that *forces* the query optimizer to use a specific index. However, `Optimizer Hints` can be provided to influence the query optimizer's decisions regarding query execution plans. These hints are proprietary syntax used to influence how the optimizer executes a query [reference_id: ].\n\nIt's important to note that while hints can influence the optimizer, they do not guarantee a specific outcome, and their effectiveness can vary. Performance can be negatively impacted by skewed data distributions, which might lead to the use of hints, but these should be reviewed to ensure they are still necessary, especially after database updates or changes in table statistics."
+      ],
+      "latency_s": 5.11,
+      "rag_type": "lightrag",
+      "dominio": "Test_Local_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "What is the default transaction isolation level for Microsoft SQL Server 2008?",
+      "ground_truth": "READ COMMITTED",
+      "answer": "The default transaction isolation level for Microsoft SQL Server 2008 is READ COMMITTED. This level ensures that a transaction only reads data that has been committed and prevents dirty reads. However, non-repeatable reads and phantoms can still occur at this level.",
+      "contexts": [
+        "The default transaction isolation level for Microsoft SQL Server 2008 is READ COMMITTED. This level ensures that a transaction only reads data that has been committed and prevents dirty reads. However, non-repeatable reads and phantoms can still occur at this level."
+      ],
+      "latency_s": 5.84,
+      "rag_type": "lightrag",
+      "dominio": "Test_Local_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Which Java keyword prevents a class from being extended through inheritance?",
+      "ground_truth": "final",
+      "answer": "The `final` keyword in Java prevents a class from being extended through inheritance. When a class is declared as `final`, it cannot be used as a superclass. [1]",
+      "contexts": [
+        "The `final` keyword in Java prevents a class from being extended through inheritance. When a class is declared as `final`, it cannot be used as a superclass. [1]"
+      ],
+      "latency_s": 7.08,
+      "rag_type": "lightrag",
+      "dominio": "Test_Local_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "What is the mechanism in Java where a subclass provides a specific implementation of a method already defined in its superclass?",
+      "ground_truth": "Overriding",
+      "answer": "The mechanism in Java where a subclass provides a specific implementation for a method that is already defined in its superclass is called **Method Overriding** [1, 2, 3].\n\nThis is a key aspect of **Polymorphism**, which is a fundamental concept in Object-Oriented Programming (OOP). Polymorphism allows objects of different classes to be treated as objects of a common superclass. Method overriding enables a subclass to offer its specialized version of a method inherited from its superclass.\n\nIn Java, an **overriding method** in a subclass has the same name, number of parameters, and types of parameters as a method in the superclass [4]. This allows for runtime determination of which specific method implementation to execute based on the actual type of the object being referenced [5].",
+      "contexts": [
+        "The mechanism in Java where a subclass provides a specific implementation for a method that is already defined in its superclass is called **Method Overriding** [1, 2, 3].\n\nThis is a key aspect of **Polymorphism**, which is a fundamental concept in Object-Oriented Programming (OOP). Polymorphism allows objects of different classes to be treated as objects of a common superclass. Method overriding enables a subclass to offer its specialized version of a method inherited from its superclass.\n\nIn Java, an **overriding method** in a subclass has the same name, number of parameters, and types of parameters as a method in the superclass [4]. This allows for runtime determination of which specific method implementation to execute based on the actual type of the object being referenced [5]."
+      ],
+      "latency_s": 5.22,
+      "rag_type": "lightrag",
+      "dominio": "Test_Local_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "What derogatory term does Joe Celko use for the practice of adding prefixes like 'tbl_' to table names?",
+      "ground_truth": "Tibbling",
+      "answer": "Joe Celko uses the term \"silly convention\" for the practice of adding prefixes like 'tbl_' to table names. [reference_id: ]",
+      "contexts": [
+        "Joe Celko uses the term \"silly convention\" for the practice of adding prefixes like 'tbl_' to table names. [reference_id: ]"
+      ],
+      "latency_s": 5.63,
+      "rag_type": "lightrag",
+      "dominio": "Test_Local_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "According to SQL programming best practices, what name is given to tables used to resolve many-to-many relationships?",
+      "ground_truth": "Associative tables",
+      "answer": "Tables used to resolve many-to-many relationships are called **Relationship Tables**. These tables are designed to model the connections between entities, specifically handling scenarios where multiple records in one table can relate to multiple records in another. In systems like SQL Server, this is typically implemented using an **intermediate table** when a direct physical link is not feasible. [1, 3]",
+      "contexts": [
+        "Tables used to resolve many-to-many relationships are called **Relationship Tables**. These tables are designed to model the connections between entities, specifically handling scenarios where multiple records in one table can relate to multiple records in another. In systems like SQL Server, this is typically implemented using an **intermediate table** when a direct physical link is not feasible. [1, 3]"
+      ],
+      "latency_s": 5.74,
+      "rag_type": "lightrag",
+      "dominio": "Test_Local_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "What is the name of the primary data structure that represents a network packet in the Linux kernel?",
+      "ground_truth": "sk_buff",
+      "answer": "The primary data structure that represents a network packet in the Linux kernel is the `sk_buff` structure, also known as a socket buffer (SKB). This structure is fundamental to the Linux kernel's networking subsystem and is used for manipulating network packets. It contains not only the packet data but also essential metadata for processing, such as information about packet fragments and callback functions. The `sk_buff` structure is defined in the `include/linux/skbuff.h` header file. [1, 5, 7, 9]",
+      "contexts": [
+        "The primary data structure that represents a network packet in the Linux kernel is the `sk_buff` structure, also known as a socket buffer (SKB). This structure is fundamental to the Linux kernel's networking subsystem and is used for manipulating network packets. It contains not only the packet data but also essential metadata for processing, such as information about packet fragments and callback functions. The `sk_buff` structure is defined in the `include/linux/skbuff.h` header file. [1, 5, 7, 9]"
+      ],
+      "latency_s": 5.11,
+      "rag_type": "lightrag",
+      "dominio": "Test_Local_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Which Linux kernel macro is used to iterate over the system's list of network devices?",
+      "ground_truth": "for_each_netdev",
+      "answer": "The provided context does not contain information about a specific Linux kernel macro used to iterate over the system's list of network devices. However, it does mention that the `dev_list` member within the `net_device` structure is a global list of network devices, and insertion/removal from this list is handled by the `list_netdevice()` and `unlist_netdevice()` methods, respectively.",
+      "contexts": [
+        "The provided context does not contain information about a specific Linux kernel macro used to iterate over the system's list of network devices. However, it does mention that the `dev_list` member within the `net_device` structure is a global list of network devices, and insertion/removal from this list is handled by the `list_netdevice()` and `unlist_netdevice()` methods, respectively."
+      ],
+      "latency_s": 4.49,
+      "rag_type": "lightrag",
+      "dominio": "Test_Local_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "What is the name of the standard R function used to perform Nelder-Mead optimization?",
+      "ground_truth": "optim()",
+      "answer": "The standard R function used for numerical optimization is `optim()`. The Nelder-Mead method, also known as the downhill simplex method, is an implementation option for the `optim()` function, which can be selected by setting the \"method\" argument. Additionally, the `optim` function can execute the SANN method. [1, 2, 3, 4, 5]\n\n### References\n\n- [1] Optim R Function, SANN Method\n- [2] Optim R Function, Simulated Annealing\n- [3] Optim R Function, Method Argument\n- [4] Optim R Function, Nelder-Mead Method\n- [5] Optim Function, S",
+      "contexts": [
+        "The standard R function used for numerical optimization is `optim()`. The Nelder-Mead method, also known as the downhill simplex method, is an implementation option for the `optim()` function, which can be selected by setting the \"method\" argument. Additionally, the `optim` function can execute the SANN method. [1, 2, 3, 4, 5]\n\n### References\n\n- [1] Optim R Function, SANN Method\n- [2] Optim R Function, Simulated Annealing\n- [3] Optim R Function, Method Argument\n- [4] Optim R Function, Nelder-Mead Method\n- [5] Optim Function, S"
+      ],
+      "latency_s": 8.82,
+      "rag_type": "lightrag",
+      "dominio": "Test_Local_01",
+      "titulo": "",
+      "error": ""
+    },
+    {
+      "question": "Which heuristic search algorithm for optimization is inspired by the cooling process in metallurgy?",
+      "ground_truth": "Simulated Annealing",
+      "answer": "Simulated annealing is a heuristic search algorithm for optimization that is inspired by the annealing phenomenon in metallurgy. This process involves heating a metal and then gradually cooling it in a controlled manner. [1]",
+      "contexts": [
+        "Simulated annealing is a heuristic search algorithm for optimization that is inspired by the annealing phenomenon in metallurgy. This process involves heating a metal and then gradually cooling it in a controlled manner. [1]"
+      ],
+      "latency_s": 5.75,
+      "rag_type": "lightrag",
+      "dominio": "Test_Local_01",
+      "titulo": "",
+      "error": ""
+    }
+  ],
+  "ragas_scores": {
+    "faithfulness": 0.99,
+    "answer_relevancy": 0.7767,
+    "context_precision": 0.7,
+    "context_recall": 0.65
+  },
+  "avg_latency_s": 5.43,
+  "n_errors": 0
+}
