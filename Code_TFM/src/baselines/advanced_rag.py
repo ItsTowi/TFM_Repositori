@@ -27,6 +27,9 @@ from langchain_classic.retrievers.document_compressors import CrossEncoderRerank
 from langchain_community.cross_encoders import HuggingFaceCrossEncoder
 from langchain_classic.retrievers import ContextualCompressionRetriever
 
+from src.evaluation.query_token_tracker import QueryTokenTracker, LangChainTokenCallback
+
+
 class AdvancedRAG:
     """
     RAG++ con búsqueda híbrida y reranking.
@@ -66,6 +69,7 @@ class AdvancedRAG:
 
         self.vector_store = None
         self._all_docs = []  # guardamos todos los docs para BM25
+        self._query_callback: LangChainTokenCallback | None = None
 
     def index_documents(self, splits):
         """Indexa los documentos en ChromaDB y guarda los splits para BM25."""
@@ -135,6 +139,10 @@ class AdvancedRAG:
 
         return retriever
 
+    def attach_token_tracker(self, tracker: QueryTokenTracker) -> None:
+        """Engancha un QueryTokenTracker para registrar tokens de cada query."""
+        self._query_callback = LangChainTokenCallback(tracker)
+
     def ask(self, question: str) -> str:
         """Responde una pregunta usando el pipeline RAG++."""
         retriever = self._build_retriever()
@@ -168,7 +176,8 @@ class AdvancedRAG:
         ])
         question_answer_chain = create_stuff_documents_chain(self.llm, prompt)
         rag_chain = create_retrieval_chain(retriever, question_answer_chain)
-        response = await rag_chain.ainvoke({"input": question})
+        callbacks = [self._query_callback] if self._query_callback else []
+        response = await rag_chain.ainvoke({"input": question}, config={"callbacks": callbacks})
         answer = response["answer"]
         contexts = [doc.page_content for doc in response["context"]]
         return answer, contexts  # ← solo 2, el try/except del evaluador gestiona errores

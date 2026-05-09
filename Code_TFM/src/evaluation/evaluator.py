@@ -9,6 +9,7 @@ from datetime import datetime
 from .results import QAResult, ExperimentResult, RAGType
 from .query_adapters import query_traditional, query_lightrag, query_llamaindex, query_advanced, query_msgraphrag_global, query_msgraphrag_local, query_literag
 from .metrics import build_ragas_wrappers, compute_ragas_scores
+from .query_token_tracker import QueryTokenTracker, ITokenTrackable
 
 
 class RAGEvaluator:
@@ -59,20 +60,39 @@ class RAGEvaluator:
         titulo_por_cid = {l["context_id"]: l["titulo"] for l in libros}
         qas_a_evaluar = qas[:max_questions] if max_questions else qas
 
+        # ── Setup query token tracker ──────────────────────────────────────────
+        query_tracker: QueryTokenTracker | None = None
+        if isinstance(self.rag, ITokenTrackable):
+            query_tracker = QueryTokenTracker()
+            self.rag.attach_token_tracker(query_tracker)
+            print(f"  📡 Query token tracking activado para {self.rag_type}")
+        else:
+            print(f"  ⚠️  {self.rag_type} no implementa ITokenTrackable — sin query token tracking")
+
         print(f"\n🔍 Evaluando {self.rag_type.upper()} | {dominio} | {len(qas_a_evaluar)} preguntas")
         print("─" * 60)
 
         for i, qa in enumerate(qas_a_evaluar):
             print(f"  [{i+1}/{len(qas_a_evaluar)}] {qa['question'][:70]}...")
             t0 = time.time()
+
+            # Snapshot del log antes de la query para aislar tokens de esta pregunta
+            idx_before = len(query_tracker.request_log) if query_tracker else 0
+
             try:
                 answer, contexts = await self._query(qa["question"])
                 error = ""
             except Exception as e:
-                traceback.print_exc()  # ← añade esta línea
+                traceback.print_exc()
                 answer, contexts, error = "", [], str(e)
                 result.n_errors += 1
                 print(f"    ⚠️ Error: {e}")
+
+            # Tokens de query para esta pregunta
+            q_token_usage = {}
+            if query_tracker:
+                q_slice = query_tracker.request_log[idx_before:]
+                q_token_usage = query_tracker.get_stats_for_slice(q_slice)
 
             result.qa_results.append(QAResult(
                 question=qa["question"],
@@ -84,17 +104,22 @@ class RAGEvaluator:
                 dominio=dominio,
                 titulo=titulo_por_cid.get(qa["context_id"], ""),
                 error=error,
+                query_token_usage=q_token_usage,
             ))
 
         latencias = [r.latency_s for r in result.qa_results if not r.error]
         result.avg_latency_s = round(sum(latencias) / len(latencias), 2) if latencias else 0
+
+        # Tokens totales de query (sin RAGAS)
+        if query_tracker:
+            result.query_token_usage = query_tracker.get_stats()
 
         print("\n📊 Calculando métricas RAGAS...")
         ragas_output = await compute_ragas_scores(
             result.qa_results, self.llm, self.embeddings
         )
 
-        # Separar scores de token_usage
+        # Separar scores de token_usage (RAGAS)
         result.token_usage = ragas_output.pop("token_usage", {})
         result.ragas_scores = ragas_output
 
@@ -136,10 +161,28 @@ class RAGEvaluator:
                     print(f"    {metric:<25} {'':>20} NaN")
         else:
             print("    (sin métricas)")
+
+        # ── Query token usage ──────────────────────────────────────────────────
+        if result.query_token_usage:
+            t = result.query_token_usage.get("total", {})
+            r2 = result.query_token_usage.get("rates", {})
+            estimated = result.query_token_usage.get("estimated", False)
+            label = "💰 Tokens Query (estimado):" if estimated else "💰 Tokens Query:"
+            print(f"\n  {label}")
+            print(f"    Total      : {t.get('total_tokens', 0):,}")
+            print(f"    Prompt     : {t.get('prompt_tokens', 0):,}")
+            print(f"    Completion : {t.get('completion_tokens', 0):,}")
+            if r2:
+                print(f"    TPM        : {r2.get('tpm', 0):,} tokens/min")
+                print(f"    RPM        : {r2.get('rpm', 0):,} requests/min")
+        else:
+            print("\n  💰 Tokens Query: no disponible")
+
+        # ── RAGAS token usage ──────────────────────────────────────────────────
         if result.token_usage:
             t = result.token_usage.get("total", {})
             r2 = result.token_usage.get("rates", {})
-            print(f"\n  💰 Tokens RAGAS:")
+            print(f"\n  🔬 Tokens RAGAS (evaluación):")
             print(f"    Total      : {t.get('total_tokens', 0):,}")
             print(f"    Prompt     : {t.get('prompt_tokens', 0):,}")
             print(f"    Completion : {t.get('completion_tokens', 0):,}")

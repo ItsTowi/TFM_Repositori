@@ -22,6 +22,8 @@ class QAResult:
     dominio: str
     titulo: str
     error: str = ""
+    # Tokens consumidos por el RAG para responder esta pregunta (sin RAGAS)
+    query_token_usage: dict = field(default_factory=dict)
 
 
 @dataclass
@@ -35,3 +37,7 @@ class ExperimentResult:
     ragas_scores: dict = field(default_factory=dict)
     avg_latency_s: float = 0.0
     n_errors: int = 0
+    # Tokens consumidos por el RAG en todas las queries (sin RAGAS)
+    query_token_usage: dict = field(default_factory=dict)
+    # Tokens consumidos por RAGAS durante la evaluación
+    token_usage: dict = field(default_factory=dict)

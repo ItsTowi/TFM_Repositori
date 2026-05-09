@@ -6,11 +6,15 @@ from langchain_classic.chains import create_retrieval_chain
 from langchain_classic.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate
 
+from src.evaluation.query_token_tracker import QueryTokenTracker, LangChainTokenCallback
+
+
 class TraditionalRAG:
     def __init__(self, persist_directory="./chroma_db"):
         self.persist_directory = persist_directory
         self.embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
         self.llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0)
+        self._query_callback: LangChainTokenCallback | None = None
         
         if os.path.exists(self.persist_directory) and os.listdir(self.persist_directory):
             print(f"Cargando índice existente desde {self.persist_directory}...")
@@ -38,12 +42,16 @@ class TraditionalRAG:
                 persist_directory=self.persist_directory
             )
 
+    def attach_token_tracker(self, tracker: QueryTokenTracker) -> None:
+        """Engancha un QueryTokenTracker para registrar tokens de cada query."""
+        self._query_callback = LangChainTokenCallback(tracker)
+
     def ask(self, question: str) -> str:
         if not self.vector_store:
             raise ValueError("La base de datos no existe. Debes indexar documentos primero.")
-            
+
         retriever = self.vector_store.as_retriever(search_kwargs={"k": 4})
-        
+
         system_prompt = (
             "You are an expert assistant. Use ONLY the following retrieved context "
             "to answer the question. If you don't know, say you don't know.\n\n"
@@ -53,9 +61,10 @@ class TraditionalRAG:
             ("system", system_prompt),
             ("human", "{input}"),
         ])
-        
+
         question_answer_chain = create_stuff_documents_chain(self.llm, prompt)
         rag_chain = create_retrieval_chain(retriever, question_answer_chain)
-        
-        response = rag_chain.invoke({"input": question})
+
+        callbacks = [self._query_callback] if self._query_callback else []
+        response = rag_chain.invoke({"input": question}, config={"callbacks": callbacks})
         return response["answer"]

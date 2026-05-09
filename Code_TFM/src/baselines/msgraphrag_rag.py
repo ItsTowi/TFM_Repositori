@@ -1,6 +1,26 @@
 import pandas as pd
 from pathlib import Path
 
+from src.evaluation.query_token_tracker import QueryTokenTracker
+
+
+def _estimate_tokens(text: str) -> int:
+    """
+    Estima tokens usando tiktoken (cl100k_base, compatible con GPT-4/Gemini).
+    Fallback: len(text) // 4 si tiktoken no está disponible.
+
+    NOTA: MSGraphRAG no expone el cliente LLM interno, así que los tokens
+    son una estimación basada en el input (query + contextos) y el output
+    (respuesta). El conteo real puede diferir según el system prompt interno
+    de graphrag y el número de llamadas LLM que haga internamente.
+    """
+    try:
+        import tiktoken
+        enc = tiktoken.get_encoding("cl100k_base")
+        return len(enc.encode(text))
+    except Exception:
+        return max(len(text) // 4, 1)
+
 
 class MSGraphRAG:
     def __init__(self, workspace_dir: str = "./ms_graphrag_workspace"):
@@ -8,6 +28,15 @@ class MSGraphRAG:
         self.output_dir = self.workspace_dir / "output"
         self._config = None
         self._df = None
+        self._query_tracker: QueryTokenTracker | None = None
+
+    def attach_token_tracker(self, tracker: QueryTokenTracker) -> None:
+        """
+        Engancha un QueryTokenTracker.
+        Los tokens se estiman con tiktoken sobre (query + contextos) y respuesta,
+        ya que graphrag no expone el cliente LLM directamente.
+        """
+        self._query_tracker = tracker
 
     def _load_config(self):
         from graphrag.config.load_config import load_config
@@ -36,6 +65,20 @@ class MSGraphRAG:
         self._load_config()
         self._load_dataframes()
         return self
+
+    def _record_estimated_tokens(
+        self, query: str, response: str, contexts: list[str]
+    ) -> None:
+        """Registra tokens estimados en el tracker si está activo."""
+        if not self._query_tracker:
+            return
+        context_text = " ".join(contexts)
+        prompt_est = _estimate_tokens(query + " " + context_text)
+        completion_est = _estimate_tokens(response)
+        self._query_tracker.record(
+            prompt_tokens=prompt_est,
+            completion_tokens=completion_est,
+        )
 
     async def local_search(
         self,
@@ -68,6 +111,7 @@ class MSGraphRAG:
         )
 
         contexts = self._extract_contexts(context)
+        self._record_estimated_tokens(query, str(response), contexts)
         return str(response), contexts
 
     async def global_search(
@@ -99,6 +143,7 @@ class MSGraphRAG:
         )
 
         contexts = self._extract_contexts(context)
+        self._record_estimated_tokens(query, str(response), contexts)
         return str(response), contexts
 
     def _extract_contexts(self, context) -> list[str]:

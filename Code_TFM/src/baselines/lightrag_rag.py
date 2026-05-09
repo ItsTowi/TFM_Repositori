@@ -23,6 +23,8 @@ from lightrag import LightRAG
 from lightrag.utils import wrap_embedding_func_with_attrs
 from lightrag.llm.openai import openai_complete_if_cache
 
+from src.evaluation.query_token_tracker import QueryTokenTracker
+
 
 # ── Token Tracker de Indexación ────────────────────────────────────────────────
 
@@ -169,6 +171,72 @@ def _make_embedding_wrapper(tracker: IndexingStats):
 
 # ── Builder principal ──────────────────────────────────────────────────────────
 
+# ── Wrapper con ITokenTrackable ───────────────────────────────────────────────
+
+class LightRAGWrapper:
+    """
+    Wrapper ligero sobre LightRAG que implementa ITokenTrackable.
+
+    Cuando el evaluador llama a attach_token_tracker(), reemplaza
+    llm_model_func del rag interno con una versión que usa un
+    AsyncOpenAI con tracking de tokens (conteos exactos de la API).
+    El resto de operaciones (ainsert, aquery, etc.) se delegan
+    transparentemente al rag interno mediante __getattr__.
+    """
+
+    def __init__(self, rag: LightRAG, model: str):
+        self._rag = rag
+        self._model = model
+
+    def __getattr__(self, name: str):
+        """Delega cualquier atributo/método no definido aquí al rag interno."""
+        return getattr(self._rag, name)
+
+    def attach_token_tracker(self, tracker: QueryTokenTracker) -> None:
+        """
+        Reemplaza llm_model_func del rag interno con un wrapper que usa
+        un AsyncOpenAI tracking client para obtener conteos exactos.
+        Llamar antes de empezar las queries (la indexación ya ha terminado).
+        """
+        model = self._model
+        api_key = os.getenv("GEMINI_API_KEY")
+        client = AsyncOpenAI(
+            api_key=api_key,
+            base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
+        )
+        # kwargs que el cliente OpenAI acepta en chat.completions.create
+        _VALID_KWARGS = {"max_tokens", "temperature", "top_p", "stop", "n", "stream"}
+
+        async def _tracking_llm_wrapper(
+            prompt, system_prompt=None, history_messages=[], **kwargs
+        ) -> str:
+            messages = []
+            if system_prompt:
+                messages.append({"role": "system", "content": system_prompt})
+            for msg in (history_messages or []):
+                messages.append(msg)
+            messages.append({"role": "user", "content": prompt})
+
+            api_kwargs = {k: v for k, v in kwargs.items() if k in _VALID_KWARGS}
+
+            response = await client.chat.completions.create(
+                model=model,
+                messages=messages,
+                **api_kwargs,
+            )
+            if response.usage:
+                tracker.record(
+                    prompt_tokens=response.usage.prompt_tokens or 0,
+                    completion_tokens=response.usage.completion_tokens or 0,
+                )
+            return response.choices[0].message.content
+
+        self._rag.llm_model_func = _tracking_llm_wrapper
+
+    async def aquery(self, question: str, **kwargs):
+        return await self._rag.aquery(question, **kwargs)
+
+
 async def build_lightrag(
     workspace_dir: str,
     model: str = "gemini-2.5-flash-lite",
@@ -178,9 +246,12 @@ async def build_lightrag(
     chunk_token_size: int = 600,        # FIX: reducido del default ~1200
     chunk_overlap_token_size: int = 50, # FIX: reducido del default ~100
     entity_extract_max_gleaning: int = 0,  # FIX: eliminado gleaning (ahorra ~50% tiempo LLM)
-) -> tuple[LightRAG, IndexingStats]:
+) -> tuple["LightRAGWrapper", IndexingStats]:
     """
-    Inicializa LightRAG con Gemini y devuelve (rag, tracker).
+    Inicializa LightRAG con Gemini y devuelve (LightRAGWrapper, IndexingStats).
+
+    El wrapper expone attach_token_tracker() para el tracking de queries y
+    delega el resto de operaciones (ainsert, aquery…) al LightRAG interno.
 
     Args:
         workspace_dir:                carpeta donde LightRAG guarda el grafo
@@ -212,7 +283,7 @@ async def build_lightrag(
     print(f"✅ LightRAG inicializado en: {workspace_dir}")
     print(f"   max_async={max_async} | max_retries={max_retries} | modelo={model}")
     print(f"   chunk_size={chunk_token_size} | gleaning={entity_extract_max_gleaning}")
-    return rag, tracker
+    return LightRAGWrapper(rag, model), tracker
 
 
 async def index_documents(
